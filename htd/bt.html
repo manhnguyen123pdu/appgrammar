@@ -1,0 +1,3292 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#4f46e5" />
+  <title>PRESENT SIMPLE EXERCISESh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f7f8fd;
+      --card: #ffffff;
+      --text: #0b1120;
+      --text-soft: #4b5563;
+      --muted: #9ca3af;
+      --border: #eaeef7;
+      --brand: #6366f1;
+      --brand-dark: #4f46e5;
+      --brand-soft: #eef2ff;
+      --accent: #06b6d4;
+      --green: #10b981;
+      --green-soft: #ecfdf5;
+      --green-border: #a7f3d0;
+      --red: #ef4444;
+      --red-soft: #fef2f2;
+      --red-border: #fecaca;
+      --yellow: #f59e0b;
+      --orange: #f97316;
+      --shadow-xs: 0 1px 2px rgba(15, 23, 42, .04);
+      --shadow-sm: 0 4px 14px rgba(15, 23, 42, .05);
+      --shadow: 0 10px 30px -8px rgba(15, 23, 42, .12);
+      --shadow-lg: 0 30px 60px -20px rgba(79, 70, 229, .35);
+      --radius: 20px;
+      --radius-lg: 28px;
+      --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 15% 0%, rgba(99, 102, 241, .08), transparent 45%),
+        radial-gradient(circle at 100% 20%, rgba(6, 182, 212, .07), transparent 40%);
+      background-attachment: fixed;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    input,
+    textarea {
+      font-family: inherit;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .82);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(234, 238, 247, .8);
+    }
+
+    .nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -.02em;
+      transition: transform .25s ease;
+      white-space: nowrap;
+    }
+
+    .logo:hover {
+      transform: translateY(-1px);
+    }
+
+    .logo .dot {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      box-shadow: 0 6px 16px rgba(99, 102, 241, .4);
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 4px;
+      background: rgba(238, 242, 255, .6);
+      padding: 4px;
+      border-radius: 12px;
+    }
+
+    .nav-links a {
+      padding: 8px 16px;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-soft);
+      transition: all .2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand-dark);
+      background: #fff;
+    }
+
+    .nav-links a.active {
+      background: #fff;
+      color: var(--brand-dark);
+      box-shadow: 0 2px 8px rgba(99, 102, 241, .15);
+    }
+
+    /* ================= LAYOUT ================= */
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 24px 100px;
+    }
+
+    /* ================= HERO ================= */
+    .exercise-hero {
+      background: linear-gradient(135deg, #4f46e5 0%, #6366f1 45%, #8b5cf6 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .exercise-hero::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .12);
+      pointer-events: none;
+    }
+
+    .exercise-hero h1 {
+      font-size: clamp(24px, 3.4vw, 34px);
+      font-weight: 800;
+      letter-spacing: -.025em;
+      line-height: 1.15;
+      margin-bottom: 10px;
+      position: relative;
+      padding-right: 200px;
+    }
+
+    .exercise-hero p {
+      font-size: 15.5px;
+      opacity: .92;
+      max-width: 620px;
+      position: relative;
+      margin-bottom: 22px;
+    }
+
+    .exercise-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, .16);
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+    }
+
+    /* Nút In + Đáp án trong hero */
+    .print-toggle,
+    .print-answer-toggle {
+      position: absolute;
+      top: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, .18);
+      border: 1px solid rgba(255, 255, 255, .35);
+      color: #fff;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .25s cubic-bezier(.4, 0, .2, 1);
+      backdrop-filter: blur(10px);
+      font-family: inherit;
+      z-index: 5;
+    }
+
+    .print-toggle {
+      right: 24px;
+    }
+
+    .print-answer-toggle {
+      right: 200px;
+    }
+
+    .print-toggle:hover,
+    .print-answer-toggle:hover {
+      background: rgba(255, 255, 255, .3);
+      transform: translateY(-2px);
+    }
+
+    .print-answer-toggle.active {
+      background: #10b981;
+      border-color: #10b981;
+      box-shadow: 0 8px 22px -6px rgba(16, 185, 129, .5);
+    }
+
+    /* body:not(.print-mode) .print-answer-toggle { display: none; } */
+
+    /* ================= STICKY SCORE BAR ================= */
+    .score-bar {
+      position: sticky;
+      top: 68px;
+      z-index: 50;
+      margin-bottom: 26px;
+      padding: 14px 22px;
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .score-bar .progress-mini {
+      flex: 1 1 200px;
+      height: 8px;
+      background: #e8ecf6;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .score-bar .progress-mini .fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--brand), var(--accent));
+      border-radius: 999px;
+      transition: width .5s cubic-bezier(.4, 0, .2, 1);
+      width: 0%;
+    }
+
+    .score-bar .stat {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .score-bar .stat.correct {
+      color: var(--green);
+      background: var(--green-soft);
+      border: 1px solid var(--green-border);
+    }
+
+    .score-bar .stat.wrong {
+      color: var(--red);
+      background: var(--red-soft);
+      border: 1px solid var(--red-border);
+    }
+
+    .score-bar .stat.progress {
+      color: var(--brand-dark);
+      background: var(--brand-soft);
+      border: 1px solid #c7d2fe;
+    }
+
+    /* ================= SECTION ================= */
+    .section-block {
+      margin-bottom: 24pt;
+      break-inside: auto;
+      page-break-inside: auto;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px dashed var(--border);
+    }
+
+    .section-header .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      background: linear-gradient(135deg, var(--brand-soft), #e0e7ff);
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px -4px rgba(99, 102, 241, .3);
+    }
+
+    .section-header .text h2 {
+      font-size: clamp(18px, 2.2vw, 22px);
+      font-weight: 800;
+      letter-spacing: -.025em;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+
+    .section-header .text p {
+      font-size: 14px;
+      color: var(--text-soft);
+      font-weight: 500;
+    }
+
+    .section-header .badge-count {
+      margin-left: auto;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 14px;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* ================= CÂU HỎI ================= */
+    .q-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-xs);
+      transition: all .3s cubic-bezier(.4, 0, .2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .q-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--border);
+      transition: background .3s ease;
+    }
+
+    .q-item.correct::before {
+      background: var(--green);
+    }
+
+    .q-item.wrong::before {
+      background: var(--red);
+    }
+
+    .q-item.correct {
+      border-color: var(--green-border);
+      background: linear-gradient(135deg, #ffffff, #f7fdfb);
+    }
+
+    .q-item.wrong {
+      border-color: var(--red-border);
+      background: linear-gradient(135deg, #ffffff, #fff8f8);
+    }
+
+    .q-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+
+    .q-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      font-family: var(--mono);
+      transition: all .3s ease;
+    }
+
+    .q-item.correct .q-num {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .q-item.wrong .q-num {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .q-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .q-text {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: -.01em;
+      color: var(--text);
+      word-wrap: break-word;
+    }
+
+    /* ================= OPTIONS ================= */
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 16px;
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all .2s cubic-bezier(.4, 0, .2, 1);
+      text-align: left;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .option:hover:not(.disabled) {
+      border-color: var(--brand);
+      background: #fafbff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px -6px rgba(99, 102, 241, .2);
+    }
+
+    .option .key {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+      background: #f1f4fb;
+      color: var(--text-soft);
+      flex-shrink: 0;
+      transition: all .2s ease;
+      font-family: var(--mono);
+    }
+
+    .option:hover:not(.disabled) .key {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .option .text {
+      flex: 1;
+    }
+
+    .option.disabled {
+      cursor: default;
+    }
+
+    .option.correct {
+      border-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .option.correct .key {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .option.wrong {
+      border-color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .option.wrong .key {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .option.dimmed {
+      opacity: .55;
+    }
+
+    /* ================= INPUT / TEXTAREA ================= */
+    .input-wrap {
+      /* margin-top: 14px; */
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .text-input {
+      flex: 1 1 240px;
+      min-width: 0;
+      padding: 13px 16px;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      background: #fff;
+      transition: all .2s ease;
+      font-family: var(--mono);
+      outline: none;
+    }
+
+    .text-input::placeholder {
+      color: var(--muted);
+      font-weight: 500;
+      font-family: var(--font);
+    }
+
+    .text-input:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, .12);
+    }
+
+    .text-input:disabled {
+      cursor: default;
+      background: #fafbfe;
+    }
+
+    .q-item.correct .text-input {
+      border-color: var(--green);
+      background: var(--green-soft);
+      color: #065f46;
+    }
+
+    .q-item.wrong .text-input {
+      border-color: var(--red);
+      background: var(--red-soft);
+      color: #7f1d1d;
+    }
+
+    .textarea {
+      width: 100%;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      background: #fff;
+      transition: all .2s ease;
+      font-family: var(--font);
+      outline: none;
+      resize: vertical;
+      min-height: 70px;
+      line-height: 1.55;
+    }
+
+    .textarea::placeholder {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .textarea:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, .12);
+    }
+
+    .textarea:disabled {
+      cursor: default;
+      background: #fafbfe;
+    }
+
+    .q-item.correct .textarea {
+      border-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .q-item.wrong .textarea {
+      border-color: var(--red);
+      background: var(--red-soft);
+    }
+
+    /* ================= REORDER ================= */
+    .reorder-words {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 16px;
+      background: #f8faff;
+      border: 2px dashed #dbe2f0;
+      border-radius: 14px;
+      margin-top: 14px;
+      min-height: 60px;
+    }
+
+    .word-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 16px;
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      font-family: inherit;
+      cursor: pointer;
+      transition: all .2s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .04);
+    }
+
+    .word-chip:hover:not(:disabled):not(.used) {
+      border-color: var(--brand);
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px -4px rgba(99, 102, 241, .3);
+    }
+
+    .word-chip.used {
+      opacity: .25;
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+
+    .word-chip:disabled {
+      cursor: default;
+    }
+
+    .reorder-answer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 16px;
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      margin-top: 12px;
+      min-height: 62px;
+      align-items: center;
+      transition: border-color .3s ease;
+    }
+
+    .q-item.correct .reorder-answer {
+      border-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .q-item.wrong .reorder-answer {
+      border-color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .reorder-placeholder {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      user-select: none;
+    }
+
+    .word-chip-answer {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 16px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: #fff;
+      border: 2px solid var(--brand-dark);
+      border-radius: 10px;
+      font-size: 14.5px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all .18s ease;
+      box-shadow: 0 4px 12px -4px rgba(99, 102, 241, .4);
+      animation: chipIn .25s cubic-bezier(.34, 1.56, .64, 1) both;
+    }
+
+    @keyframes chipIn {
+      from {
+        opacity: 0;
+        transform: scale(.7);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .word-chip-answer:hover:not(:disabled) {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 8px 20px -4px rgba(99, 102, 241, .5);
+    }
+
+    .q-item.correct .word-chip-answer {
+      background: linear-gradient(135deg, var(--green), #059669);
+      border-color: #059669;
+    }
+
+    .q-item.wrong .word-chip-answer {
+      background: linear-gradient(135deg, var(--red), #dc2626);
+      border-color: #dc2626;
+    }
+
+    .word-chip-answer:disabled {
+      cursor: default;
+    }
+
+    .reorder-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .btn-ghost-dark {
+      background: #f1f4fb;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost-dark:hover {
+      background: #e8ecf6;
+      color: var(--text);
+    }
+
+    /* ================= TRANSLATE ================= */
+    .translate-prompt {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 18px;
+      background: linear-gradient(135deg, #fff8f0, #fff5eb);
+      border: 1px solid #ffe0c2;
+      border-left: 4px solid var(--orange);
+      border-radius: 12px;
+      margin-top: 14px;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #7c2d12;
+      line-height: 1.5;
+    }
+
+    .translate-prompt .flag {
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    /* ================= FEEDBACK ================= */
+    .feedback {
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      animation: slideIn .35s cubic-bezier(.2, .8, .2, 1) both;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feedback.correct {
+      background: var(--green-soft);
+      border: 1px solid var(--green-border);
+      color: #065f46;
+    }
+
+    .feedback.wrong {
+      background: var(--red-soft);
+      border: 1px solid var(--red-border);
+      color: #7f1d1d;
+    }
+
+    .feedback .emoji {
+      font-size: 20px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .feedback b {
+      font-weight: 800;
+    }
+
+    .feedback .correct-ans {
+      display: inline-block;
+      font-family: var(--mono);
+      background: rgba(255, 255, 255, .7);
+      border: 1px solid rgba(0, 0, 0, .08);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin: 0 2px;
+      font-weight: 700;
+    }
+
+    .feedback .fb-vi {
+      display: block;
+      margin-top: 6px;
+      font-size: 13px;
+      color: #475569;
+      font-style: italic;
+    }
+
+    /* ================= BUTTONS ================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14.5px;
+      letter-spacing: -.01em;
+      border: 1px solid transparent;
+      transition: all .22s cubic-bezier(.4, 0, .2, 1);
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: #fff;
+      box-shadow: 0 8px 22px -6px rgba(99, 102, 241, .5);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px -8px rgba(99, 102, 241, .6);
+    }
+
+    .btn-primary:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand);
+      color: var(--brand-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn .arrow {
+      display: inline-block;
+      transition: transform .3s ease;
+    }
+
+    .btn:hover:not(:disabled) .arrow {
+      transform: translateX(4px);
+    }
+
+    /* ================= BOTTOM ACTION ================= */
+    .bottom-action {
+      margin-top: 48px;
+      padding: 32px 30px;
+      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      border: 1px solid #c7d2fe;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bottom-action::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(99, 102, 241, .1);
+      pointer-events: none;
+    }
+
+    .bottom-action h3 {
+      font-size: clamp(19px, 2.4vw, 24px);
+      font-weight: 800;
+      letter-spacing: -.025em;
+      color: var(--brand-dark);
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .bottom-action p {
+      font-size: 14.5px;
+      color: var(--text-soft);
+      margin-bottom: 22px;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .bottom-action .btn {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+
+    /* ================= MODAL ================= */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(15, 23, 42, .55);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: fadeIn .3s ease both;
+      overflow-y: auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 44px 36px 36px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, .4);
+      animation: modalIn .45s cubic-bezier(.34, 1.56, .64, 1) both;
+      margin: auto;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: scale(.9) translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .modal-emoji {
+      font-size: 66px;
+      line-height: 1;
+      margin-bottom: 18px;
+      display: inline-block;
+      animation: bounce .8s cubic-bezier(.34, 1.56, .64, 1) both;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: scale(0) rotate(-20deg);
+      }
+
+      60% {
+        transform: scale(1.15) rotate(5deg);
+      }
+
+      100% {
+        transform: scale(1) rotate(0);
+      }
+    }
+
+    .modal h2 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -.025em;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .modal .sub {
+      font-size: 15px;
+      color: var(--text-soft);
+      margin-bottom: 26px;
+    }
+
+    .modal .score-big {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .modal .score-detail {
+      font-size: 14.5px;
+      color: var(--text-soft);
+      margin-bottom: 28px;
+    }
+
+    .modal .score-detail b {
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .modal .score-detail .wrong-b {
+      color: var(--red);
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .modal-actions .btn {
+      flex: 1 1 160px;
+    }
+
+    /* =========================================================
+   PRINT MODE
+   ========================================================= */
+    .print-header {
+      display: none;
+    }
+
+    .exit-print {
+      display: none;
+    }
+
+    .answer-key {
+      display: none;
+    }
+
+    body.print-mode header,
+    body.print-mode .exercise-hero,
+    body.print-mode .score-bar,
+    body.print-mode .bottom-action,
+    body.print-mode .feedback,
+    body.print-mode .btn-check,
+    body.print-mode .btn-reset,
+    body.print-mode .reorder-actions {
+      display: none !important;
+    }
+
+    body.print-mode .wrap {
+      max-width: 900px;
+      padding: 30px 24px 60px;
+    }
+
+    body.print-mode .print-header {
+      display: block;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 3px double #0b1120;
+    }
+
+    .print-header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--text);
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .print-header .sub {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 16px;
+    }
+
+    .print-header .info-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 14px;
+      color: var(--text);
+      flex-wrap: wrap;
+      padding-top: 10px;
+      border-top: 1px dashed #cbd5e1;
+    }
+
+    .print-header .info-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .print-header .info-row .line {
+      display: inline-block;
+      min-width: 180px;
+      border-bottom: 1px solid #94a3b8;
+    }
+
+    /* Nút điều khiển chế độ in */
+    body.print-mode .exit-print,
+    body.print-mode .print-toggle,
+    body.print-mode .print-answer-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: fixed;
+      top: 20px;
+      z-index: 200;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      transition: all .25s ease;
+    }
+
+    body.print-mode .exit-print {
+      left: 20px;
+      background: #0b1120;
+      color: #fff;
+      box-shadow: 0 12px 30px -8px rgba(0, 0, 0, .5);
+    }
+
+    body.print-mode .exit-print:hover {
+      transform: translateY(-2px);
+      background: #1e293b;
+    }
+
+    body.print-mode .print-toggle {
+      right: 20px;
+      background: var(--brand);
+      color: #fff;
+      box-shadow: 0 12px 30px -8px rgba(99, 102, 241, .5);
+    }
+
+    body.print-mode .print-toggle:hover {
+      transform: translateY(-2px);
+      background: var(--brand-dark);
+    }
+
+    body.print-mode .print-answer-toggle {
+      right: 180px;
+      background: #fff;
+      color: var(--text);
+      border: 2px solid var(--border);
+      box-shadow: 0 12px 30px -8px rgba(0, 0, 0, .1);
+    }
+
+    body.print-mode .print-answer-toggle:hover {
+      transform: translateY(-2px);
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    body.print-mode .print-answer-toggle.active {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+    }
+
+    /* Câu hỏi gọn trong chế độ in */
+    body.print-mode .section-block {
+      margin-bottom: 36px;
+      break-inside: avoid;
+    }
+
+    body.print-mode .section-header {
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #0b1120;
+    }
+
+    body.print-mode .section-header .icon {
+      background: #f3f4f6;
+      box-shadow: none;
+      border: 1px solid #e5e7eb;
+    }
+
+    body.print-mode .section-header .badge-count {
+      background: #f3f4f6;
+      color: var(--text);
+    }
+
+    body.print-mode .q-item {
+      padding: 5px 0;
+      margin-bottom: 0;
+      border: none;
+      border-bottom: 1px dashed #d1d5db;
+      border-radius: 0;
+      background: transparent !important;
+      box-shadow: none;
+      break-inside: avoid;
+    }
+
+    body.print-mode .q-item::before {
+      display: none;
+    }
+
+    body.print-mode .q-item.correct,
+    body.print-mode .q-item.wrong {
+      background: transparent !important;
+      border-color: #d1d5db;
+    }
+
+    body.print-mode .q-num {
+      width: 29px;
+      height: 26px;
+      background: #0b1120 !important;
+      color: #fff !important;
+      border-radius: 8px;
+    }
+
+    body.print-mode .q-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    body.print-mode .options {
+      font-size: 13px;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 1px 20px !important;
+      margin-top: 2px !important;
+    }
+
+    body.print-mode .correct {
+      grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+
+    body.print-mode .option {
+      padding: 4px 0 !important;
+      border: none !important;
+      background: transparent !important;
+      border-radius: 0 !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      color: #000 !important;
+      cursor: default !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    body.print-mode .option .key {
+      background: transparent !important;
+      color: #000 !important;
+      border: 1px solid #94a3b8 !important;
+      width: 24px !important;
+      height: 24px !important;
+      border-radius: 50% !important;
+      font-size: 11px !important;
+    }
+
+
+    body.print-mode .text-input,
+    body.print-mode .reorder-answer {
+      border: none !important;
+      border-bottom: 1.5px solid #94a3b8 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      padding: 4px 0 !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      min-height: 30px !important;
+    }
+
+    body.print-mode .textarea {
+      margin: 0;
+      height: 26px !important;
+      min-height: 26px !important;
+      max-height: 26px !important;
+      border: none !important;
+      border-bottom: 1.5px solid #94a3b8 !important;
+      border-radius: 0 !important;
+      padding: 0 0 2px 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      resize: none !important;
+      line-height: 22px !important;
+      overflow: hidden !important;
+      vertical-align: baseline !important;
+    }
+
+    body.print-mode .text-input::placeholder,
+    body.print-mode .textarea::placeholder {
+      color: transparent !important;
+    }
+
+    body.print-mode .reorder-words {
+      padding: 10px 12px !important;
+      background: #f9fafb !important;
+      border: 1px dashed #94a3b8 !important;
+      border-radius: 8px !important;
+      min-height: auto !important;
+    }
+
+    body.print-mode .word-chip {
+      padding: 4px 12px !important;
+      border: 1px solid #94a3b8 !important;
+      background: #fff !important;
+      font-size: 14px !important;
+      border-radius: 6px !important;
+      box-shadow: none !important;
+      transform: none !important;
+      color: #000 !important;
+    }
+
+    body.print-mode .word-chip.used {
+      opacity: 1 !important;
+      filter: none !important;
+      pointer-events: auto !important;
+    }
+
+    body.print-mode .reorder-answer .reorder-placeholder {
+      color: #94a3b8 !important;
+      font-style: italic;
+    }
+
+    /* ================= ĐÁP ÁN ================= */
+    body.print-mode.answer-key-on .answer-key {
+      display: block;
+    }
+
+    .answer-key {
+      margin-top: 60px;
+      padding-top: 30px;
+      position: relative;
+      page-break-before: always;
+      break-before: page;
+    }
+
+    .answer-key::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-top: 2px dashed #94a3b8;
+    }
+
+    .answer-key .cut-label {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 2px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .answer-key h2 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .answer-key .sub {
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-soft);
+      margin-bottom: 26px;
+    }
+
+    .answer-key .section-key {
+      margin-bottom: 24px;
+      break-inside: avoid;
+    }
+
+    .answer-key .section-key h3 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--brand-dark);
+      letter-spacing: -.01em;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .answer-key .key-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .answer-key .key-list li {
+      display: flex;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #f9fafb;
+      border-left: 3px solid #10b981;
+      border-radius: 6px;
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+
+    .answer-key .key-list li .num {
+      font-weight: 800;
+      color: #0b1120;
+      font-family: var(--mono);
+      min-width: 24px;
+      flex-shrink: 0;
+    }
+
+    .answer-key .key-list li .ans-body {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .answer-key .key-list li .ans {
+      font-weight: 800;
+      color: #059669;
+      margin-right: 6px;
+    }
+
+    .answer-key .key-list li .exp {
+      color: #64748b;
+      font-style: italic;
+      font-size: 12.5px;
+    }
+
+    .answer-key .key-list li .vi-line {
+      font-size: 12.5px;
+      color: #475569;
+      padding-top: 5px;
+      border-top: 1px dashed #e2e8f0;
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    .answer-key .key-list li .vi-line b {
+      color: #6366f1;
+      font-weight: 700;
+      margin-right: 3px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .wrap {
+        padding: 24px 18px 80px;
+      }
+
+      .exercise-hero {
+        padding: 28px 24px;
+        border-radius: 22px;
+      }
+
+      .exercise-hero h1 {
+        padding-right: 0;
+      }
+
+      .score-bar {
+        top: 60px;
+        padding: 12px 16px;
+        gap: 10px;
+      }
+
+      .q-item {
+        padding: 20px;
+        border-radius: 16px;
+      }
+
+      .section-header .icon {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+        border-radius: 12px;
+      }
+
+      body.print-mode .exit-print {
+        left: 12px;
+        top: 12px;
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+
+      body.print-mode .print-toggle {
+        right: 12px;
+        top: 12px;
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+
+      body.print-mode .print-answer-toggle {
+        right: 12px;
+        top: 58px;
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 15px;
+      }
+
+      .nav {
+        padding: 10px 16px;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        font-size: 14.5px;
+      }
+
+      .logo .dot {
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+
+      .nav-links {
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding: 3px;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-links a {
+        padding: 7px 14px;
+        font-size: 13px;
+        flex-shrink: 0;
+      }
+
+      .wrap {
+        padding: 20px 14px 70px;
+      }
+
+      .exercise-hero {
+        padding: 24px 20px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+      }
+
+      .exercise-hero h1 {
+        font-size: 22px;
+      }
+
+      .exercise-hero p {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+
+      .meta-pill {
+        font-size: 12px;
+        padding: 6px 11px;
+      }
+
+      .print-toggle,
+      .print-answer-toggle {
+        position: static;
+        margin-top: 12px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .print-answer-toggle {
+        margin-top: 8px;
+      }
+
+      .score-bar {
+        top: 56px;
+        padding: 10px 14px;
+        gap: 8px;
+        margin-bottom: 20px;
+        border-radius: 14px;
+      }
+
+      .score-bar .progress-mini {
+        flex: 1 1 100%;
+        order: -1;
+        height: 7px;
+      }
+
+      .score-bar .stat {
+        font-size: 12.5px;
+        padding: 5px 11px;
+      }
+
+      .section-block {
+        margin-bottom: 36px;
+      }
+
+      .section-header {
+        gap: 11px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+      }
+
+      .section-header .icon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+        border-radius: 11px;
+      }
+
+      .section-header .badge-count {
+        font-size: 12px;
+        padding: 5px 11px;
+      }
+
+      .q-item {
+        padding: 18px 16px;
+        border-radius: 14px;
+        margin-bottom: 12px;
+      }
+
+      .q-head {
+        gap: 11px;
+        margin-bottom: 12px;
+      }
+
+      .q-num {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+        border-radius: 10px;
+      }
+
+      .q-text {
+        font-size: 15px;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .option {
+        padding: 12px 14px;
+        font-size: 14.5px;
+        gap: 10px;
+        border-radius: 11px;
+      }
+
+      .option .key {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+        border-radius: 8px;
+      }
+
+      .option:hover:not(.disabled) {
+        transform: none;
+      }
+
+      .input-wrap {
+        gap: 8px;
+      }
+
+      .text-input {
+        padding: 12px 14px;
+        font-size: 14.5px;
+        border-radius: 11px;
+      }
+
+      .textarea {
+        padding: 12px 14px;
+        font-size: 14.5px;
+        border-radius: 11px;
+      }
+
+      .feedback {
+        padding: 12px 14px;
+        font-size: 13.5px;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .feedback .emoji {
+        font-size: 18px;
+      }
+
+      .bottom-action {
+        padding: 26px 20px;
+        border-radius: 20px;
+        margin-top: 36px;
+      }
+
+      .bottom-action h3 {
+        font-size: 19px;
+      }
+
+      .bottom-action p {
+        font-size: 13.5px;
+        margin-bottom: 18px;
+      }
+
+      .bottom-action .btn {
+        width: 100%;
+        padding: 14px 22px;
+      }
+
+      .modal {
+        padding: 34px 22px 26px;
+        border-radius: 22px;
+      }
+
+      .modal-emoji {
+        font-size: 56px;
+        margin-bottom: 14px;
+      }
+
+      .modal h2 {
+        font-size: 22px;
+      }
+
+      .modal .score-big {
+        font-size: 46px;
+      }
+
+      .modal-actions {
+        flex-direction: column;
+      }
+
+      .modal-actions .btn {
+        flex: 1 1 100%;
+        width: 100%;
+      }
+
+      .reorder-words,
+      .reorder-answer {
+        padding: 12px;
+        gap: 6px;
+        border-radius: 12px;
+      }
+
+      .word-chip,
+      .word-chip-answer {
+        padding: 8px 13px;
+        font-size: 14px;
+        border-radius: 9px;
+      }
+
+      .reorder-actions {
+        flex-direction: column-reverse;
+      }
+
+      .reorder-actions .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+
+      .translate-prompt {
+        padding: 13px 15px;
+        font-size: 14.5px;
+        gap: 10px;
+      }
+
+      .translate-prompt .flag {
+        font-size: 20px;
+      }
+
+      body.print-mode .options {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .wrap {
+        padding: 16px 12px 60px;
+      }
+
+      .exercise-hero {
+        padding: 20px 16px;
+      }
+
+      .exercise-hero h1 {
+        font-size: 20px;
+      }
+
+      .q-item {
+        padding: 16px 14px;
+      }
+
+      .q-text {
+        font-size: 14.5px;
+      }
+
+      .option {
+        padding: 11px 12px;
+        font-size: 14px;
+      }
+    }
+
+    /* ================= @MEDIA PRINT ================= */
+    @media print {
+      body {
+        background: #fff !important;
+        font-size: 12.5pt;
+        color: #000;
+      }
+
+      header,
+      .exercise-hero,
+      .score-bar,
+      .bottom-action,
+      .print-toggle,
+      .print-answer-toggle,
+      .exit-print,
+      .feedback,
+      .btn,
+      .btn-check,
+      .btn-reset,
+      .reorder-actions {
+        display: none !important;
+      }
+
+      .wrap {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+
+      .print-header {
+        display: block !important;
+      }
+
+      .section-block {
+        margin-bottom: 24pt;
+        break-inside: avoid;
+      }
+
+      .section-header {
+        border-bottom: 1.5pt solid #000;
+        margin-bottom: 10pt;
+        padding-bottom: 6pt;
+      }
+
+      .section-header .icon {
+        background: #f3f4f6 !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+      }
+
+      .q-item {
+        border: none !important;
+        border-bottom: 1px dashed #999 !important;
+        padding: 10pt 0 !important;
+        margin-bottom: 0 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
+
+      .q-item::before {
+        display: none !important;
+      }
+
+      .q-num {
+        background: #000 !important;
+        color: #fff !important;
+      }
+
+      .options {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 3pt 20pt !important;
+      }
+
+      .option {
+        padding: 2pt 0 !important;
+        border: none !important;
+        background: #fff !important;
+        font-size: 12pt !important;
+        color: #000 !important;
+      }
+
+      .option .key {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1pt solid #666 !important;
+      }
+
+      .text-input,
+      .textarea {
+        border: none !important;
+        border-bottom: 1pt solid #666 !important;
+        background: #fff !important;
+        padding: 2pt 0 !important;
+        color: #000 !important;
+      }
+
+      .textarea {
+        border: 1pt solid #666 !important;
+        padding: 4pt 8pt !important;
+        min-height: 40pt !important;
+      }
+
+      .reorder-words {
+        border: 1pt dashed #666 !important;
+        background: #fafafa !important;
+        padding: 6pt 8pt !important;
+      }
+
+      .word-chip {
+        border: 1pt solid #666 !important;
+        background: #fff !important;
+        padding: 2pt 8pt !important;
+        font-size: 11pt !important;
+      }
+
+      a[href]:after {
+        content: "";
+      }
+
+      body.print-mode.answer-key-on .answer-key {
+        display: block !important;
+        page-break-before: always;
+        margin-top: 40pt;
+        padding-top: 20pt;
+      }
+
+      .answer-key::before {
+        border-top: 2pt dashed #333 !important;
+      }
+
+      .answer-key .cut-label {
+        background: #fff !important;
+        color: #333 !important;
+      }
+
+      .answer-key .key-list li {
+        background: #f5f5f5 !important;
+        border-left: 2pt solid #059669 !important;
+        padding: 6pt 10pt !important;
+        break-inside: avoid;
+      }
+
+      .answer-key .key-list li .ans {
+        color: #000 !important;
+      }
+
+      .answer-key .key-list li .vi-line {
+        color: #333 !important;
+        border-top: 1px dashed #999 !important;
+      }
+
+      .answer-key .key-list li .vi-line b {
+        color: #000 !important;
+      }
+
+      .answer-key .section-key {
+        break-inside: avoid;
+      }
+    }
+
+    /* ================= @MEDIA PRINT ================= */
+    @media print {
+      body {
+        background: #fff !important;
+        font-size: 12.5pt;
+        color: #0b1120;
+      }
+
+      /* Ẩn các thành phần website */
+      header,
+      .exercise-hero,
+      .score-bar,
+      .bottom-action,
+      .print-toggle,
+      .print-answer-toggle,
+      .exit-print,
+      .feedback,
+      .btn,
+      .btn-check,
+      .btn-reset,
+      .reorder-actions {
+        display: none !important;
+      }
+
+      .wrap {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* ================= HEADER CỦA ĐỀ ================= */
+      .print-header {
+        display: block !important;
+        break-before: auto !important;
+        page-break-before: auto !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        break-after: auto !important;
+        page-break-after: auto !important;
+        margin-bottom: 18pt !important;
+        padding-bottom: 12pt !important;
+        border-bottom: 2pt double #4f46e5 !important;
+      }
+
+      .print-header h1 {
+        font-size: 22pt;
+        margin-bottom: 4pt;
+        text-align: center;
+        color: #4f46e5 !important;
+        font-weight: 800;
+      }
+
+      .print-header .sub {
+        text-align: center;
+        font-size: 11pt;
+        margin-bottom: 12pt;
+        color: #6366f1 !important;
+      }
+
+      .print-header .info-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 15pt;
+        font-size: 11pt;
+        color: #0b1120;
+      }
+
+      .print-header .info-row .line {
+        border-bottom: 1px solid #6366f1 !important;
+      }
+
+      /* ================= SECTION ================= */
+      .section-block {
+        margin-bottom: 18pt;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+      }
+
+      .section-header {
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+        border-bottom: 1.5pt solid #6366f1 !important;
+        margin-bottom: 10pt;
+        padding-bottom: 6pt;
+      }
+
+      .section-header .text h2 {
+        color: #4f46e5 !important;
+        font-weight: 800;
+      }
+
+      .section-header .text p {
+        color: #4b5563 !important;
+      }
+
+      .section-header .icon {
+        background: #eef2ff !important;
+        border: 1px solid #c7d2fe !important;
+        box-shadow: none !important;
+        color: #4f46e5 !important;
+      }
+
+      .section-header .badge-count {
+        background: #eef2ff !important;
+        color: #4f46e5 !important;
+        border: 1px solid #c7d2fe !important;
+      }
+
+      /* ================= QUESTION ================= */
+      .q-item {
+        border: none !important;
+        border-bottom: 1px dashed #cbd5e1 !important;
+        padding: 10pt 0 !important;
+        margin-bottom: 0 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      .q-item::before {
+        display: none !important;
+      }
+
+      .q-num {
+        background: #6366f1 !important;
+        color: #fff !important;
+        border-radius: 8px !important;
+        width: 29px !important;
+        height: 26px !important;
+        font-weight: 800 !important;
+      }
+
+      .q-text {
+        color: #0b1120 !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+      }
+
+      /* ================= OPTIONS ================= */
+      .options {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 1px 20px !important;
+        margin-top: 2px !important;
+      }
+
+      .option {
+        padding: 4px 0 !important;
+        border: none !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        color: #0b1120 !important;
+        cursor: default !important;
+        transform: none !important;
+        box-shadow: none !important;
+      }
+
+      .option .key {
+        background: #eef2ff !important;
+        color: #4f46e5 !important;
+        border: 1px solid #6366f1 !important;
+        width: 24px !important;
+        height: 24px !important;
+        border-radius: 50% !important;
+        font-size: 11px !important;
+        font-weight: 800 !important;
+      }
+
+      /* ================= INPUT / TEXTAREA ================= */
+      .text-input {
+        border: none !important;
+        border-bottom: 1pt solid #6366f1 !important;
+        background: #fff !important;
+        padding: 2pt 0 !important;
+        color: #0b1120 !important;
+      }
+
+      .textarea {
+        height: 26px !important;
+        min-height: 26px !important;
+        max-height: 26px !important;
+        border: none !important;
+        border-bottom: 1pt solid #6366f1 !important;
+        border-radius: 0 !important;
+        background: #fff !important;
+        padding: 0 0 1pt 0 !important;
+        color: #0b1120 !important;
+        line-height: 22px !important;
+        overflow: hidden !important;
+        resize: none !important;
+        box-shadow: none !important;
+      }
+
+      .text-input::placeholder,
+      .textarea::placeholder {
+        color: transparent !important;
+      }
+
+      /* ================= REORDER ================= */
+      .reorder-words {
+        border: 1pt dashed #a5b4fc !important;
+        background: #f5f7ff !important;
+        padding: 6pt 8pt !important;
+        border-radius: 8px !important;
+      }
+
+      .word-chip {
+        border: 1pt solid #a5b4fc !important;
+        background: #eef2ff !important;
+        color: #4f46e5 !important;
+        padding: 2pt 8pt !important;
+        font-size: 11pt !important;
+        border-radius: 6px !important;
+        font-weight: 700 !important;
+      }
+
+      .reorder-answer {
+        border: none !important;
+        border-bottom: 1pt solid #6366f1 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        padding: 4px 0 !important;
+        min-height: 30px !important;
+      }
+
+      .reorder-placeholder {
+        color: #94a3b8 !important;
+      }
+
+      a[href]:after {
+        content: "";
+      }
+
+      /* ================= ĐÁP ÁN ================= */
+      body.print-mode.answer-key-on .answer-key {
+        display: block !important;
+        page-break-before: always !important;
+        break-before: page !important;
+        margin-top: 40pt;
+        padding-top: 20pt;
+      }
+
+      .answer-key::before {
+        border-top: 2pt dashed #a5b4fc !important;
+      }
+
+      .answer-key .cut-label {
+        background: #fff !important;
+        color: #6366f1 !important;
+        font-weight: 800 !important;
+      }
+
+      .answer-key h2 {
+        color: #4f46e5 !important;
+        font-weight: 800 !important;
+      }
+
+      .answer-key .sub {
+        color: #4b5563 !important;
+      }
+
+      .answer-key .section-key h3 {
+        color: #4f46e5 !important;
+        border-bottom: 1px solid #c7d2fe !important;
+      }
+
+      .answer-key .key-list li {
+        background: #f5f7ff !important;
+        border-left: 2pt solid #6366f1 !important;
+        padding: 6pt 10pt !important;
+        break-inside: avoid;
+        color: #0b1120 !important;
+      }
+
+      .answer-key .key-list li .ans {
+        color: #4f46e5 !important;
+        font-weight: 800 !important;
+      }
+
+      .answer-key .key-list li .exp {
+        color: #4b5563 !important;
+      }
+
+      .answer-key .key-list li .vi-line {
+        color: #4b5563 !important;
+        border-top: 1px dashed #c7d2fe !important;
+      }
+
+      .answer-key .key-list li .vi-line b {
+        color: #4f46e5 !important;
+      }
+
+      .answer-key .section-key {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+    <header>
+      <div class="nav">
+        <a class="logo" href="index.html">
+          <span class="dot">EN</span>
+          <span>PRESENT SIMPLE EXERCISES</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="bai-tap.html" class="active">Bài tập</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap" id="app"></main>
+  </div>
+
+  <script>
+    /* =========================================================
+       DỮ LIỆU BÀI TẬP — 5 DẠNG (có trường "vi" là dịch nghĩa)
+       ========================================================= */
+    const SECTIONS = [
+      {
+        id: "mcq",
+        icon: "",
+        title: "Part 1: Choose the correct answer",
+        desc: "	Select one of the four answers to complete the sentence.",
+        type: "mcq",
+        questions: [
+          // ===== CẤP 1: NHẬN BIẾT CƠ BẢN (1-15) =====
+          { q: "She _______ to school by bus every day.", options: ["go", "goes", "going", "went"], answer: 1, vi: "Cô ấy đi học bằng xe buýt mỗi ngày.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ thêm <b>-es</b>. Dấu hiệu: <i>every day</i>." },
+          { q: "They _______ football every Sunday.", options: ["play", "plays", "playing", "played"], answer: 0, vi: "Họ chơi bóng đá mỗi Chủ nhật.", explain: "Chủ ngữ <b>They</b> (số nhiều) → động từ giữ nguyên. Dấu hiệu: <i>every Sunday</i>." },
+          { q: "My father _______ coffee every morning.", options: ["drink", "drinks", "drinking", "drank"], answer: 1, vi: "Bố tôi uống cà phê mỗi sáng.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>." },
+          { q: "We _______ English every day.", options: ["study", "studies", "studying", "studied"], answer: 0, vi: "Chúng tôi học tiếng Anh mỗi ngày.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "He _______ his homework every evening.", options: ["do", "does", "doing", "did"], answer: 1, vi: "Anh ấy làm bài tập về nhà mỗi tối.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → động từ <b>do</b> chuyển thành <b>does</b>." },
+          { q: "The cat _______ milk every day.", options: ["drink", "drinks", "drinking", "drank"], answer: 1, vi: "Con mèo uống sữa mỗi ngày.", explain: "Chủ ngữ <b>The cat</b> (số ít) → động từ thêm <b>-s</b>." },
+          { q: "She _______ her teeth twice a day.", options: ["brush", "brushes", "brushing", "brushed"], answer: 1, vi: "Cô ấy đánh răng hai lần một ngày.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ thêm <b>-es</b>." },
+          { q: "I usually _______ up at 6 o'clock.", options: ["get", "gets", "getting", "got"], answer: 0, vi: "Tôi thường thức dậy lúc 6 giờ.", explain: "Chủ ngữ <b>I</b> → động từ giữ nguyên. Dấu hiệu: <i>usually</i>." },
+          { q: "My mother _______ dinner every night.", options: ["cook", "cooks", "cooking", "cooked"], answer: 1, vi: "Mẹ tôi nấu bữa tối mỗi tối.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>." },
+          { q: "We _______ to the cinema on weekends.", options: ["go", "goes", "going", "went"], answer: 0, vi: "Chúng tôi đi xem phim vào cuối tuần.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "My brother _______ video games every night.", options: ["play", "plays", "playing", "played"], answer: 1, vi: "Anh trai tôi chơi trò chơi điện tử mỗi tối.", explain: "Chủ ngữ <b>My brother</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>." },
+          { q: "The children _______ in the park every afternoon.", options: ["play", "plays", "playing", "played"], answer: 0, vi: "Bọn trẻ chơi ở công viên mỗi chiều.", explain: "Chủ ngữ <b>The children</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "She _______ breakfast at 7 a.m.", options: ["have", "has", "having", "had"], answer: 1, vi: "Cô ấy ăn sáng lúc 7 giờ.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ <b>have</b> chuyển thành <b>has</b>." },
+          { q: "My sister _______ in a hospital.", options: ["work", "works", "working", "worked"], answer: 1, vi: "Chị tôi làm việc ở bệnh viện.", explain: "Chủ ngữ <b>My sister</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>." },
+          { q: "I _______ my room every Saturday.", options: ["clean", "cleans", "cleaning", "cleaned"], answer: 0, vi: "Tôi dọn phòng mỗi thứ Bảy.", explain: "Chủ ngữ <b>I</b> → động từ giữ nguyên." },
+
+          // ===== CẤP 2: VẬN DỤNG – PHỦ ĐỊNH, NGHI VẤN, ĐỘNG TỪ ĐẶC BIỆT (16-30) =====
+          { q: "He _______ not like fish.", options: ["do", "does", "is", "are"], answer: 1, vi: "Anh ấy không thích cá.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → dùng trợ động từ <b>does</b> trong câu phủ định." },
+          { q: "_______ you go to school every day?", options: ["Do", "Does", "Is", "Are"], answer: 0, vi: "Bạn có đi học mỗi ngày không?", explain: "Chủ ngữ <b>you</b> → dùng trợ động từ <b>Do</b> trong câu hỏi." },
+          { q: "_______ she like ice cream?", options: ["Do", "Does", "Is", "Are"], answer: 1, vi: "Cô ấy có thích kem không?", explain: "Chủ ngữ <b>she</b> (ngôi 3 số ít) → dùng trợ động từ <b>Does</b>." },
+          { q: "The baby _______ every two hours.", options: ["cry", "cries", "crying", "cried"], answer: 1, vi: "Em bé khóc mỗi hai giờ.", explain: "Chủ ngữ <b>The baby</b> (số ít) → động từ tận cùng <b>-y</b> sau phụ âm → đổi thành <b>-ies</b>." },
+          { q: "She _______ English every Monday and Wednesday.", options: ["teach", "teaches", "teaching", "taught"], answer: 1, vi: "Cô ấy dạy tiếng Anh vào thứ Hai và thứ Tư hàng tuần.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-ch</b> → thêm <b>-es</b>." },
+          { q: "My mother _______ shopping every weekend.", options: ["go", "goes", "going", "went"], answer: 1, vi: "Mẹ tôi đi mua sắm mỗi cuối tuần.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ <b>go</b> thêm <b>-es</b>." },
+          { q: "She _______ her hair every morning.", options: ["wash", "washes", "washing", "washed"], answer: 1, vi: "Cô ấy gội đầu mỗi sáng.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>." },
+          { q: "_______ they often go swimming?", options: ["Do", "Does", "Is", "Are"], answer: 0, vi: "Họ có thường đi bơi không?", explain: "Chủ ngữ <b>they</b> → dùng trợ động từ <b>Do</b>." },
+          { q: "My father _______ not smoke.", options: ["do", "does", "is", "are"], answer: 1, vi: "Bố tôi không hút thuốc.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → dùng trợ động từ <b>does</b>." },
+          { q: "He _______ to music every evening.", options: ["listen", "listens", "listening", "listened"], answer: 1, vi: "Anh ấy nghe nhạc mỗi tối.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>." },
+          { q: "_______ your brother play the guitar?", options: ["Do", "Does", "Is", "Are"], answer: 1, vi: "Anh trai bạn có chơi guitar không?", explain: "Chủ ngữ <b>your brother</b> (ngôi 3 số ít) → dùng trợ động từ <b>Does</b>." },
+          { q: "We _______ not have any classes on Sunday.", options: ["do", "does", "is", "are"], answer: 0, vi: "Chúng tôi không có tiết học nào vào Chủ nhật.", explain: "Chủ ngữ <b>We</b> → dùng trợ động từ <b>do</b>." },
+          { q: "She _______ to bed at 10 p.m. every night.", options: ["go", "goes", "going", "went"], answer: 1, vi: "Cô ấy đi ngủ lúc 10 giờ mỗi tối.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ <b>go</b> thêm <b>-es</b>." },
+          { q: "_______ your parents live in Hanoi?", options: ["Do", "Does", "Is", "Are"], answer: 0, vi: "Bố mẹ bạn sống ở Hà Nội à?", explain: "Chủ ngữ <b>your parents</b> (số nhiều) → dùng trợ động từ <b>Do</b>." },
+          { q: "Tom _______ his car every weekend.", options: ["wash", "washes", "washing", "washed"], answer: 1, vi: "Tom rửa xe mỗi cuối tuần.", explain: "Chủ ngữ <b>Tom</b> (ngôi 3 số ít) → động từ thêm <b>-es</b>." },
+
+          // ===== CẤP 3: PHÂN BIỆT – DẤU HIỆU, TRẠNG TỪ TẦN SUẤT, CHỦ NGỮ PHỨC TẠP (31-45) =====
+          { q: "The sun _______ in the east and _______ in the west.", options: ["rise/set", "rises/sets", "rising/setting", "rose/set"], answer: 1, vi: "Mặt trời mọc ở hướng đông và lặn ở hướng tây.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The sun</b> (số ít) → cả hai động từ đều thêm <b>-s</b>." },
+          { q: "Water _______ at 100 degrees Celsius.", options: ["boil", "boils", "boiling", "boiled"], answer: 1, vi: "Nước sôi ở 100 độ C.", explain: "Sự thật khoa học → hiện tại đơn. Chủ ngữ <b>Water</b> (không đếm được, số ít) → thêm <b>-s</b>." },
+          { q: "The train _______ at 8 a.m. every morning.", options: ["leave", "leaves", "leaving", "left"], answer: 1, vi: "Tàu khởi hành lúc 8 giờ sáng mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The train</b> (số ít) → thêm <b>-s</b>." },
+          { q: "She always _______ her keys.", options: ["lose", "loses", "losing", "lost"], answer: 1, vi: "Cô ấy luôn làm mất chìa khóa.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>. Trạng từ tần suất <i>always</i> đứng trước động từ thường." },
+          { q: "My grandparents _______ in the countryside.", options: ["live", "lives", "living", "lived"], answer: 0, vi: "Ông bà tôi sống ở nông thôn.", explain: "Chủ ngữ <b>My grandparents</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "Birds _______ south in winter.", options: ["fly", "flies", "flying", "flew"], answer: 0, vi: "Chim bay về phương nam vào mùa đông.", explain: "Chủ ngữ <b>Birds</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "The Earth _______ around the Sun.", options: ["move", "moves", "moving", "moved"], answer: 1, vi: "Trái Đất quay quanh Mặt Trời.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The Earth</b> (số ít) → thêm <b>-s</b>." },
+          { q: "He _______ not watch TV in the morning.", options: ["do", "does", "is", "are"], answer: 1, vi: "Anh ấy không xem TV vào buổi sáng.", explain: "Chủ ngữ <b>He</b> → dùng trợ động từ <b>does</b> trong câu phủ định." },
+          { q: "My dog _______ to bark at strangers.", options: ["like", "likes", "liking", "liked"], answer: 1, vi: "Con chó của tôi thích sủa người lạ.", explain: "Chủ ngữ <b>My dog</b> (số ít) → động từ thêm <b>-s</b>." },
+          { q: "The shop _______ at 9 a.m. and _______ at 9 p.m. every day.", options: ["open/close", "opens/closes", "opening/closing", "opened/closed"], answer: 1, vi: "Cửa hàng mở cửa lúc 9 giờ sáng và đóng cửa lúc 9 giờ tối mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The shop</b> (số ít) → cả hai động từ đều thêm <b>-s</b>/<b>-es</b>." },
+          { q: "She rarely _______ out at night.", options: ["go", "goes", "going", "went"], answer: 1, vi: "Cô ấy hiếm khi đi ra ngoài vào ban đêm.", explain: "Chủ ngữ <b>She</b> → động từ <b>go</b> thêm <b>-es</b>. Trạng từ tần suất <i>rarely</i>." },
+          { q: "The students _______ to school on foot every day.", options: ["go", "goes", "going", "went"], answer: 0, vi: "Học sinh đi bộ đến trường mỗi ngày.", explain: "Chủ ngữ <b>The students</b> (số nhiều) → động từ giữ nguyên." },
+          { q: "My sister _______ not eat breakfast before 8 a.m.", options: ["do", "does", "is", "are"], answer: 1, vi: "Chị tôi không ăn sáng trước 8 giờ.", explain: "Chủ ngữ <b>My sister</b> (ngôi 3 số ít) → dùng trợ động từ <b>does</b>." },
+          { q: "He seldom _______ his car because he is busy.", options: ["wash", "washes", "washing", "washed"], answer: 1, vi: "Anh ấy hiếm khi rửa xe vì anh ấy bận.", explain: "Chủ ngữ <b>He</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>. Trạng từ tần suất <i>seldom</i>." },
+          { q: "The clock _______ every hour and the bell _______ loudly.", options: ["ring/ring", "rings/rings", "ringing/ringing", "rang/rang"], answer: 1, vi: "Đồng hồ reo mỗi giờ và chuông kêu to.", explain: "Chủ ngữ <b>The clock</b> và <b>the bell</b> (số ít) → cả hai động từ đều thêm <b>-s</b>." },
+
+          // ===== CẤP 4: NÂNG CAO – CHỦ NGỮ GIẢ, DANH TỪ KHÔNG ĐẾM ĐƯỢC, MỆNH ĐỀ, BẪY (46-60) =====
+          { q: "Every student in my class _______ a notebook.", options: ["have", "has", "having", "had"], answer: 1, vi: "Mỗi học sinh trong lớp tôi đều có một cuốn vở.", explain: "<b>Every + danh từ số ít</b> → động từ chia số ít. Chủ ngữ thực là <b>Every student</b> → dùng <b>has</b>." },
+          { q: "Neither my brother nor my sisters _______ interested in sports.", options: ["is", "are", "be", "been"], answer: 1, vi: "Cả anh trai tôi lẫn các chị tôi đều không thích thể thao.", explain: "<b>Neither...nor...</b> → động từ chia theo chủ ngữ gần nhất. <b>My sisters</b> (số nhiều) → dùng <b>are</b>." },
+          { q: "Each of the students _______ responsible for their own homework.", options: ["is", "are", "be", "been"], answer: 0, vi: "Mỗi học sinh chịu trách nhiệm cho bài tập về nhà của mình.", explain: "<b>Each of + danh từ số nhiều</b> → động từ chia số ít. Chủ ngữ thực là <b>Each</b> → dùng <b>is</b>." },
+          { q: "The news on TV _______ usually depressing.", options: ["is", "are", "be", "been"], answer: 0, vi: "Tin tức trên TV thường gây buồn.", explain: "<b>The news</b> là danh từ không đếm được, luôn chia số ít → dùng <b>is</b>." },
+          { q: "Mathematics _______ my favorite subject at school.", options: ["is", "are", "be", "been"], answer: 0, vi: "Toán là môn học yêu thích của tôi ở trường.", explain: "Các môn học tận cùng <b>-ics</b> (mathematics, physics, economics...) → chia số ít → dùng <b>is</b>." },
+          { q: "The police _______ investigating the case.", options: ["is", "are", "be", "been"], answer: 1, vi: "Cảnh sát đang điều tra vụ án.", explain: "<b>The police</b> là danh từ tập hợp luôn chia số nhiều → dùng <b>are</b>." },
+          { q: "My family _______ dinner together every Sunday.", options: ["have", "has", "having", "had"], answer: 1, vi: "Gia đình tôi ăn tối cùng nhau mỗi Chủ nhật.", explain: "<b>My family</b> được xem như một đơn vị thống nhất → chia số ít → dùng <b>has</b>." },
+          { q: "The number of students in this school _______ increasing every year.", options: ["is", "are", "be", "been"], answer: 0, vi: "Số lượng học sinh ở trường này tăng mỗi năm.", explain: "<b>The number of + danh từ số nhiều</b> → động từ chia số ít → dùng <b>is</b>." },
+          { q: "A number of students _______ absent today.", options: ["is", "are", "be", "been"], answer: 1, vi: "Một số học sinh vắng mặt hôm nay.", explain: "<b>A number of + danh từ số nhiều</b> → động từ chia số nhiều → dùng <b>are</b>." },
+          { q: "Either you or he _______ to be responsible for this.", options: ["is", "are", "be", "been"], answer: 0, vi: "Hoặc bạn hoặc anh ấy phải chịu trách nhiệm cho việc này.", explain: "<b>Either...or...</b> → động từ chia theo chủ ngữ gần nhất. <b>He</b> (số ít) → dùng <b>is</b>." },
+          { q: "Ten kilometers _______ a long distance to walk.", options: ["is", "are", "be", "been"], answer: 0, vi: "Mười cây số là một quãng đường dài để đi bộ.", explain: "Khoảng cách, thời gian, tiền bạc được xem là một đơn vị → chia số ít → dùng <b>is</b>." },
+          { q: "The rich _______ not always happy.", options: ["is", "are", "be", "been"], answer: 1, vi: "Người giàu không phải lúc nào cũng hạnh phúc.", explain: "<b>The + tính từ</b> chỉ một nhóm người → chia số nhiều → dùng <b>are</b>." },
+          { q: "He _______ not only speak English but also _______ French fluently.", options: ["do/speak", "does/speaks", "is/speaks", "does/speak"], answer: 1, vi: "Anh ấy không chỉ nói tiếng Anh mà còn nói tiếng Pháp trôi chảy.", explain: "Chủ ngữ <b>He</b> → trợ động từ <b>does</b>; động từ chính <b>speak</b> thêm <b>-s</b> → <b>speaks</b>." },
+          { q: "It is important that every employee _______ on time.", options: ["be", "is", "are", "been"], answer: 0, vi: "Điều quan trọng là mỗi nhân viên phải đến đúng giờ.", explain: "Cấu trúc <b>It is important that + S + (should) + V nguyên thể</b> → dùng <b>be</b> (giả định cách)." },
+          { q: "The furniture in this room _______ very old.", options: ["is", "are", "be", "been"], answer: 0, vi: "Đồ nội thất trong phòng này rất cũ.", explain: "<b>Furniture</b> là danh từ không đếm được → chia số ít → dùng <b>is</b>." },
+          { q: "She _______ to work by car, but her husband _______ by train.", options: ["go/goes", "goes/goes", "goes/go", "go/go"], answer: 2, vi: "Cô ấy đi làm bằng ô tô, nhưng chồng cô ấy đi bằng tàu.", explain: "Chủ ngữ <b>She</b> → <b>goes</b>; chủ ngữ <b>her husband</b> (số ít) → cũng <b>goes</b>... nhưng đáp án đúng là <b>goes/goes</b>. Lưu ý: cả hai đều số ít." }
+        ]
+      },
+      {
+        id: "fill",
+        icon: "✏️",
+        title: "Part 2: Fill in the Blanks",
+        desc: "Type the correct answer in the blank. Capitalization is not required.",
+        type: "fill",
+        questions: [
+          // ===== CẤP 1: CƠ BẢN (1-10) =====
+          { q: "She _______ (go) to school by bus every day.", answer: ["goes"], vi: "Cô ấy đi học bằng xe buýt mỗi ngày.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ thêm <b>-es</b>: <b>goes</b>. Dấu hiệu: <i>every day</i>." },
+          { q: "They _______ (play) football every Sunday.", answer: ["play"], vi: "Họ chơi bóng đá mỗi Chủ nhật.", explain: "Chủ ngữ <b>They</b> (số nhiều) → động từ giữ nguyên: <b>play</b>." },
+          { q: "My father _______ (drink) coffee every morning.", answer: ["drinks"], vi: "Bố tôi uống cà phê mỗi sáng.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>drinks</b>." },
+          { q: "We _______ (study) English every day.", answer: ["study"], vi: "Chúng tôi học tiếng Anh mỗi ngày.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên: <b>study</b>." },
+          { q: "He _______ (do) his homework every evening.", answer: ["does"], vi: "Anh ấy làm bài tập về nhà mỗi tối.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → động từ <b>do</b> chuyển thành <b>does</b>." },
+          { q: "The cat _______ (drink) milk every day.", answer: ["drinks"], vi: "Con mèo uống sữa mỗi ngày.", explain: "Chủ ngữ <b>The cat</b> (số ít) → động từ thêm <b>-s</b>: <b>drinks</b>." },
+          { q: "She _______ (brush) her teeth twice a day.", answer: ["brushes"], vi: "Cô ấy đánh răng hai lần một ngày.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>brushes</b>." },
+          { q: "I usually _______ (get) up at 6 o'clock.", answer: ["get"], vi: "Tôi thường thức dậy lúc 6 giờ.", explain: "Chủ ngữ <b>I</b> → động từ giữ nguyên: <b>get</b>. Dấu hiệu: <i>usually</i>." },
+          { q: "My mother _______ (cook) dinner every night.", answer: ["cooks"], vi: "Mẹ tôi nấu bữa tối mỗi tối.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>cooks</b>." },
+          { q: "We _______ (go) to the cinema on weekends.", answer: ["go"], vi: "Chúng tôi đi xem phim vào cuối tuần.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên: <b>go</b>." },
+
+          // ===== CẤP 2: VẬN DỤNG (11-20) =====
+          { q: "My brother _______ (play) video games every night.", answer: ["plays"], vi: "Anh trai tôi chơi trò chơi điện tử mỗi tối.", explain: "Chủ ngữ <b>My brother</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>plays</b>." },
+          { q: "The children _______ (play) in the park every afternoon.", answer: ["play"], vi: "Bọn trẻ chơi ở công viên mỗi chiều.", explain: "Chủ ngữ <b>The children</b> (số nhiều) → động từ giữ nguyên: <b>play</b>." },
+          { q: "She _______ (have) breakfast at 7 a.m.", answer: ["has"], vi: "Cô ấy ăn sáng lúc 7 giờ.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ <b>have</b> chuyển thành <b>has</b>." },
+          { q: "My sister _______ (work) in a hospital.", answer: ["works"], vi: "Chị tôi làm việc ở bệnh viện.", explain: "Chủ ngữ <b>My sister</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>works</b>." },
+          { q: "I _______ (clean) my room every Saturday.", answer: ["clean"], vi: "Tôi dọn phòng mỗi thứ Bảy.", explain: "Chủ ngữ <b>I</b> → động từ giữ nguyên: <b>clean</b>." },
+          { q: "The baby _______ (cry) every two hours.", answer: ["cries"], vi: "Em bé khóc mỗi hai giờ.", explain: "Chủ ngữ <b>The baby</b> (số ít) → động từ tận cùng <b>-y</b> sau phụ âm → đổi thành <b>-ies</b>: <b>cries</b>." },
+          { q: "She _______ (teach) English every Monday and Wednesday.", answer: ["teaches"], vi: "Cô ấy dạy tiếng Anh vào thứ Hai và thứ Tư hàng tuần.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-ch</b> → thêm <b>-es</b>: <b>teaches</b>." },
+          { q: "My mother _______ (go) shopping every weekend.", answer: ["goes"], vi: "Mẹ tôi đi mua sắm mỗi cuối tuần.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ <b>go</b> thêm <b>-es</b>: <b>goes</b>." },
+          { q: "She _______ (wash) her hair every morning.", answer: ["washes"], vi: "Cô ấy gội đầu mỗi sáng.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>washes</b>." },
+          { q: "He _______ (listen) to music every evening.", answer: ["listens"], vi: "Anh ấy nghe nhạc mỗi tối.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>listens</b>." },
+
+          // ===== CẤP 3: PHỦ ĐỊNH & NGHI VẤN (21-30) =====
+          { q: "He _______ (not/like) fish.", answer: ["does not like", "doesn't like"], vi: "Anh ấy không thích cá.", explain: "Chủ ngữ <b>He</b> → phủ định: <b>does not like</b> (hoặc <b>doesn't like</b>)." },
+          { q: "_______ you _______ (go) to school every day?", answer: ["Do you go"], vi: "Bạn có đi học mỗi ngày không?", explain: "Chủ ngữ <b>you</b> → câu hỏi: <b>Do you go</b>...?" },
+          { q: "_______ she _______ (like) ice cream?", answer: ["Does she like"], vi: "Cô ấy có thích kem không?", explain: "Chủ ngữ <b>she</b> → câu hỏi: <b>Does she like</b>...?" },
+          { q: "My father _______ (not/smoke).", answer: ["does not smoke", "doesn't smoke"], vi: "Bố tôi không hút thuốc.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → phủ định: <b>does not smoke</b>." },
+          { q: "We _______ (not/have) any classes on Sunday.", answer: ["do not have", "don't have"], vi: "Chúng tôi không có tiết học nào vào Chủ nhật.", explain: "Chủ ngữ <b>We</b> → phủ định: <b>do not have</b>." },
+          { q: "_______ your parents _______ (live) in Hanoi?", answer: ["Do your parents live"], vi: "Bố mẹ bạn sống ở Hà Nội à?", explain: "Chủ ngữ <b>your parents</b> (số nhiều) → câu hỏi: <b>Do your parents live</b>...?" },
+          { q: "She _______ (not/eat) breakfast before 8 a.m.", answer: ["does not eat", "doesn't eat"], vi: "Cô ấy không ăn sáng trước 8 giờ.", explain: "Chủ ngữ <b>She</b> → phủ định: <b>does not eat</b>." },
+          { q: "_______ your brother _______ (play) the guitar?", answer: ["Does your brother play"], vi: "Anh trai bạn có chơi guitar không?", explain: "Chủ ngữ <b>your brother</b> (ngôi 3 số ít) → câu hỏi: <b>Does your brother play</b>...?" },
+          { q: "Tom _______ (not/watch) TV in the morning.", answer: ["does not watch", "doesn't watch"], vi: "Tom không xem TV vào buổi sáng.", explain: "Chủ ngữ <b>Tom</b> (ngôi 3 số ít) → phủ định: <b>does not watch</b>." },
+          { q: "_______ they often _______ (go) swimming?", answer: ["Do they often go"], vi: "Họ có thường đi bơi không?", explain: "Chủ ngữ <b>they</b> → câu hỏi: <b>Do they often go</b>...?" },
+
+          // ===== CẤP 4: NÂNG CAO – DẤU HIỆU, SỰ THẬT, CHỦ NGỮ PHỨC TẠP (31-40) =====
+          { q: "The sun _______ (rise) in the east and _______ (set) in the west.", answer: ["rises", "sets"], vi: "Mặt trời mọc ở hướng đông và lặn ở hướng tây.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The sun</b> (số ít) → <b>rises</b> và <b>sets</b>." },
+          { q: "Water _______ (boil) at 100 degrees Celsius.", answer: ["boils"], vi: "Nước sôi ở 100 độ C.", explain: "Sự thật khoa học → hiện tại đơn. Chủ ngữ <b>Water</b> (không đếm được, số ít) → <b>boils</b>." },
+          { q: "The train _______ (leave) at 8 a.m. every morning.", answer: ["leaves"], vi: "Tàu khởi hành lúc 8 giờ sáng mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The train</b> (số ít) → <b>leaves</b>." },
+          { q: "She always _______ (lose) her keys.", answer: ["loses"], vi: "Cô ấy luôn làm mất chìa khóa.", explain: "Chủ ngữ <b>She</b> → động từ thêm <b>-s</b>: <b>loses</b>. Trạng từ tần suất <i>always</i>." },
+          { q: "Birds _______ (fly) south in winter.", answer: ["fly"], vi: "Chim bay về phương nam vào mùa đông.", explain: "Chủ ngữ <b>Birds</b> (số nhiều) → động từ giữ nguyên: <b>fly</b>." },
+          { q: "The Earth _______ (move) around the Sun.", answer: ["moves"], vi: "Trái Đất quay quanh Mặt Trời.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The Earth</b> (số ít) → <b>moves</b>." },
+          { q: "My dog _______ (like) to bark at strangers.", answer: ["likes"], vi: "Con chó của tôi thích sủa người lạ.", explain: "Chủ ngữ <b>My dog</b> (số ít) → động từ thêm <b>-s</b>: <b>likes</b>." },
+          { q: "The shop _______ (open) at 9 a.m. and _______ (close) at 9 p.m. every day.", answer: ["opens", "closes"], vi: "Cửa hàng mở cửa lúc 9 giờ sáng và đóng cửa lúc 9 giờ tối mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The shop</b> (số ít) → <b>opens</b> và <b>closes</b>." },
+          { q: "Every student in my class _______ (have) a notebook.", answer: ["has"], vi: "Mỗi học sinh trong lớp tôi đều có một cuốn vở.", explain: "<b>Every + danh từ số ít</b> → động từ chia số ít. Chủ ngữ <b>Every student</b> → <b>has</b>." },
+          { q: "The news on TV _______ (be) usually depressing.", answer: ["is"], vi: "Tin tức trên TV thường gây buồn.", explain: "<b>The news</b> là danh từ không đếm được → chia số ít → <b>is</b>." }
+        ]
+      },
+      {
+        id: "reorder",
+        icon: "🧩",
+        title: "Part 3: Arrange the Words",
+        desc: "The words are scrambled. Conjugate the verbs correctly and rearrange them into a complete sentence.",
+        type: "reorder",
+        questions: [
+          // ===== CẤP 1: CƠ BẢN – CÂU KHẲNG ĐỊNH NGẮN (1-10) =====
+          { q: "Arrange the words to make a sentence", words: ["She", "go", "to", "school", "by", "bus", "every", "day"], answer: ["she goes to school by bus every day"], vi: "Cô ấy đi học bằng xe buýt mỗi ngày.", explain: "Chủ ngữ <b>She</b> số ít → <b>go</b> chia thành <b>goes</b>. Câu đúng: <b>She goes to school by bus every day.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["They", "play", "football", "every", "Sunday"], answer: ["they play football every sunday"], vi: "Họ chơi bóng đá mỗi Chủ nhật.", explain: "Chủ ngữ <b>They</b> số nhiều → <b>play</b> giữ nguyên. Câu đúng: <b>They play football every Sunday.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "father", "drink", "coffee", "every", "morning"], answer: ["my father drinks coffee every morning"], vi: "Bố tôi uống cà phê mỗi sáng.", explain: "Chủ ngữ <b>My father</b> số ít → <b>drink</b> chia thành <b>drinks</b>. Câu đúng: <b>My father drinks coffee every morning.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["We", "study", "English", "every", "day"], answer: ["we study english every day"], vi: "Chúng tôi học tiếng Anh mỗi ngày.", explain: "Chủ ngữ <b>We</b> số nhiều → <b>study</b> giữ nguyên. Câu đúng: <b>We study English every day.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["He", "do", "his", "homework", "every", "evening"], answer: ["he does his homework every evening"], vi: "Anh ấy làm bài tập về nhà mỗi tối.", explain: "Chủ ngữ <b>He</b> số ít → <b>do</b> chia thành <b>does</b>. Câu đúng: <b>He does his homework every evening.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "cat", "drink", "milk", "every", "day"], answer: ["the cat drinks milk every day"], vi: "Con mèo uống sữa mỗi ngày.", explain: "Chủ ngữ <b>The cat</b> số ít → <b>drink</b> chia thành <b>drinks</b>. Câu đúng: <b>The cat drinks milk every day.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["I", "usually", "get", "up", "at", "6", "o'clock"], answer: ["i usually get up at 6 o'clock"], vi: "Tôi thường thức dậy lúc 6 giờ.", explain: "Chủ ngữ <b>I</b> → <b>get</b> giữ nguyên. Trạng từ <i>usually</i> đứng trước động từ. Câu đúng: <b>I usually get up at 6 o'clock.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "mother", "cook", "dinner", "every", "night"], answer: ["my mother cooks dinner every night"], vi: "Mẹ tôi nấu bữa tối mỗi tối.", explain: "Chủ ngữ <b>My mother</b> số ít → <b>cook</b> chia thành <b>cooks</b>. Câu đúng: <b>My mother cooks dinner every night.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["We", "go", "to", "the", "cinema", "on", "weekends"], answer: ["we go to the cinema on weekends"], vi: "Chúng tôi đi xem phim vào cuối tuần.", explain: "Chủ ngữ <b>We</b> số nhiều → <b>go</b> giữ nguyên. Câu đúng: <b>We go to the cinema on weekends.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "brother", "play", "video", "games", "every", "night"], answer: ["my brother plays video games every night"], vi: "Anh trai tôi chơi trò chơi điện tử mỗi tối.", explain: "Chủ ngữ <b>My brother</b> số ít → <b>play</b> chia thành <b>plays</b>. Câu đúng: <b>My brother plays video games every night.</b>" },
+
+          // ===== CẤP 2: ĐỘNG TỪ ĐẶC BIỆT + TRẠNG TỪ TẦN SUẤT (11-20) =====
+          { q: "Arrange the words to make a sentence", words: ["She", "have", "breakfast", "at", "7", "a.m"], answer: ["she has breakfast at 7 a.m"], vi: "Cô ấy ăn sáng lúc 7 giờ.", explain: "Chủ ngữ <b>She</b> số ít → <b>have</b> chia thành <b>has</b>. Câu đúng: <b>She has breakfast at 7 a.m.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "sister", "work", "in", "a", "hospital"], answer: ["my sister works in a hospital"], vi: "Chị tôi làm việc ở bệnh viện.", explain: "Chủ ngữ <b>My sister</b> số ít → <b>work</b> chia thành <b>works</b>. Câu đúng: <b>My sister works in a hospital.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["She", "brush", "her", "teeth", "twice", "a", "day"], answer: ["she brushes her teeth twice a day"], vi: "Cô ấy đánh răng hai lần một ngày.", explain: "Chủ ngữ <b>She</b> → <b>brush</b> tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>brushes</b>. Câu đúng: <b>She brushes her teeth twice a day.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "baby", "cry", "every", "two", "hours"], answer: ["the baby cries every two hours"], vi: "Em bé khóc mỗi hai giờ.", explain: "Chủ ngữ <b>The baby</b> số ít → <b>cry</b> tận cùng <b>-y</b> sau phụ âm → đổi thành <b>-ies</b>: <b>cries</b>. Câu đúng: <b>The baby cries every two hours.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["She", "teach", "English", "every", "Monday"], answer: ["she teaches english every monday"], vi: "Cô ấy dạy tiếng Anh vào thứ Hai hàng tuần.", explain: "Chủ ngữ <b>She</b> → <b>teach</b> tận cùng <b>-ch</b> → thêm <b>-es</b>: <b>teaches</b>. Câu đúng: <b>She teaches English every Monday.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "mother", "go", "shopping", "every", "weekend"], answer: ["my mother goes shopping every weekend"], vi: "Mẹ tôi đi mua sắm mỗi cuối tuần.", explain: "Chủ ngữ <b>My mother</b> số ít → <b>go</b> thêm <b>-es</b>: <b>goes</b>. Câu đúng: <b>My mother goes shopping every weekend.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["She", "always", "lose", "her", "keys"], answer: ["she always loses her keys"], vi: "Cô ấy luôn làm mất chìa khóa.", explain: "Chủ ngữ <b>She</b> → <b>lose</b> thêm <b>-s</b>: <b>loses</b>. Trạng từ <i>always</i> đứng trước động từ. Câu đúng: <b>She always loses her keys.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["He", "seldom", "wash", "his", "car"], answer: ["he seldom washes his car"], vi: "Anh ấy hiếm khi rửa xe.", explain: "Chủ ngữ <b>He</b> → <b>wash</b> tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>washes</b>. Trạng từ <i>seldom</i> đứng trước động từ. Câu đúng: <b>He seldom washes his car.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "dog", "like", "to", "bark", "at", "strangers"], answer: ["my dog likes to bark at strangers"], vi: "Con chó của tôi thích sủa người lạ.", explain: "Chủ ngữ <b>My dog</b> số ít → <b>like</b> thêm <b>-s</b>: <b>likes</b>. Câu đúng: <b>My dog likes to bark at strangers.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["She", "rarely", "go", "out", "at", "night"], answer: ["she rarely goes out at night"], vi: "Cô ấy hiếm khi đi ra ngoài vào ban đêm.", explain: "Chủ ngữ <b>She</b> → <b>go</b> thêm <b>-es</b>: <b>goes</b>. Trạng từ <i>rarely</i> đứng trước động từ. Câu đúng: <b>She rarely goes out at night.</b>" },
+
+          // ===== CẤP 3: PHỦ ĐỊNH & NGHI VẤN (21-30) =====
+          { q: "Arrange the words to make a sentence", words: ["He", "not", "like", "fish"], answer: ["he does not like fish", "he doesn't like fish"], vi: "Anh ấy không thích cá.", explain: "Chủ ngữ <b>He</b> → phủ định: <b>does not like</b> (hoặc <b>doesn't like</b>). Câu đúng: <b>He does not like fish.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["She", "not", "eat", "breakfast", "before", "8", "a.m"], answer: ["she does not eat breakfast before 8 a.m", "she doesn't eat breakfast before 8 a.m"], vi: "Cô ấy không ăn sáng trước 8 giờ.", explain: "Chủ ngữ <b>She</b> → phủ định: <b>does not eat</b>. Câu đúng: <b>She does not eat breakfast before 8 a.m.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "father", "not", "smoke"], answer: ["my father does not smoke", "my father doesn't smoke"], vi: "Bố tôi không hút thuốc.", explain: "Chủ ngữ <b>My father</b> số ít → phủ định: <b>does not smoke</b>. Câu đúng: <b>My father does not smoke.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["We", "not", "have", "any", "classes", "on", "Sunday"], answer: ["we do not have any classes on sunday", "we don't have any classes on sunday"], vi: "Chúng tôi không có tiết học nào vào Chủ nhật.", explain: "Chủ ngữ <b>We</b> → phủ định: <b>do not have</b>. Câu đúng: <b>We do not have any classes on Sunday.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["Tom", "not", "watch", "TV", "in", "the", "morning"], answer: ["tom does not watch tv in the morning", "tom doesn't watch tv in the morning"], vi: "Tom không xem TV vào buổi sáng.", explain: "Chủ ngữ <b>Tom</b> số ít → phủ định: <b>does not watch</b>. Câu đúng: <b>Tom does not watch TV in the morning.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["you", "go", "to", "school", "every", "day"], answer: ["do you go to school every day"], vi: "Bạn có đi học mỗi ngày không?", explain: "Câu hỏi Yes/No với chủ ngữ <b>you</b> → <b>Do you go...?</b> Câu đúng: <b>Do you go to school every day?</b>" },
+          { q: "Arrange the words to make a sentence", words: ["she", "like", "ice", "cream"], answer: ["does she like ice cream"], vi: "Cô ấy có thích kem không?", explain: "Câu hỏi Yes/No với chủ ngữ <b>she</b> → <b>Does she like...?</b> Câu đúng: <b>Does she like ice cream?</b>" },
+          { q: "Arrange the words to make a sentence", words: ["your", "parents", "live", "in", "Hanoi"], answer: ["do your parents live in hanoi"], vi: "Bố mẹ bạn sống ở Hà Nội à?", explain: "Câu hỏi Yes/No với chủ ngữ <b>your parents</b> (số nhiều) → <b>Do your parents live...?</b> Câu đúng: <b>Do your parents live in Hanoi?</b>" },
+          { q: "Arrange the words to make a sentence", words: ["your", "brother", "play", "the", "guitar"], answer: ["does your brother play the guitar"], vi: "Anh trai bạn có chơi guitar không?", explain: "Câu hỏi Yes/No với chủ ngữ <b>your brother</b> (số ít) → <b>Does your brother play...?</b> Câu đúng: <b>Does your brother play the guitar?</b>" },
+          { q: "Arrange the words to make a sentence", words: ["they", "often", "go", "swimming"], answer: ["do they often go swimming"], vi: "Họ có thường đi bơi không?", explain: "Câu hỏi Yes/No với chủ ngữ <b>they</b> → <b>Do they often go...?</b> Câu đúng: <b>Do they often go swimming?</b>" },
+
+          // ===== CẤP 4: NÂNG CAO – SỰ THẬT, LỊCH TRÌNH, CHỦ NGỮ PHỨC TẠP (31-40) =====
+          { q: "Arrange the words to make a sentence", words: ["The", "sun", "rise", "in", "the", "east"], answer: ["the sun rises in the east"], vi: "Mặt trời mọc ở hướng đông.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The sun</b> số ít → <b>rises</b>. Câu đúng: <b>The sun rises in the east.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["Water", "boil", "at", "100", "degrees", "Celsius"], answer: ["water boils at 100 degrees celsius"], vi: "Nước sôi ở 100 độ C.", explain: "Sự thật khoa học → hiện tại đơn. Chủ ngữ <b>Water</b> không đếm được → <b>boils</b>. Câu đúng: <b>Water boils at 100 degrees Celsius.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "train", "leave", "at", "8", "a.m", "every", "morning"], answer: ["the train leaves at 8 a.m every morning"], vi: "Tàu khởi hành lúc 8 giờ sáng mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The train</b> số ít → <b>leaves</b>. Câu đúng: <b>The train leaves at 8 a.m. every morning.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "Earth", "move", "around", "the", "Sun"], answer: ["the earth moves around the sun"], vi: "Trái Đất quay quanh Mặt Trời.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The Earth</b> số ít → <b>moves</b>. Câu đúng: <b>The Earth moves around the Sun.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["Birds", "fly", "south", "in", "winter"], answer: ["birds fly south in winter"], vi: "Chim bay về phương nam vào mùa đông.", explain: "Chủ ngữ <b>Birds</b> số nhiều → <b>fly</b> giữ nguyên. Câu đúng: <b>Birds fly south in winter.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "shop", "open", "at", "9", "a.m", "and", "close", "at", "9", "p.m"], answer: ["the shop opens at 9 a.m and closes at 9 p.m"], vi: "Cửa hàng mở cửa lúc 9 giờ sáng và đóng cửa lúc 9 giờ tối.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The shop</b> số ít → <b>opens</b> và <b>closes</b>. Câu đúng: <b>The shop opens at 9 a.m. and closes at 9 p.m.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["Every", "student", "in", "my", "class", "have", "a", "notebook"], answer: ["every student in my class has a notebook"], vi: "Mỗi học sinh trong lớp tôi đều có một cuốn vở.", explain: "<b>Every + danh từ số ít</b> → chia số ít. Chủ ngữ <b>Every student</b> → <b>has</b>. Câu đúng: <b>Every student in my class has a notebook.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "news", "on", "TV", "be", "usually", "depressing"], answer: ["the news on tv is usually depressing"], vi: "Tin tức trên TV thường gây buồn.", explain: "<b>The news</b> là danh từ không đếm được → chia số ít → <b>is</b>. Câu đúng: <b>The news on TV is usually depressing.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["My", "grandparents", "live", "in", "the", "countryside"], answer: ["my grandparents live in the countryside"], vi: "Ông bà tôi sống ở nông thôn.", explain: "Chủ ngữ <b>My grandparents</b> số nhiều → <b>live</b> giữ nguyên. Câu đúng: <b>My grandparents live in the countryside.</b>" },
+          { q: "Arrange the words to make a sentence", words: ["The", "students", "go", "to", "school", "on", "foot", "every", "day"], answer: ["the students go to school on foot every day"], vi: "Học sinh đi bộ đến trường mỗi ngày.", explain: "Chủ ngữ <b>The students</b> số nhiều → <b>go</b> giữ nguyên. Câu đúng: <b>The students go to school on foot every day.</b>" }
+        ]
+      },
+      {
+        id: "translate",
+        icon: "🌐",
+        title: "Part 4: Translate into English",
+        desc: "Translate the Vietnamese sentence into English, using the correct tense.",
+        type: "translate",
+        questions: [
+          // ===== CẤP 1: CƠ BẢN – CÂU KHẲNG ĐỊNH NGẮN (1-10) =====
+          { q: "Tôi đi học bằng xe đạp mỗi ngày.", answer: ["i go to school by bike every day", "i go to school by bicycle every day", "i ride a bike to school every day", "i ride a bicycle to school every day"], vi: "I go to school by bike every day.", explain: "Thói quen → hiện tại đơn: <b>I go to school by bike every day.</b>" },
+          { q: "Cô ấy đi học bằng xe buýt mỗi ngày.", answer: ["she goes to school by bus every day"], vi: "She goes to school by bus every day.", explain: "Chủ ngữ <b>She</b> số ít → <b>go</b> chia thành <b>goes</b>." },
+          { q: "Họ chơi bóng đá mỗi Chủ nhật.", answer: ["they play football every sunday", "they play soccer every sunday"], vi: "They play football every Sunday.", explain: "Chủ ngữ <b>They</b> số nhiều → <b>play</b> giữ nguyên." },
+          { q: "Bố tôi uống cà phê mỗi sáng.", answer: ["my father drinks coffee every morning"], vi: "My father drinks coffee every morning.", explain: "Chủ ngữ <b>My father</b> số ít → <b>drink</b> chia thành <b>drinks</b>." },
+          { q: "Chúng tôi học tiếng Anh mỗi ngày.", answer: ["we study english every day"], vi: "We study English every day.", explain: "Chủ ngữ <b>We</b> số nhiều → <b>study</b> giữ nguyên." },
+          { q: "Anh ấy làm bài tập về nhà mỗi tối.", answer: ["he does his homework every evening", "he does his homework every night"], vi: "He does his homework every evening.", explain: "Chủ ngữ <b>He</b> số ít → <b>do</b> chia thành <b>does</b>." },
+          { q: "Con mèo uống sữa mỗi ngày.", answer: ["the cat drinks milk every day"], vi: "The cat drinks milk every day.", explain: "Chủ ngữ <b>The cat</b> số ít → <b>drink</b> chia thành <b>drinks</b>." },
+          { q: "Tôi thường thức dậy lúc 6 giờ.", answer: ["i usually get up at 6 o'clock", "i usually get up at six o'clock"], vi: "I usually get up at 6 o'clock.", explain: "Chủ ngữ <b>I</b> → <b>get</b> giữ nguyên. Trạng từ <i>usually</i> đứng trước động từ." },
+          { q: "Mẹ tôi nấu bữa tối mỗi tối.", answer: ["my mother cooks dinner every night", "my mother cooks dinner every evening"], vi: "My mother cooks dinner every night.", explain: "Chủ ngữ <b>My mother</b> số ít → <b>cook</b> chia thành <b>cooks</b>." },
+          { q: "Chúng tôi đi xem phim vào cuối tuần.", answer: ["we go to the cinema on weekends", "we go to the movies on weekends"], vi: "We go to the cinema on weekends.", explain: "Chủ ngữ <b>We</b> số nhiều → <b>go</b> giữ nguyên." },
+
+          // ===== CẤP 2: ĐỘNG TỪ ĐẶC BIỆT + TRẠNG TỪ TẦN SUẤT (11-20) =====
+          { q: "Anh trai tôi chơi trò chơi điện tử mỗi tối.", answer: ["my brother plays video games every night", "my brother plays video games every evening"], vi: "My brother plays video games every night.", explain: "Chủ ngữ <b>My brother</b> số ít → <b>play</b> chia thành <b>plays</b>." },
+          { q: "Bọn trẻ chơi ở công viên mỗi chiều.", answer: ["the children play in the park every afternoon"], vi: "The children play in the park every afternoon.", explain: "Chủ ngữ <b>The children</b> số nhiều → <b>play</b> giữ nguyên." },
+          { q: "Cô ấy ăn sáng lúc 7 giờ.", answer: ["she has breakfast at 7 a.m", "she has breakfast at seven a.m", "she has breakfast at 7 o'clock"], vi: "She has breakfast at 7 a.m.", explain: "Chủ ngữ <b>She</b> số ít → <b>have</b> chia thành <b>has</b>." },
+          { q: "Chị tôi làm việc ở bệnh viện.", answer: ["my sister works in a hospital"], vi: "My sister works in a hospital.", explain: "Chủ ngữ <b>My sister</b> số ít → <b>work</b> chia thành <b>works</b>." },
+          { q: "Cô ấy đánh răng hai lần một ngày.", answer: ["she brushes her teeth twice a day"], vi: "She brushes her teeth twice a day.", explain: "Chủ ngữ <b>She</b> → <b>brush</b> tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>brushes</b>." },
+          { q: "Em bé khóc mỗi hai giờ.", answer: ["the baby cries every two hours"], vi: "The baby cries every two hours.", explain: "Chủ ngữ <b>The baby</b> số ít → <b>cry</b> tận cùng <b>-y</b> sau phụ âm → đổi thành <b>-ies</b>: <b>cries</b>." },
+          { q: "Cô ấy dạy tiếng Anh vào thứ Hai hàng tuần.", answer: ["she teaches english every monday"], vi: "She teaches English every Monday.", explain: "Chủ ngữ <b>She</b> → <b>teach</b> tận cùng <b>-ch</b> → thêm <b>-es</b>: <b>teaches</b>." },
+          { q: "Mẹ tôi đi mua sắm mỗi cuối tuần.", answer: ["my mother goes shopping every weekend"], vi: "My mother goes shopping every weekend.", explain: "Chủ ngữ <b>My mother</b> số ít → <b>go</b> thêm <b>-es</b>: <b>goes</b>." },
+          { q: "Cô ấy luôn làm mất chìa khóa.", answer: ["she always loses her keys"], vi: "She always loses her keys.", explain: "Chủ ngữ <b>She</b> → <b>lose</b> thêm <b>-s</b>: <b>loses</b>. Trạng từ <i>always</i> đứng trước động từ." },
+          { q: "Anh ấy hiếm khi rửa xe.", answer: ["he seldom washes his car", "he rarely washes his car"], vi: "He seldom washes his car.", explain: "Chủ ngữ <b>He</b> → <b>wash</b> tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>washes</b>." },
+
+          // ===== CẤP 3: PHỦ ĐỊNH & NGHI VẤN (21-30) =====
+          { q: "Anh ấy không thích cá.", answer: ["he does not like fish", "he doesn't like fish"], vi: "He does not like fish.", explain: "Chủ ngữ <b>He</b> → phủ định: <b>does not like</b> (hoặc <b>doesn't like</b>)." },
+          { q: "Cô ấy không ăn sáng trước 8 giờ.", answer: ["she does not eat breakfast before 8 a.m", "she doesn't eat breakfast before 8 a.m"], vi: "She does not eat breakfast before 8 a.m.", explain: "Chủ ngữ <b>She</b> → phủ định: <b>does not eat</b>." },
+          { q: "Bố tôi không hút thuốc.", answer: ["my father does not smoke", "my father doesn't smoke"], vi: "My father does not smoke.", explain: "Chủ ngữ <b>My father</b> số ít → phủ định: <b>does not smoke</b>." },
+          { q: "Chúng tôi không có tiết học nào vào Chủ nhật.", answer: ["we do not have any classes on sunday", "we don't have any classes on sunday"], vi: "We do not have any classes on Sunday.", explain: "Chủ ngữ <b>We</b> → phủ định: <b>do not have</b>." },
+          { q: "Tom không xem TV vào buổi sáng.", answer: ["tom does not watch tv in the morning", "tom doesn't watch tv in the morning"], vi: "Tom does not watch TV in the morning.", explain: "Chủ ngữ <b>Tom</b> số ít → phủ định: <b>does not watch</b>." },
+          { q: "Bạn có đi học mỗi ngày không?", answer: ["do you go to school every day"], vi: "Do you go to school every day?", explain: "Câu hỏi Yes/No với chủ ngữ <b>you</b> → <b>Do you go...?</b>" },
+          { q: "Cô ấy có thích kem không?", answer: ["does she like ice cream"], vi: "Does she like ice cream?", explain: "Câu hỏi Yes/No với chủ ngữ <b>she</b> → <b>Does she like...?</b>" },
+          { q: "Bố mẹ bạn sống ở Hà Nội à?", answer: ["do your parents live in hanoi"], vi: "Do your parents live in Hanoi?", explain: "Câu hỏi Yes/No với chủ ngữ <b>your parents</b> (số nhiều) → <b>Do your parents live...?</b>" },
+          { q: "Anh trai bạn có chơi guitar không?", answer: ["does your brother play the guitar"], vi: "Does your brother play the guitar?", explain: "Câu hỏi Yes/No với chủ ngữ <b>your brother</b> (số ít) → <b>Does your brother play...?</b>" },
+          { q: "Họ có thường đi bơi không?", answer: ["do they often go swimming"], vi: "Do they often go swimming?", explain: "Câu hỏi Yes/No với chủ ngữ <b>they</b> → <b>Do they often go...?</b>" },
+
+          // ===== CẤP 4: NÂNG CAO – SỰ THẬT, LỊCH TRÌNH, CHỦ NGỮ PHỨC TẠP (31-40) =====
+          { q: "Mặt trời mọc ở hướng đông.", answer: ["the sun rises in the east"], vi: "The sun rises in the east.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The sun</b> số ít → <b>rises</b>." },
+          { q: "Nước sôi ở 100 độ C.", answer: ["water boils at 100 degrees celsius"], vi: "Water boils at 100 degrees Celsius.", explain: "Sự thật khoa học → hiện tại đơn. Chủ ngữ <b>Water</b> không đếm được → <b>boils</b>." },
+          { q: "Tàu khởi hành lúc 8 giờ sáng mỗi ngày.", answer: ["the train leaves at 8 a.m every morning", "the train leaves at 8 a.m every day"], vi: "The train leaves at 8 a.m. every morning.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The train</b> số ít → <b>leaves</b>." },
+          { q: "Trái Đất quay quanh Mặt Trời.", answer: ["the earth moves around the sun", "the earth goes around the sun"], vi: "The Earth moves around the Sun.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The Earth</b> số ít → <b>moves</b>." },
+          { q: "Chim bay về phương nam vào mùa đông.", answer: ["birds fly south in winter", "birds fly south in the winter"], vi: "Birds fly south in winter.", explain: "Chủ ngữ <b>Birds</b> số nhiều → <b>fly</b> giữ nguyên." },
+          { q: "Cửa hàng mở cửa lúc 9 giờ sáng và đóng cửa lúc 9 giờ tối.", answer: ["the shop opens at 9 a.m and closes at 9 p.m", "the shop opens at 9 a.m and closes at 9 p.m every day"], vi: "The shop opens at 9 a.m. and closes at 9 p.m.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The shop</b> số ít → <b>opens</b> và <b>closes</b>." },
+          { q: "Mỗi học sinh trong lớp tôi đều có một cuốn vở.", answer: ["every student in my class has a notebook"], vi: "Every student in my class has a notebook.", explain: "<b>Every + danh từ số ít</b> → chia số ít. Chủ ngữ <b>Every student</b> → <b>has</b>." },
+          { q: "Tin tức trên TV thường gây buồn.", answer: ["the news on tv is usually depressing"], vi: "The news on TV is usually depressing.", explain: "<b>The news</b> là danh từ không đếm được → chia số ít → <b>is</b>." },
+          { q: "Ông bà tôi sống ở nông thôn.", answer: ["my grandparents live in the countryside"], vi: "My grandparents live in the countryside.", explain: "Chủ ngữ <b>My grandparents</b> số nhiều → <b>live</b> giữ nguyên." },
+          { q: "Học sinh đi bộ đến trường mỗi ngày.", answer: ["the students go to school on foot every day", "the students walk to school every day"], vi: "The students go to school on foot every day.", explain: "Chủ ngữ <b>The students</b> số nhiều → <b>go</b> giữ nguyên." }
+        ]
+      },
+      {
+        id: "correct",
+        icon: "🎯",
+        title: "Part 5: Choose the Correct Sentence",
+        desc: "Among the four sentences, only one is grammatically correct. Find it.",
+        type: "correct",
+        questions: [
+          // ===== CẤP 1: NHẬN BIẾT CƠ BẢN – CHIA ĐỘNG TỪ (1-10) =====
+          { q: "Which of the following is grammatically correct?", options: ["She go to school every day.", "She goes to school every day.", "She going to school every day.", "She gone to school every day."], answer: 1, vi: "Cô ấy đi học mỗi ngày.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ thêm <b>-es</b>: <b>She goes to school every day.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["They plays football every Sunday.", "They play football every Sunday.", "They playing football every Sunday.", "They played football every Sunday."], answer: 1, vi: "Họ chơi bóng đá mỗi Chủ nhật.", explain: "Chủ ngữ <b>They</b> (số nhiều) → động từ giữ nguyên: <b>They play football every Sunday.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My father drink coffee every morning.", "My father drinks coffee every morning.", "My father drinking coffee every morning.", "My father drank coffee every morning."], answer: 1, vi: "Bố tôi uống cà phê mỗi sáng.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>My father drinks coffee every morning.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["We studies English every day.", "We study English every day.", "We studying English every day.", "We studied English every day."], answer: 1, vi: "Chúng tôi học tiếng Anh mỗi ngày.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên: <b>We study English every day.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["He do his homework every evening.", "He does his homework every evening.", "He doing his homework every evening.", "He did his homework every evening."], answer: 1, vi: "Anh ấy làm bài tập về nhà mỗi tối.", explain: "Chủ ngữ <b>He</b> (ngôi 3 số ít) → động từ <b>do</b> chuyển thành <b>does</b>: <b>He does his homework every evening.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The cat drink milk every day.", "The cat drinks milk every day.", "The cat drinking milk every day.", "The cat drank milk every day."], answer: 1, vi: "Con mèo uống sữa mỗi ngày.", explain: "Chủ ngữ <b>The cat</b> (số ít) → động từ thêm <b>-s</b>: <b>The cat drinks milk every day.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["She brush her teeth twice a day.", "She brushes her teeth twice a day.", "She brushing her teeth twice a day.", "She brushed her teeth twice a day."], answer: 1, vi: "Cô ấy đánh răng hai lần một ngày.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>She brushes her teeth twice a day.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["I usually gets up at 6 o'clock.", "I usually get up at 6 o'clock.", "I usually getting up at 6 o'clock.", "I usually got up at 6 o'clock."], answer: 1, vi: "Tôi thường thức dậy lúc 6 giờ.", explain: "Chủ ngữ <b>I</b> → động từ giữ nguyên: <b>I usually get up at 6 o'clock.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My mother cook dinner every night.", "My mother cooks dinner every night.", "My mother cooking dinner every night.", "My mother cooked dinner every night."], answer: 1, vi: "Mẹ tôi nấu bữa tối mỗi tối.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>My mother cooks dinner every night.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["We goes to the cinema on weekends.", "We go to the cinema on weekends.", "We going to the cinema on weekends.", "We went to the cinema on weekends."], answer: 1, vi: "Chúng tôi đi xem phim vào cuối tuần.", explain: "Chủ ngữ <b>We</b> (số nhiều) → động từ giữ nguyên: <b>We go to the cinema on weekends.</b>" },
+
+          // ===== CẤP 2: ĐỘNG TỪ ĐẶC BIỆT + TRẠNG TỪ TẦN SUẤT (11-20) =====
+          { q: "Which of the following is grammatically correct?", options: ["She have breakfast at 7 a.m.", "She has breakfast at 7 a.m.", "She having breakfast at 7 a.m.", "She had breakfast at 7 a.m."], answer: 1, vi: "Cô ấy ăn sáng lúc 7 giờ.", explain: "Chủ ngữ <b>She</b> (ngôi 3 số ít) → động từ <b>have</b> chuyển thành <b>has</b>: <b>She has breakfast at 7 a.m.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My sister work in a hospital.", "My sister works in a hospital.", "My sister working in a hospital.", "My sister worked in a hospital."], answer: 1, vi: "Chị tôi làm việc ở bệnh viện.", explain: "Chủ ngữ <b>My sister</b> (ngôi 3 số ít) → động từ thêm <b>-s</b>: <b>My sister works in a hospital.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The baby cry every two hours.", "The baby cries every two hours.", "The baby crying every two hours.", "The baby cried every two hours."], answer: 1, vi: "Em bé khóc mỗi hai giờ.", explain: "Chủ ngữ <b>The baby</b> (số ít) → động từ tận cùng <b>-y</b> sau phụ âm → đổi thành <b>-ies</b>: <b>The baby cries every two hours.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["She teach English every Monday.", "She teaches English every Monday.", "She teaching English every Monday.", "She taught English every Monday."], answer: 1, vi: "Cô ấy dạy tiếng Anh vào thứ Hai hàng tuần.", explain: "Chủ ngữ <b>She</b> → động từ tận cùng <b>-ch</b> → thêm <b>-es</b>: <b>She teaches English every Monday.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My mother go shopping every weekend.", "My mother goes shopping every weekend.", "My mother going shopping every weekend.", "My mother went shopping every weekend."], answer: 1, vi: "Mẹ tôi đi mua sắm mỗi cuối tuần.", explain: "Chủ ngữ <b>My mother</b> (ngôi 3 số ít) → động từ <b>go</b> thêm <b>-es</b>: <b>My mother goes shopping every weekend.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["She always lose her keys.", "She always loses her keys.", "She always losing her keys.", "She always lost her keys."], answer: 1, vi: "Cô ấy luôn làm mất chìa khóa.", explain: "Chủ ngữ <b>She</b> → động từ thêm <b>-s</b>: <b>She always loses her keys.</b> Trạng từ <i>always</i> đứng trước động từ." },
+          { q: "Which of the following is grammatically correct?", options: ["He seldom wash his car.", "He seldom washes his car.", "He seldom washing his car.", "He seldom washed his car."], answer: 1, vi: "Anh ấy hiếm khi rửa xe.", explain: "Chủ ngữ <b>He</b> → động từ tận cùng <b>-sh</b> → thêm <b>-es</b>: <b>He seldom washes his car.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My dog like to bark at strangers.", "My dog likes to bark at strangers.", "My dog liking to bark at strangers.", "My dog liked to bark at strangers."], answer: 1, vi: "Con chó của tôi thích sủa người lạ.", explain: "Chủ ngữ <b>My dog</b> (số ít) → động từ thêm <b>-s</b>: <b>My dog likes to bark at strangers.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["She rarely go out at night.", "She rarely goes out at night.", "She rarely going out at night.", "She rarely went out at night."], answer: 1, vi: "Cô ấy hiếm khi đi ra ngoài vào ban đêm.", explain: "Chủ ngữ <b>She</b> → động từ <b>go</b> thêm <b>-es</b>: <b>She rarely goes out at night.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The students goes to school on foot.", "The students go to school on foot.", "The students going to school on foot.", "The students went to school on foot."], answer: 1, vi: "Học sinh đi bộ đến trường.", explain: "Chủ ngữ <b>The students</b> (số nhiều) → động từ giữ nguyên: <b>The students go to school on foot.</b>" },
+
+          // ===== CẤP 3: PHỦ ĐỊNH & NGHI VẤN (21-30) =====
+          { q: "Which of the following is grammatically correct?", options: ["She don't like coffee.", "She doesn't likes coffee.", "She doesn't like coffee.", "She not like coffee."], answer: 2, vi: "Cô ấy không thích cà phê.", explain: "Chủ ngữ <b>She</b> → trợ động từ <b>doesn't</b>, động từ chính giữ nguyên: <b>She doesn't like coffee.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["He don't like fish.", "He doesn't likes fish.", "He doesn't like fish.", "He not like fish."], answer: 2, vi: "Anh ấy không thích cá.", explain: "Chủ ngữ <b>He</b> → trợ động từ <b>doesn't</b>, động từ chính giữ nguyên: <b>He doesn't like fish.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["We doesn't have any classes on Sunday.", "We don't have any classes on Sunday.", "We don't has any classes on Sunday.", "We not have any classes on Sunday."], answer: 1, vi: "Chúng tôi không có tiết học nào vào Chủ nhật.", explain: "Chủ ngữ <b>We</b> → trợ động từ <b>don't</b>, động từ chính giữ nguyên: <b>We don't have any classes on Sunday.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My father don't smoke.", "My father doesn't smokes.", "My father doesn't smoke.", "My father not smoke."], answer: 2, vi: "Bố tôi không hút thuốc.", explain: "Chủ ngữ <b>My father</b> (ngôi 3 số ít) → trợ động từ <b>doesn't</b>, động từ chính giữ nguyên: <b>My father doesn't smoke.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Tom don't watch TV in the morning.", "Tom doesn't watches TV in the morning.", "Tom doesn't watch TV in the morning.", "Tom not watch TV in the morning."], answer: 2, vi: "Tom không xem TV vào buổi sáng.", explain: "Chủ ngữ <b>Tom</b> (ngôi 3 số ít) → trợ động từ <b>doesn't</b>, động từ chính giữ nguyên: <b>Tom doesn't watch TV in the morning.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Do she like ice cream?", "Does she likes ice cream?", "Does she like ice cream?", "Does she liking ice cream?"], answer: 2, vi: "Cô ấy có thích kem không?", explain: "Chủ ngữ <b>she</b> → trợ động từ <b>Does</b>, động từ chính giữ nguyên: <b>Does she like ice cream?</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Do your parents lives in Hanoi?", "Does your parents live in Hanoi?", "Do your parents live in Hanoi?", "Do your parents living in Hanoi?"], answer: 2, vi: "Bố mẹ bạn sống ở Hà Nội à?", explain: "Chủ ngữ <b>your parents</b> (số nhiều) → trợ động từ <b>Do</b>, động từ chính giữ nguyên: <b>Do your parents live in Hanoi?</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Do your brother play the guitar?", "Does your brother plays the guitar?", "Does your brother play the guitar?", "Does your brother playing the guitar?"], answer: 2, vi: "Anh trai bạn có chơi guitar không?", explain: "Chủ ngữ <b>your brother</b> (ngôi 3 số ít) → trợ động từ <b>Does</b>, động từ chính giữ nguyên: <b>Does your brother play the guitar?</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Does they often go swimming?", "Do they often goes swimming?", "Do they often go swimming?", "Do they often going swimming?"], answer: 2, vi: "Họ có thường đi bơi không?", explain: "Chủ ngữ <b>they</b> → trợ động từ <b>Do</b>, động từ chính giữ nguyên: <b>Do they often go swimming?</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Do you goes to school every day?", "Does you go to school every day?", "Do you go to school every day?", "Do you going to school every day?"], answer: 2, vi: "Bạn có đi học mỗi ngày không?", explain: "Chủ ngữ <b>you</b> → trợ động từ <b>Do</b>, động từ chính giữ nguyên: <b>Do you go to school every day?</b>" },
+
+          // ===== CẤP 4: NÂNG CAO – PHÂN BIỆT VỚI CÁC THÌ KHÁC, STATIVE VERBS, CHỦ NGỮ PHỨC TẠP (31-40) =====
+          { q: "Which of the following is grammatically correct?", options: ["I am knowing the answer.", "I know the answer.", "I am know the answer.", "I knowing the answer."], answer: 1, vi: "Tôi biết câu trả lời.", explain: "<b>Know</b> là stative verb, không dùng ở thì tiếp diễn: <b>I know the answer.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["She is liking coffee.", "She likes coffee.", "She is like coffee.", "She liking coffee."], answer: 1, vi: "Cô ấy thích cà phê.", explain: "<b>Like</b> là stative verb, không dùng ở thì tiếp diễn: <b>She likes coffee.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The sun rise in the east.", "The sun rises in the east.", "The sun is rising in the east.", "The sun rising in the east."], answer: 1, vi: "Mặt trời mọc ở hướng đông.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The sun</b> (số ít) → <b>rises</b>: <b>The sun rises in the east.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Water boil at 100 degrees Celsius.", "Water boils at 100 degrees Celsius.", "Water is boiling at 100 degrees Celsius.", "Water boiling at 100 degrees Celsius."], answer: 1, vi: "Nước sôi ở 100 độ C.", explain: "Sự thật khoa học → hiện tại đơn. Chủ ngữ <b>Water</b> (không đếm được) → <b>boils</b>: <b>Water boils at 100 degrees Celsius.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Every student in my class have a notebook.", "Every student in my class has a notebook.", "Every student in my class having a notebook.", "Every student in my class had a notebook."], answer: 1, vi: "Mỗi học sinh trong lớp tôi đều có một cuốn vở.", explain: "<b>Every + danh từ số ít</b> → chia số ít. Chủ ngữ <b>Every student</b> → <b>has</b>: <b>Every student in my class has a notebook.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The news on TV are usually depressing.", "The news on TV is usually depressing.", "The news on TV were usually depressing.", "The news on TV being usually depressing."], answer: 1, vi: "Tin tức trên TV thường gây buồn.", explain: "<b>The news</b> là danh từ không đếm được → chia số ít → <b>is</b>: <b>The news on TV is usually depressing.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The train leave at 8 a.m. every morning.", "The train leaves at 8 a.m. every morning.", "The train is leaving at 8 a.m. every morning.", "The train leaving at 8 a.m. every morning."], answer: 1, vi: "Tàu khởi hành lúc 8 giờ sáng mỗi ngày.", explain: "Lịch trình cố định → hiện tại đơn. Chủ ngữ <b>The train</b> (số ít) → <b>leaves</b>: <b>The train leaves at 8 a.m. every morning.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["The Earth move around the Sun.", "The Earth moves around the Sun.", "The Earth is moving around the Sun.", "The Earth moving around the Sun."], answer: 1, vi: "Trái Đất quay quanh Mặt Trời.", explain: "Sự thật hiển nhiên → hiện tại đơn. Chủ ngữ <b>The Earth</b> (số ít) → <b>moves</b>: <b>The Earth moves around the Sun.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["Birds flies south in winter.", "Birds fly south in winter.", "Birds is flying south in winter.", "Birds flying south in winter."], answer: 1, vi: "Chim bay về phương nam vào mùa đông.", explain: "Chủ ngữ <b>Birds</b> (số nhiều) → động từ giữ nguyên: <b>Birds fly south in winter.</b>" },
+          { q: "Which of the following is grammatically correct?", options: ["My grandparents lives in the countryside.", "My grandparents live in the countryside.", "My grandparents is living in the countryside.", "My grandparents living in the countryside."], answer: 1, vi: "Ông bà tôi sống ở nông thôn.", explain: "Chủ ngữ <b>My grandparents</b> (số nhiều) → động từ giữ nguyên: <b>My grandparents live in the countryside.</b>" }
+        ]
+      }
+    ];
+
+    /* =========================================================
+       STATE
+       ========================================================= */
+    let state = {
+      answers: {},
+      checked: {}
+    };
+
+    const app = document.getElementById("app");
+    const letters = ["A", "B", "C", "D"];
+
+    /* =========================================================
+       CHUẨN HÓA CÂU TRẢ LỜI
+       ========================================================= */
+    function normalize(s) {
+      return s.toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, " ")
+        .replace(/[.,!?;:'"]/g, "")
+        .replace(/[’‘]/g, "'")
+        .replace(/\s*'\s*/g, "'");
+    }
+
+    function isAnswerCorrect(userAns, correctArr) {
+      const u = normalize(userAns);
+      return correctArr.some(a => normalize(a) === u);
+    }
+
+    /* =========================================================
+       XÁO TRỘN
+       ========================================================= */
+    function shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    /* =========================================================
+       RENDER ALL
+       ========================================================= */
+    function renderAll() {
+      const totalQuestions = SECTIONS.reduce((s, sec) => s + sec.questions.length, 0);
+
+      app.innerHTML = `
+    <div class="print-header">
+      <h1>PRESENT SIMPLE EXERCISES</h1>
+     
+    </div>
+
+    <button class="exit-print" id="exitPrint">← Quay lại làm bài</button>
+
+    <div class="exercise-hero">
+      <button class="print-toggle" id="printToggle">🖨️ Print the exercises</button>
+      <button class="print-answer-toggle" id="printAnswerToggle">Print along with the answers</button>
+      <h1>PRESENT SIMPLE EXERCISES</h1>
+      <div class="exercise-meta">
+        <span class="meta-pill">📚 <strong>${SECTIONS.length}</strong> types of exercises</span>
+        <span class="meta-pill">❓ <strong>${totalQuestions}</strong>questions </span>
+
+      </div>
+    </div>
+
+    <div class="score-bar" id="scoreBar">
+      <span class="stat correct">✓ <span id="statCorrect">0</span> correct</span>
+      <span class="stat wrong">✕ <span id="statWrong">0</span> wrong</span>
+      <div class="progress-mini"><div class="fill" id="progressFill"></div></div>
+      <span class="stat progress"><span id="statProgress">0</span>/${totalQuestions}</span>
+    </div>
+
+    <div id="sectionsContainer"></div>
+
+    <div class="bottom-action">
+      <h3>Hoàn thành tất cả các câu hỏi 🎯</h3>
+      <p>Bấm nút bên dưới để chấm điểm và xem kết quả chi tiết.</p>
+      <button class="btn btn-primary" id="submitBtn">
+        Nộp bài & Xem kết quả <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <div class="answer-key" id="answerKey"></div>
+  `;
+
+      const container = document.getElementById("sectionsContainer");
+      SECTIONS.forEach(sec => container.appendChild(renderSection(sec)));
+
+      renderAnswerKey();
+      updateScoreBar();
+      document.getElementById("submitBtn").addEventListener("click", submitAll);
+      bindPrintButtons();
+    }
+
+    /* =========================================================
+       RENDER SECTION
+       ========================================================= */
+    function renderSection(sec) {
+      const wrap = document.createElement("div");
+      wrap.className = "section-block";
+      wrap.innerHTML = `
+    <div class="section-header">
+      <div class="text">
+        <h2>${sec.title}</h2>
+        <p>${sec.desc}</p>
+      </div>
+      <span class="badge-count">${sec.questions.length} câu</span>
+    </div>
+    <div class="q-list"></div>
+  `;
+
+      const qList = wrap.querySelector(".q-list");
+      sec.questions.forEach((q, i) => qList.appendChild(renderQuestion(sec, q, i)));
+      return wrap;
+    }
+
+    /* =========================================================
+       RENDER CÂU HỎI
+       ========================================================= */
+    function renderQuestion(sec, q, i) {
+      const key = `${sec.id}_${i}`;
+      const el = document.createElement("div");
+      el.className = "q-item";
+      el.dataset.key = key;
+
+      let headHTML = `
+    <div class="q-head">
+      <span class="q-num">${i + 1}</span> 
+      <div class="q-body">
+        <div class="q-text">${q.q || ""}</div>
+      </div>
+    </div>
+  `;
+
+      let bodyHTML = "";
+
+      if (sec.type === "mcq" || sec.type === "correct") {
+        bodyHTML = `
+      <div class="options ${sec.type} ">
+        ${q.options.map((opt, idx) => `
+          <button class="option" data-idx="${idx}" data-key="${key}">
+            <span class="key">${letters[idx]}</span>
+            <span class="text">${opt}</span>
+          </button>
+        `).join("")}
+      </div>
+    `;
+      }
+      else if (sec.type === "fill") {
+        bodyHTML = `
+      <div class="input-wrap">
+        <input type="text" class="text-input" data-key="${key}"
+               placeholder="Nhập đáp án của bạn..." autocomplete="off" spellcheck="false" />
+        <button class="btn btn-primary btn-check" data-key="${key}" style="padding:12px 22px;font-size:14px">
+          Kiểm tra
+        </button>
+      </div>
+    `;
+      }
+      else if (sec.type === "reorder") {
+        const shuffled = shuffleArray([...q.words]);
+        bodyHTML = `
+      <div class="reorder-words" data-key="${key}">
+        ${shuffled.map((w, idx) => `
+          <button class="word-chip" data-word="${w}" data-idx="${idx}">${w}</button>
+        `).join("")}
+      </div>
+      <div class="reorder-answer" data-key="${key}">
+        <span class="reorder-placeholder"></span>
+      </div>
+      <div class="reorder-actions">
+        <button class="btn btn-ghost-dark btn-reset" data-key="${key}">↺ Xóa hết</button>
+        <button class="btn btn-primary btn-check" data-key="${key}">Kiểm tra</button>
+      </div>
+    `;
+      }
+      else if (sec.type === "translate") {
+        bodyHTML = `
+     
+      <textarea class="textarea" data-key="${key} rows = "1"
+                placeholder="Dịch câu trên sang tiếng Anh..." spellcheck="false"></textarea>
+      <div class="input-wrap" style="margin-top:10px">
+        <button class="btn btn-primary btn-check" data-key="${key}" style="padding:12px 22px;font-size:14px">
+          Kiểm tra
+        </button>
+      </div>
+    `;
+      }
+
+      el.innerHTML = headHTML + bodyHTML;
+
+      if (sec.type === "mcq" || sec.type === "correct") {
+        el.querySelectorAll(".option").forEach(btn => {
+          btn.addEventListener("click", () => {
+            if (state.checked[key]) return;
+            selectMCQ(sec, q, key, parseInt(btn.dataset.idx), el);
+          });
+        });
+      }
+
+      if (sec.type === "fill" || sec.type === "translate") {
+        const checkBtn = el.querySelector(".btn-check");
+        const input = el.querySelector(".text-input, .textarea");
+        checkBtn.addEventListener("click", () => {
+          if (state.checked[key]) return;
+          checkText(sec, q, key, el);
+        });
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" && sec.type === "fill" && !state.checked[key]) {
+            e.preventDefault();
+            checkText(sec, q, key, el);
+          }
+        });
+      }
+
+      if (sec.type === "reorder") {
+        initReorder(el, key, q);
+      }
+
+      return el;
+    }
+
+    /* =========================================================
+       RENDER ĐÁP ÁN (kèm dịch nghĩa)
+       ========================================================= */
+    function renderAnswerKey() {
+      const keyEl = document.getElementById("answerKey");
+      if (!keyEl) return;
+
+      const sectionsHTML = SECTIONS.map(sec => {
+        const itemsHTML = sec.questions.map((q, i) => {
+          let answerText = "";
+          let explainText = q.explain || "";
+
+          if (sec.type === "mcq" || sec.type === "correct") {
+            answerText = letters[q.answer] + ". " + q.options[q.answer];
+          } else if (sec.type === "fill") {
+            answerText = q.answer[0];
+          } else if (sec.type === "reorder") {
+            answerText = q.answer[0].charAt(0).toUpperCase() + q.answer[0].slice(1) + ".";
+          } else if (sec.type === "translate") {
+            answerText = q.answer[0].charAt(0).toUpperCase() + q.answer[0].slice(1) + ".";
+            if (q.answer.length > 1) {
+              const alt = q.answer.slice(1).map(a =>
+                a.charAt(0).toUpperCase() + a.slice(1) + "."
+              ).join(" · ");
+              explainText = "<b>Chấp nhận:</b> " + alt + (explainText ? " · " + explainText : "");
+            }
+          }
+
+          const viLine = q.vi
+            ? `<div class="vi-line">📖 <b>Dịch:</b> ${q.vi}</div>`
+            : "";
+
+          return `
+        <li>
+          <span class="num">${i + 1}.</span>
+          <span class="ans-body">
+            <span>
+              <span class="ans">${answerText}</span>
+              ${explainText ? `<span class="exp">— ${explainText}</span>` : ""}
+            </span>
+            ${viLine}
+          </span>
+        </li>
+      `;
+        }).join("");
+
+        return `
+      <div class="section-key">
+        <h3><span class="key-icon">${sec.icon}</span> ${sec.title}</h3>
+        <ul class="key-list">${itemsHTML}</ul>
+      </div>
+    `;
+      }).join("");
+
+      keyEl.innerHTML = `
+    <span class="cut-label">✂ Cắt theo đường kẻ — ĐÁP ÁN</span>
+    <h2>PHẦN ĐÁP ÁN</h2>
+    <p class="sub">Dùng để giáo viên chấm hoặc học sinh tự kiểm tra sau khi làm xong</p>
+    ${sectionsHTML}
+  `;
+    }
+
+    /* =========================================================
+       CHẾ ĐỘ IN
+       ========================================================= */
+    function enterPrintMode() {
+      document.body.classList.add("print-mode");
+      document.title = "In bài tập – English grammar";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function exitPrintMode() {
+      document.body.classList.remove("print-mode");
+      document.body.classList.remove("answer-key-on");
+      const answerToggle = document.getElementById("printAnswerToggle");
+      if (answerToggle) {
+        answerToggle.classList.remove("active");
+        answerToggle.innerHTML = "📖 Kèm đáp án";
+      }
+      document.title = "Làm bài tập – Ngữ pháp tiếng Anh";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function bindPrintButtons() {
+      const toggle = document.getElementById("printToggle");
+      const exit = document.getElementById("exitPrint");
+      const answerToggle = document.getElementById("printAnswerToggle");
+
+      if (toggle) toggle.addEventListener("click", enterPrintMode);
+      if (exit) exit.addEventListener("click", exitPrintMode);
+
+      if (answerToggle) {
+        answerToggle.addEventListener("click", () => {
+          document.body.classList.toggle("answer-key-on");
+          answerToggle.classList.toggle("active");
+          answerToggle.innerHTML = document.body.classList.contains("answer-key-on")
+            ? "📖 Ẩn đáp án"
+            : "📖 Kèm đáp án";
+        });
+      }
+    }
+
+    /* =========================================================
+       XỬ LÝ MCQ
+       ========================================================= */
+    function selectMCQ(sec, q, key, idx, el) {
+      state.answers[key] = idx;
+      state.checked[key] = true;
+
+      const isCorrect = idx === q.answer;
+      el.classList.add(isCorrect ? "correct" : "wrong");
+
+      el.querySelectorAll(".option").forEach(btn => {
+        const i = parseInt(btn.dataset.idx);
+        btn.classList.add("disabled");
+        if (i === q.answer) btn.classList.add("correct");
+        else if (i === idx) btn.classList.add("wrong");
+        else btn.classList.add("dimmed");
+      });
+
+      appendFeedback(el, isCorrect, q, letters[q.answer] + ". " + q.options[q.answer]);
+      updateScoreBar();
+      setTimeout(() => scrollToNext(el), 400);
+    }
+
+    /* =========================================================
+       XỬ LÝ ĐIỀN TỪ / DỊCH
+       ========================================================= */
+    function checkText(sec, q, key, el) {
+      const input = el.querySelector(".text-input, .textarea");
+      const val = input.value.trim();
+      if (!val) {
+        input.focus();
+        input.style.borderColor = "var(--yellow)";
+        setTimeout(() => { input.style.borderColor = ""; }, 800);
+        return;
+      }
+
+      state.answers[key] = val;
+      state.checked[key] = true;
+
+      const isCorrect = isAnswerCorrect(val, q.answer);
+      el.classList.add(isCorrect ? "correct" : "wrong");
+      input.disabled = true;
+
+      const btn = el.querySelector(".btn-check");
+      if (btn) btn.style.display = "none";
+
+      const correctDisplay = Array.isArray(q.answer) ? q.answer[0] : q.answer;
+      appendFeedback(el, isCorrect, q, correctDisplay);
+      updateScoreBar();
+      setTimeout(() => scrollToNext(el), 400);
+    }
+
+    /* =========================================================
+       XỬ LÝ SẮP XẾP TỪ
+       ========================================================= */
+    function initReorder(el, key, q) {
+      const wordsBox = el.querySelector(".reorder-words");
+      const answerBox = el.querySelector(".reorder-answer");
+      const resetBtn = el.querySelector(".btn-reset");
+      const checkBtn = el.querySelector(".btn-check");
+
+      function updatePlaceholder() {
+        const chips = answerBox.querySelectorAll(".word-chip-answer");
+        if (chips.length === 0) {
+          answerBox.innerHTML = `<span class="reorder-placeholder">👆 Bấm vào các từ bên trên để xếp câu</span>`;
+        }
+      }
+
+      wordsBox.querySelectorAll(".word-chip").forEach(chip => {
+        chip.addEventListener("click", () => {
+          if (state.checked[key] || chip.classList.contains("used")) return;
+          chip.classList.add("used");
+
+          const ph = answerBox.querySelector(".reorder-placeholder");
+          if (ph) ph.remove();
+
+          const newChip = document.createElement("button");
+          newChip.className = "word-chip-answer";
+          newChip.textContent = chip.dataset.word;
+          newChip.dataset.idx = chip.dataset.idx;
+          newChip.addEventListener("click", () => {
+            if (state.checked[key]) return;
+            newChip.remove();
+            chip.classList.remove("used");
+            updatePlaceholder();
+          });
+          answerBox.appendChild(newChip);
+        });
+      });
+
+      resetBtn.addEventListener("click", () => {
+        if (state.checked[key]) return;
+        answerBox.querySelectorAll(".word-chip-answer").forEach(c => c.remove());
+        wordsBox.querySelectorAll(".word-chip").forEach(c => c.classList.remove("used"));
+        updatePlaceholder();
+      });
+
+      checkBtn.addEventListener("click", () => {
+        if (state.checked[key]) return;
+        const chips = answerBox.querySelectorAll(".word-chip-answer");
+        if (chips.length === 0) {
+          answerBox.style.borderColor = "var(--yellow)";
+          setTimeout(() => { answerBox.style.borderColor = ""; }, 800);
+          return;
+        }
+
+        const userSentence = Array.from(chips).map(c => c.textContent).join(" ");
+        state.answers[key] = userSentence;
+        state.checked[key] = true;
+
+        const isCorrect = isAnswerCorrect(userSentence, q.answer);
+
+        el.classList.add(isCorrect ? "correct" : "wrong");
+        chips.forEach(c => { c.disabled = true; });
+        wordsBox.querySelectorAll(".word-chip").forEach(c => { c.disabled = true; });
+        resetBtn.style.display = "none";
+        checkBtn.style.display = "none";
+
+        const correctDisplay = q.answer[0].charAt(0).toUpperCase() + q.answer[0].slice(1) + ".";
+        appendFeedback(el, isCorrect, q, correctDisplay);
+        updateScoreBar();
+        setTimeout(() => scrollToNext(el), 400);
+      });
+    }
+
+    /* =========================================================
+       FEEDBACK (kèm dịch nghĩa)
+       ========================================================= */
+    function appendFeedback(el, isCorrect, q, correctDisplay) {
+      const fb = document.createElement("div");
+      fb.className = `feedback ${isCorrect ? "correct" : "wrong"}`;
+      const viLine = q.vi ? `<span class="fb-vi">📖 Dịch: ${q.vi}</span>` : "";
+      fb.innerHTML = `
+    <span class="emoji">${isCorrect ? "🎉" : "💡"}</span>
+    <div>
+      <b>${isCorrect ? "Chính xác!" : "Chưa đúng!"}</b>
+      ${!isCorrect ? ` Đáp án đúng: <span class="correct-ans">${correctDisplay}</span>.<br>` : " "}
+      ${q.explain}
+      ${viLine}
+    </div>
+  `;
+      el.appendChild(fb);
+    }
+
+    /* =========================================================
+       SCROLL CÂU TIẾP
+       ========================================================= */
+    function scrollToNext(currentEl) {
+      const all = document.querySelectorAll(".q-item");
+      const arr = Array.from(all);
+      const idx = arr.indexOf(currentEl);
+      if (idx >= 0 && idx < arr.length - 1) {
+        const next = arr[idx + 1];
+        const rect = next.getBoundingClientRect();
+        const top = window.scrollY + rect.top - 120;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    }
+
+    /* =========================================================
+       CẬP NHẬT SCORE BAR
+       ========================================================= */
+    function updateScoreBar() {
+      let correct = 0, wrong = 0;
+      SECTIONS.forEach(sec => {
+        sec.questions.forEach((q, i) => {
+          const key = `${sec.id}_${i}`;
+          if (!state.checked[key]) return;
+          const userAns = state.answers[key];
+          let isCorrect = false;
+          if (sec.type === "mcq" || sec.type === "correct") {
+            isCorrect = userAns === q.answer;
+          } else {
+            isCorrect = isAnswerCorrect(userAns, q.answer);
+          }
+          if (isCorrect) correct++; else wrong++;
+        });
+      });
+
+      const total = SECTIONS.reduce((s, sec) => s + sec.questions.length, 0);
+      const done = correct + wrong;
+
+      document.getElementById("statCorrect").textContent = correct;
+      document.getElementById("statWrong").textContent = wrong;
+      document.getElementById("statProgress").textContent = done;
+      document.getElementById("progressFill").style.width = (done / total * 100) + "%";
+    }
+
+    /* =========================================================
+       NỘP BÀI
+       ========================================================= */
+    function submitAll() {
+      let correct = 0, wrong = 0, unanswered = 0;
+      SECTIONS.forEach(sec => {
+        sec.questions.forEach((q, i) => {
+          const key = `${sec.id}_${i}`;
+          if (!state.checked[key]) { unanswered++; return; }
+          const userAns = state.answers[key];
+          let isCorrect = false;
+          if (sec.type === "mcq" || sec.type === "correct") {
+            isCorrect = userAns === q.answer;
+          } else {
+            isCorrect = isAnswerCorrect(userAns, q.answer);
+          }
+          if (isCorrect) correct++; else wrong++;
+        });
+      });
+
+      const total = SECTIONS.reduce((s, sec) => s + sec.questions.length, 0);
+      const percent = Math.round(correct / total * 100);
+
+      let emoji = "🎉", title = "Xuất sắc!", sub = "Bạn đã nắm rất vững ngữ pháp.";
+      if (percent < 50) { emoji = "💪"; title = "Cố gắng thêm!"; sub = "Hãy xem lại các bài học và thử lại."; }
+      else if (percent < 70) { emoji = "👍"; title = "Khá tốt!"; sub = "Bạn hiểu cơ bản, luyện thêm để giỏi hơn."; }
+      else if (percent < 90) { emoji = "🌟"; title = "Rất giỏi!"; sub = "Chỉ còn vài lỗi nhỏ, tiếp tục phát huy!"; }
+
+      const overlay = document.createElement("div");
+      overlay.className = "modal-overlay";
+      overlay.innerHTML = `
+    <div class="modal">
+      <div class="modal-emoji">${emoji}</div>
+      <h2>${title}</h2>
+      <p class="sub">${sub}</p>
+      <div class="score-big">${percent}%</div>
+      <div class="score-detail">
+        <b>${correct}</b> câu đúng · <span class="wrong-b">${wrong}</span> câu sai
+        ${unanswered > 0 ? ` · <span style="color:var(--yellow)">${unanswered}</span> chưa làm` : ""}
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="window.location.href='index.html'">← Trang chủ</button>
+        <button class="btn btn-primary" id="retryBtn">Làm lại 🔄</button>
+      </div>
+    </div>
+  `;
+      document.body.appendChild(overlay);
+
+      overlay.querySelector("#retryBtn").addEventListener("click", () => {
+        state = { answers: {}, checked: {} };
+        overlay.remove();
+        renderAll();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) overlay.remove();
+      });
+    }
+
+    /* =========================================================
+       KHỞI ĐỘNG
+       ========================================================= */
+    renderAll();
+  </script>
+</body>
+
+</html>

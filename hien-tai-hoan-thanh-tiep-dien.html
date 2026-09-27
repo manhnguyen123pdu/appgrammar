@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi" data-theme="light">
 <head>
@@ -6,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#4f46e5" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>Thì Hiện Tại Đơn · Simple Present — Học Ngữ Pháp Tiếng Anh</title>
+<title>Thì Hiện Tại Hoàn Thành Tiếp Diễn · Present Perfect Continuous — Học Ngữ Pháp Tiếng Anh</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -50,7 +49,6 @@
   --ease:cubic-bezier(.2,.8,.25,1);
   --bounce:cubic-bezier(.2,1.4,.4,1);
 
-  /* Mobile sticky nav height */
   --mnav-h:0px;
 }
 
@@ -1101,7 +1099,6 @@ tbody td .hl{
 /* ==================== RESPONSIVE ============================ */
 /* ============================================================ */
 
-/* ---- TABLET & SMALL LAPTOP ---- */
 @media (max-width:1080px){
   .hero-inner{grid-template-columns:1fr;gap:40px;text-align:center}
   .hero-desc{margin-left:auto;margin-right:auto}
@@ -1115,11 +1112,9 @@ tbody td .hl{
   .fab{width:44px;height:44px;border-radius:14px;font-size:1.05rem}
 }
 
-/* ---- MOBILE (PHONE) ---- */
 @media (max-width:720px){
   :root{--mnav-h:60px}
 
-  /* Hero */
   .hero{
     padding:52px 16px 80px;
     border-radius:0 0 28px 28px;
@@ -1140,10 +1135,8 @@ tbody td .hl{
   .orb-3{display:none}
   .orb-4{width:180px;height:180px;filter:blur(50px);top:-40px;right:10%}
 
-  /* Layout */
   .layout{padding:28px 14px 90px;gap:20px}
 
-  /* Section header */
   .section{margin-bottom:44px}
   .sec-head{gap:12px;margin-bottom:18px}
   .sec-num{
@@ -1152,26 +1145,21 @@ tbody td .hl{
   }
   .sec-head h2{font-size:1.24rem;letter-spacing:-.5px}
 
-  /* Sub heading */
   h3.sub{font-size:1rem;margin:24px 0 12px;gap:9px}
   h3.sub::before{width:7px;height:7px;flex:0 0 7px}
 
-  /* Cards */
   .card{padding:20px 18px;border-radius:18px;margin-bottom:14px}
   .card:hover{transform:none}
 
-  /* Examples */
   .ex{padding:13px 16px 13px 20px;border-radius:0 14px 14px 0;margin:9px 0}
   .ex:hover{transform:translateX(3px)}
   .ex .en{font-size:.9rem;line-height:1.55}
   .ex .vi{font-size:.8rem;margin-top:3px}
 
-  /* Good / Bad */
   .eg{padding:12px 15px;font-size:.88rem;gap:10px;border-radius:12px;margin:8px 0}
   .eg:hover{transform:none}
   .eg .mark{width:20px;height:20px;flex:0 0 20px;font-size:.68rem}
 
-  /* Formula */
   .formula{
     padding:15px 16px;
     font-size:.88rem;
@@ -1182,17 +1170,14 @@ tbody td .hl{
   .formula .tag{padding:5px 11px;font-size:.82rem;border-radius:9px}
   .formula .plus{font-size:.82rem}
 
-  /* Chips */
   .chips{gap:7px;margin-top:12px}
   .chips span{padding:6px 13px;font-size:.78rem}
   .chips span:hover{transform:translateY(-2px)}
 
-  /* Notes */
   .note{padding:15px 16px;font-size:.88rem;gap:11px;border-radius:14px;margin:14px 0}
   .note:hover{transform:none}
   .note .ico{font-size:1.15rem}
 
-  /* Grids → stack */
   .grid2,.grid3{grid-template-columns:1fr;gap:14px}
   .mini-card{padding:19px;border-radius:18px}
   .mini-card:hover{transform:translateY(-3px)}
@@ -1200,21 +1185,18 @@ tbody td .hl{
   .mini-card p{font-size:.86rem}
   .mini-card .num{width:30px;height:30px;border-radius:10px;font-size:.8rem;margin-bottom:11px}
 
-  /* Compare → stack */
   .compare{grid-template-columns:1fr;gap:14px}
   .compare .col{padding:19px 18px;border-radius:18px}
   .compare .col:hover{transform:none}
   .compare h4{font-size:.98rem;margin-bottom:12px;padding-bottom:10px}
   .compare li{font-size:.88rem;padding:8px 0}
 
-  /* Frequency */
   .freq-list{gap:12px;margin-top:16px}
   .freq-row{gap:12px}
   .freq-name{width:78px;font-size:.84rem}
   .freq-vi{display:none}
   .freq-track{height:13px}
 
-  /* Table — bigger scroll hint */
   .table-wrap{
     border-radius:16px;
     margin:14px 0;
@@ -1239,7 +1221,6 @@ tbody td .hl{
   thead th{padding:12px 14px;font-size:.75rem}
   tbody td{padding:11px 14px;font-size:.86rem}
 
-  /* Quiz */
   .quiz-shell{padding:18px 14px;border-radius:22px}
   .quiz-bar{
     padding:14px 16px;
@@ -1277,7 +1258,6 @@ tbody td .hl{
   .quiz-result .msg{font-size:1rem}
   .quiz-result .sub{font-size:.82rem}
 
-  /* Summary */
   .summary-card{padding:22px 18px;border-radius:18px}
   .summary-card:hover{transform:none}
   .summary-card h4{font-size:.98rem;margin-bottom:14px;padding-bottom:11px}
@@ -1285,12 +1265,10 @@ tbody td .hl{
   .summary-card .row .lbl{flex:none;font-size:.72rem;width:auto}
   .summary-card .row .val{font-size:.86rem;width:100%}
 
-  /* Mini nav */
   .mnav-chip{font-size:.76rem;padding:8px 13px;min-height:36px;gap:6px}
   .mnav-chip .n{font-size:.64rem}
   .mnav-scroll{padding:9px 12px;gap:7px}
 
-  /* Floating buttons */
   .theme-toggle{
     top:calc(env(safe-area-inset-top) + var(--mnav-h) + 10px);
     right:12px;
@@ -1303,7 +1281,6 @@ tbody td .hl{
   }
 }
 
-/* ---- SMALL PHONES ---- */
 @media (max-width:420px){
   .hero{padding:46px 14px 70px;border-radius:0 0 24px 24px}
   .hero h1{letter-spacing:-.9px}
@@ -1336,13 +1313,11 @@ tbody td .hl{
   .mnav-chip .n{display:none}
 }
 
-/* ---- LANDSCAPE PHONE ---- */
 @media (max-height:520px) and (orientation:landscape){
   .hero{padding:40px 20px 60px}
   .hero-inner{gap:24px}
 }
 
-/* ---- REDUCED MOTION ---- */
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{
     animation-duration:.01ms !important;
@@ -1353,14 +1328,501 @@ tbody td .hl{
   .orb,.freq-fill::after{animation:none}
 }
 
-/* ---- TOUCH DEVICES: kill hover transforms ---- */
 @media (hover: none){
   .ex:hover,.eg:hover,.card:hover,.mini-card:hover,
   .compare .col:hover,.note:hover,.opt:hover:not(:disabled){transform:none}
   .freq-fill::after{animation:none}
   .ex::after{transform:scaleY(1);opacity:.35}
 }
+
+/* ================= PRINT MODE ================= */
+.fab-print {
+  top: calc(env(safe-area-inset-top) + 14px);
+  right: 72px;
+}
+@media (max-width: 720px) {
+  .fab-print {
+    top: calc(env(safe-area-inset-top) + var(--mnav-h) + 10px);
+    right: 60px;
+  }
+}
+
+.exit-print-fab {
+  display: none;
+  position: fixed;
+  top: calc(env(safe-area-inset-top) + 14px);
+  left: 14px;
+  z-index: 950;
+  padding: 12px 22px;
+  background: #0b1220;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: 0 12px 30px -8px rgba(0,0,0,.55);
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  transition: all .25s var(--ease);
+  min-height: 46px;
+}
+.exit-print-fab:hover {
+  transform: translateY(-2px);
+  background: #1e293b;
+}
+
+body.print-mode .hero,
+body.print-mode .mnav,
+body.print-mode .sidebar,
+body.print-mode .fab,
+body.print-mode .progress-track,
+body.print-mode #quiz,
+body.print-mode .theme-toggle,
+body.print-mode .back-top,
+body.print-mode .hero-cta {
+  display: none !important;
+}
+body.print-mode .exit-print-fab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body.print-mode .layout {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px 60px;
+  grid-template-columns: 1fr;
+}
+body.print-mode .content {
+  width: 100%;
+}
+
+.print-header {
+  display: none;
+  margin-bottom: 32px;
+  padding-bottom: 22px;
+  border-bottom: 3px double #0b1220;
+}
+body.print-mode .print-header {
+  display: block;
+}
+.print-header h1 {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -.6px;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.print-header .sub {
+  text-align: center;
+  font-size: 14.5px;
+  color: var(--text-2);
+  font-style: italic;
+  margin-bottom: 18px;
+}
+.print-header .info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px dashed #cbd5e1;
+  font-size: 14px;
+}
+.print-header .info-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.print-header .info-row .line {
+  display: inline-block;
+  min-width: 180px;
+  border-bottom: 1px solid #94a3b8;
+}
+
+body.print-mode .card,
+body.print-mode .mini-card,
+body.print-mode .note,
+body.print-mode .ex,
+body.print-mode .eg,
+body.print-mode .formula,
+body.print-mode .table-wrap,
+body.print-mode .compare .col,
+body.print-mode .summary-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+body.print-mode .section {
+  break-inside: auto;
+  margin-bottom: 40px;
+}
+body.print-mode .sec-head {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+body.print-mode .theme-toggle { display: none !important; }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+  body {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000;
+    font-size: 11.5pt;
+    line-height: 1.55;
+  }
+  .progress-track,
+  .mnav,
+  .fab,
+  .exit-print-fab,
+  .hero,
+  .hero-cta,
+  .sidebar,
+  .theme-toggle,
+  .back-top,
+  #quiz,
+  .toc {
+    display: none !important;
+  }
+  .layout {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+  .print-header {
+    display: block !important;
+  }
+  .print-header h1 {
+    font-size: 20pt;
+    color: #000;
+  }
+  .print-header .sub {
+    color: #444;
+    font-size: 10pt;
+  }
+  .print-header .info-row {
+    border-top: 1px dashed #666;
+    color: #000;
+    font-size: 10pt;
+  }
+  .print-header .info-row .line {
+    border-bottom: 1px solid #333;
+  }
+
+  .section,
+  .section.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    margin-bottom: 20pt !important;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+  .section.reveal {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .card,
+  .mini-card,
+  .note,
+  .ex,
+  .eg,
+  .formula,
+  .table-wrap,
+  .compare .col,
+  .summary-card,
+  .sec-head,
+  .mini-card * {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    box-shadow: none !important;
+  }
+
+  .sec-head {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+  h3.sub {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+    color: #000 !important;
+    font-size: 12pt !important;
+  }
+  h3.sub::before {
+    background: #000 !important;
+    box-shadow: none !important;
+  }
+
+  .sec-num {
+    background: #000 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    transform: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .sec-head h2 {
+    color: #000 !important;
+    font-size: 15pt !important;
+  }
+
+  .card {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    padding: 12pt 14pt !important;
+    border-radius: 8pt !important;
+    margin-bottom: 10pt !important;
+  }
+
+  .ex {
+    background: #f5f5f5 !important;
+    border-left: 3pt solid #333 !important;
+    padding: 8pt 12pt !important;
+    border-radius: 0 6pt 6pt 0 !important;
+    margin: 6pt 0 !important;
+  }
+  .ex::after { display: none !important; }
+  .ex .en {
+    font-size: 10.5pt !important;
+    color: #000 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+  .ex .en strong {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .ex .vi {
+    color: #444 !important;
+    font-size: 9.5pt !important;
+  }
+
+  .eg {
+    padding: 8pt 12pt !important;
+    font-size: 10.5pt !important;
+    margin: 5pt 0 !important;
+    border-radius: 6pt !important;
+  }
+  .eg.good {
+    background: #e7f9ee !important;
+    color: #065f46 !important;
+    border: 1px solid #6ee7b7 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .eg.bad {
+    background: #fdecec !important;
+    color: #991b1b !important;
+    border: 1px solid #fca5a5 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .eg .mark {
+    background: #000 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+  }
+  .eg.good .mark { background: #059669 !important; }
+  .eg.bad .mark { background: #dc2626 !important; }
+
+  .formula {
+    background: #f3f4f6 !important;
+    color: #000 !important;
+    border: 1px solid #d1d5db !important;
+    box-shadow: none !important;
+    padding: 10pt 14pt !important;
+    border-radius: 8pt !important;
+  }
+  .formula::before { display: none !important; }
+  .formula .tag {
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .formula .plus {
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+
+  .chips span {
+    background: #f3f4f6 !important;
+    border: 1px solid #d1d5db !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    font-size: 9.5pt !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .chips.alt span {
+    background: #fce7f3 !important;
+    border-color: #f9a8d4 !important;
+  }
+
+  .note {
+    padding: 10pt 14pt !important;
+    font-size: 10.5pt !important;
+    border-radius: 8pt !important;
+    box-shadow: none !important;
+    transform: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .note.warn {
+    background: #fef9e7 !important;
+    border: 1px solid #fcd34d !important;
+    color: #78350f !important;
+  }
+  .note.info {
+    background: #e0f7fa !important;
+    border: 1px solid #67e8f9 !important;
+    color: #0e7490 !important;
+  }
+  .note.key {
+    background: #eef2ff !important;
+    border: 1px solid #a5b4fc !important;
+    color: #3730a3 !important;
+  }
+  .note.danger {
+    background: #fdecec !important;
+    border: 1px solid #fca5a5 !important;
+    color: #991b1b !important;
+  }
+
+  .table-wrap {
+    border: 1px solid #ccc !important;
+    border-radius: 8pt !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .table-wrap::after { display: none !important; }
+  table { min-width: 0 !important; width: 100% !important; }
+  thead th {
+    background: #1e293b !important;
+    color: #fff !important;
+    padding: 8pt 10pt !important;
+    font-size: 10pt !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  tbody td {
+    padding: 7pt 10pt !important;
+    font-size: 10pt !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    color: #000 !important;
+  }
+  tbody tr:hover { background: transparent !important; }
+  tbody td strong,
+  tbody td .hl {
+    color: #000 !important;
+    font-weight: 800;
+  }
+
+  .grid2, .grid3 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10pt !important;
+  }
+  .compare {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10pt !important;
+  }
+  .mini-card {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    padding: 12pt !important;
+    border-radius: 8pt !important;
+  }
+  .mini-card::before { display: none !important; }
+  .mini-card .num {
+    background: #000 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .compare .col {
+    background: #fff !important;
+    border: 1.5pt solid #000 !important;
+    padding: 12pt 14pt !important;
+    border-radius: 8pt !important;
+  }
+  .compare .col.vthuong {
+    border-color: #4f46e5 !important;
+    background: #eef2ff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .compare .col.tobe {
+    border-color: #059669 !important;
+    background: #ecfdf5 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .compare h4 {
+    color: #000 !important;
+    border-bottom: 1px dashed #999 !important;
+  }
+
+  .summary-card {
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .summary-card.a {
+    background: #4f46e5 !important;
+    color: #fff !important;
+  }
+  .summary-card.b {
+    background: #0e7490 !important;
+    color: #fff !important;
+  }
+  .summary-card .row {
+    border-bottom: 1px solid rgba(255,255,255,.3) !important;
+  }
+
+  .freq-track {
+    background: #e5e7eb !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .freq-fill {
+    background: linear-gradient(90deg, #4f46e5, #ec4899) !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .freq-fill::after { display: none !important; }
+  .freq-name, .freq-vi { color: #000 !important; }
+
+  a[href]:after { content: "" !important; }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+    text-shadow: none !important;
+  }
+}
 </style>
+
 </head>
 <body>
 
@@ -1374,22 +1836,27 @@ tbody td .hl{
     <a href="#tu-duy" class="mnav-chip"><span class="n">02</span> Tư duy</a>
     <a href="#khi-nao" class="mnav-chip"><span class="n">03</span> Khi nào</a>
     <a href="#cong-thuc" class="mnav-chip"><span class="n">04</span> Công thức</a>
-    <a href="#dong-tu-thuong" class="mnav-chip"><span class="n">05</span> ĐT thường</a>
-    <a href="#quy-tac" class="mnav-chip"><span class="n">06</span> S/ES/IES</a>
+    <a href="#khang-dinh" class="mnav-chip"><span class="n">05</span> Khẳng định</a>
+    <a href="#ing" class="mnav-chip"><span class="n">06</span> Quy tắc ING</a>
     <a href="#phu-dinh" class="mnav-chip"><span class="n">07</span> Phủ định</a>
-    <a href="#to-be" class="mnav-chip"><span class="n">08</span> TO BE</a>
-    <a href="#so-sanh" class="mnav-chip"><span class="n">09</span> So sánh</a>
-    <a href="#trang-tu" class="mnav-chip"><span class="n">10</span> Tần suất</a>
+    <a href="#since-for" class="mnav-chip"><span class="n">08</span> Since/For</a>
+    <a href="#how-long" class="mnav-chip"><span class="n">09</span> How long</a>
+    <a href="#tu-thuong" class="mnav-chip"><span class="n">10</span> Từ thường</a>
     <a href="#wh" class="mnav-chip"><span class="n">11</span> WH-</a>
-    <a href="#loi" class="mnav-chip"><span class="n">12</span> Lỗi</a>
-    <a href="#tong-ket" class="mnav-chip"><span class="n">13</span> Tổng hợp</a>
-    <a href="#quiz" class="mnav-chip"><span class="n">14</span> Luyện tập</a>
+    <a href="#so-sanh-pp" class="mnav-chip"><span class="n">12</span> vs Present Perfect</a>
+    <a href="#so-sanh-pc" class="mnav-chip"><span class="n">13</span> vs Present Continuous</a>
+    <a href="#loi" class="mnav-chip"><span class="n">14</span> Lỗi</a>
+    <a href="#tong-ket" class="mnav-chip"><span class="n">15</span> Tổng hợp</a>
+    <a href="#quiz" class="mnav-chip"><span class="n">16</span> Luyện tập</a>
   </div>
 </nav>
 
 <!-- ============ FLOATING BUTTONS ============ -->
 <button class="fab theme-toggle" id="themeToggle" title="Chuyển giao diện" aria-label="Chuyển giao diện">🌙</button>
+<button class="fab fab-print" id="printBtn" title="In tài liệu" aria-label="In tài liệu">🖨️</button>
 <button class="fab back-top" id="backTop" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
+
+<button class="exit-print-fab" id="exitPrintBtn">← Quay lại</button>
 
 <!-- ============ HERO ============ -->
 <header class="hero">
@@ -1400,12 +1867,12 @@ tbody td .hl{
 
   <div class="hero-inner">
     <div class="hero-text">
-      <span class="hero-badge"><span class="dot"></span> Bài 01 · Ngữ pháp tiếng Anh</span>
-      <h1>Thì Hiện Tại <em>Đơn</em></h1>
-      <p class="hero-en">Simple Present Tense</p>
+      <span class="hero-badge"><span class="dot"></span> Bài 03 · Ngữ pháp tiếng Anh</span>
+      <h1>Thì Hiện Tại Hoàn Thành <em>Tiếp Diễn</em></h1>
+      <p class="hero-en">Present Perfect Continuous Tense</p>
       <p class="hero-desc">
-        Hiểu đúng bản chất — Chia đúng động từ — Tự tin đặt câu.
-        Từ thói quen hằng ngày đến sự thật hiển nhiên, tất cả trong một bài học trực quan.
+        Hiểu đúng bản chất — Thành lập câu chuẩn — Phân biệt với Present Perfect và Present Continuous.
+        Từ quá trình kéo dài đến dấu hiệu hiện tại, tất cả trong một bài học trực quan.
       </p>
       <div class="hero-cta">
         <a href="#gioi-thieu" class="btn btn-primary">Bắt đầu học →</a>
@@ -1421,22 +1888,22 @@ tbody td .hl{
       <div class="hero-line">
         <span class="mark">01</span>
         <div>
-          <div class="en">I <span class="accent">go</span> to school every day.</div>
-          <div class="vi">Tôi đi học mỗi ngày.</div>
+          <div class="en">I have <span class="accent">been studying</span> English for three hours.</div>
+          <div class="vi">Tôi đã học tiếng Anh được ba giờ.</div>
         </div>
       </div>
       <div class="hero-line">
         <span class="mark">02</span>
         <div>
-          <div class="en">She <span class="accent">likes</span> coffee.</div>
-          <div class="vi">Cô ấy thích cà phê.</div>
+          <div class="en">She has <span class="accent">been working</span> here since 2024.</div>
+          <div class="vi">Cô ấy đã làm việc ở đây từ năm 2024.</div>
         </div>
       </div>
       <div class="hero-line">
         <span class="mark">03</span>
         <div>
-          <div class="en">The sun <span class="accent">rises</span> in the east.</div>
-          <div class="vi">Mặt trời mọc ở phía Đông.</div>
+          <div class="en">It has <span class="accent">been raining</span> all morning.</div>
+          <div class="vi">Trời đã mưa suốt cả buổi sáng.</div>
         </div>
       </div>
     </div>
@@ -1450,45 +1917,49 @@ tbody td .hl{
   <aside class="sidebar">
     <nav class="toc" id="toc">
       <p class="toc-label">Nội dung bài học</p>
-      <a href="#gioi-thieu" class="toc-link"><span class="ic">🌱</span><span class="tx">Hiện tại đơn là gì?</span><span class="no">01</span></a>
+      <a href="#gioi-thieu" class="toc-link"><span class="ic">🌱</span><span class="tx">Hiện tại hoàn thành tiếp diễn là gì?</span><span class="no">01</span></a>
       <a href="#tu-duy" class="toc-link"><span class="ic">🧠</span><span class="tx">Tư duy quan trọng</span><span class="no">02</span></a>
       <a href="#khi-nao" class="toc-link"><span class="ic">🎯</span><span class="tx">Khi nào sử dụng?</span><span class="no">03</span></a>
       <a href="#cong-thuc" class="toc-link"><span class="ic">📐</span><span class="tx">Công thức tổng quát</span><span class="no">04</span></a>
-      <a href="#dong-tu-thuong" class="toc-link"><span class="ic">✍️</span><span class="tx">Động từ thường</span><span class="no">05</span></a>
-      <a href="#quy-tac" class="toc-link"><span class="ic">🔤</span><span class="tx">Quy tắc S / ES / IES</span><span class="no">06</span></a>
+      <a href="#khang-dinh" class="toc-link"><span class="ic">✅</span><span class="tx">Câu khẳng định</span><span class="no">05</span></a>
+      <a href="#ing" class="toc-link"><span class="ic">✍️</span><span class="tx">Quy tắc thêm ING</span><span class="no">06</span></a>
       <a href="#phu-dinh" class="toc-link"><span class="ic">🚫</span><span class="tx">Phủ định &amp; Nghi vấn</span><span class="no">07</span></a>
-      <a href="#to-be" class="toc-link"><span class="ic">⭐</span><span class="tx">Hiện tại đơn với TO BE</span><span class="no">08</span></a>
-      <a href="#so-sanh" class="toc-link"><span class="ic">⚖️</span><span class="tx">So sánh hai nhóm</span><span class="no">09</span></a>
-      <a href="#trang-tu" class="toc-link"><span class="ic">📊</span><span class="tx">Trạng từ tần suất</span><span class="no">10</span></a>
+      <a href="#since-for" class="toc-link"><span class="ic">⏳</span><span class="tx">Since và For</span><span class="no">08</span></a>
+      <a href="#how-long" class="toc-link"><span class="ic">⏱️</span><span class="tx">How long — Bao lâu?</span><span class="no">09</span></a>
+      <a href="#tu-thuong" class="toc-link"><span class="ic">📌</span><span class="tx">Các từ thường đi kèm</span><span class="no">10</span></a>
       <a href="#wh" class="toc-link"><span class="ic">❓</span><span class="tx">Câu hỏi WH-</span><span class="no">11</span></a>
-      <a href="#loi" class="toc-link"><span class="ic">⚠️</span><span class="tx">Lỗi thường gặp</span><span class="no">12</span></a>
-      <a href="#tong-ket" class="toc-link"><span class="ic">📋</span><span class="tx">Công thức tổng hợp</span><span class="no">13</span></a>
-      <a href="#quiz" class="toc-link"><span class="ic">🏆</span><span class="tx">Luyện tập</span><span class="no">14</span></a>
+      <a href="#so-sanh-pp" class="toc-link"><span class="ic">⚖️</span><span class="tx">vs Present Perfect</span><span class="no">12</span></a>
+      <a href="#so-sanh-pc" class="toc-link"><span class="ic">🔄</span><span class="tx">vs Present Continuous</span><span class="no">13</span></a>
+      <a href="#loi" class="toc-link"><span class="ic">⚠️</span><span class="tx">Lỗi thường gặp</span><span class="no">14</span></a>
+      <a href="#tong-ket" class="toc-link"><span class="ic">📋</span><span class="tx">Công thức tổng hợp</span><span class="no">15</span></a>
+      <a href="#quiz" class="toc-link"><span class="ic">🏆</span><span class="tx">Luyện tập</span><span class="no">16</span></a>
     </nav>
   </aside>
 
   <!-- ===== CONTENT ===== -->
   <main class="content">
+    <div class="print-header">
+      <h1>THÌ HIỆN TẠI HOÀN THÀNH TIẾP DIỄN — PRESENT PERFECT CONTINUOUS</h1>
+    </div>
 
     <!-- 01 -->
     <section class="section reveal" id="gioi-thieu">
-      <div class="sec-head"><div class="sec-num">01</div><h2>Thì hiện tại đơn là gì?</h2></div>
+      <div class="sec-head"><div class="sec-num">01</div><h2>Thì hiện tại hoàn thành tiếp diễn là gì?</h2></div>
 
       <div class="card">
-        <p><strong>Thì hiện tại đơn (Simple Present)</strong> là một trong những thì cơ bản nhất trong tiếng Anh. Nó được dùng để nói về:</p>
+        <p><strong>Thì hiện tại hoàn thành tiếp diễn (Present Perfect Continuous)</strong> là một thì dùng để nói về:</p>
         <div class="chips">
-          <span>🔁 Việc thường xuyên xảy ra</span>
-          <span>⏰ Thói quen hằng ngày</span>
-          <span>🌍 Sự thật hiển nhiên</span>
-          <span>💡 Điều luôn đúng</span>
-          <span>📅 Lịch trình cố định</span>
+          <span>⏳ Bắt đầu quá khứ, kéo dài đến hiện tại</span>
+          <span>🔄 Diễn ra liên tục trong khoảng thời gian</span>
+          <span>🎯 Nhấn mạnh quá trình / thời lượng</span>
+          <span>💧 Vừa kết thúc, còn dấu hiệu ở hiện tại</span>
         </div>
       </div>
 
       <h3 class="sub">Ví dụ minh họa</h3>
-      <div class="ex"><span class="en">I go to school every day.</span><span class="vi">Tôi đi học mỗi ngày.</span></div>
-      <div class="ex pink"><span class="en">She likes coffee.</span><span class="vi">Cô ấy thích cà phê.</span></div>
-      <div class="ex cyan"><span class="en">The sun rises in the east.</span><span class="vi">Mặt trời mọc ở phía Đông.</span></div>
+      <div class="ex"><span class="en">I <strong>have been studying</strong> English for three hours.</span><span class="vi">Tôi đã học tiếng Anh được ba giờ.</span></div>
+      <div class="ex pink"><span class="en">She <strong>has been working</strong> here since 2024.</span><span class="vi">Cô ấy đã làm việc ở đây từ năm 2024.</span></div>
+      <div class="ex cyan"><span class="en">It <strong>has been raining</strong> all morning.</span><span class="vi">Trời đã mưa suốt cả buổi sáng.</span></div>
     </section>
 
     <!-- 02 -->
@@ -1497,93 +1968,82 @@ tbody td .hl{
 
       <div class="note warn">
         <span class="ico">⚠️</span>
-        <span>Người mới thường mắc lỗi: <em>“Hiện tại đơn = việc đang xảy ra ở hiện tại.”</em> — Điều này <strong>không hoàn toàn đúng</strong>.</span>
+        <span>Người mới thường mắc lỗi: <em>"Present Perfect Continuous = một hành động đang xảy ra ở hiện tại."</em> — Điều này <strong>chưa đầy đủ</strong>.</span>
       </div>
 
       <div class="card">
-        <div class="ex"><span class="en">I work at a company.</span><span class="vi">→ Không có nghĩa: “Tôi đang làm việc ngay lúc nói.”</span></div>
-        <p style="margin-top:14px">Mà có nghĩa là:</p>
-        <div class="ex green"><span class="en">Tôi làm việc tại một công ty.</span><span class="vi">Đây là một công việc / trạng thái hiện tại, không nhất thiết hành động đang xảy ra ngay lúc nói.</span></div>
+        <div class="ex"><span class="en">I have been studying English for two hours.</span></div>
+        <p style="margin-top:14px">Không chỉ đơn giản là: <em>"Tôi đang học tiếng Anh."</em></p>
+        <p>Mà là: <strong>Tôi đã học tiếng Anh được hai giờ và việc học có liên quan đến hiện tại.</strong></p>
       </div>
 
       <div class="note info">
         <span class="ico">💡</span>
-        <span>Nếu muốn nói <strong>“Tôi đang làm việc ngay bây giờ”</strong>, ta dùng thì <strong>Hiện tại tiếp diễn</strong>: <em>I am working now.</em></span>
+        <span>Có thể hình dung: hành động <strong>bắt đầu trong quá khứ</strong> → <strong>kéo dài trong một khoảng thời gian</strong> → <strong>liên hệ với hiện tại</strong>.</span>
+      </div>
+
+      <div class="note key">
+        <span class="ico">🔑</span>
+        <span><strong>Present Perfect Continuous</strong> = đã bắt đầu trước đây + kéo dài/diễn ra trong một khoảng thời gian + liên hệ với hiện tại.</span>
       </div>
     </section>
 
     <!-- 03 -->
     <section class="section reveal" id="khi-nao">
-      <div class="sec-head"><div class="sec-num">03</div><h2>Khi nào sử dụng thì hiện tại đơn?</h2></div>
+      <div class="sec-head"><div class="sec-num">03</div><h2>Khi nào sử dụng thì hiện tại hoàn thành tiếp diễn?</h2></div>
+
       <p style="color:var(--text-3);margin-bottom:18px">Có <strong style="color:var(--text)">4 trường hợp</strong> quan trọng mà người mới cần nhớ.</p>
 
       <div class="grid2">
         <div class="mini-card">
           <div class="num">01</div>
-          <h4>Nói về thói quen</h4>
-          <p>Cách sử dụng phổ biến nhất — những việc lặp đi lặp lại hằng ngày.</p>
+          <h4>Bắt đầu trong quá khứ, vẫn tiếp diễn</h4>
+          <p>Hành động bắt đầu trước đây và vẫn đang tiếp tục ở hiện tại.</p>
         </div>
         <div class="mini-card">
           <div class="num">02</div>
-          <h4>Sự thật hiển nhiên</h4>
-          <p>Những điều luôn đúng, không thay đổi theo thời gian.</p>
+          <h4>Nhấn mạnh thời gian / quá trình</h4>
+          <p>Tập trung vào việc hành động đã diễn ra trong bao lâu.</p>
         </div>
         <div class="mini-card">
           <div class="num">03</div>
-          <h4>Việc thường xuyên xảy ra</h4>
-          <p>Đi kèm các trạng từ chỉ tần suất như always, usually, often…</p>
+          <h4>Vừa kết thúc, còn dấu hiệu</h4>
+          <p>Hành động vừa dừng nhưng để lại kết quả ở hiện tại.</p>
         </div>
         <div class="mini-card">
           <div class="num">04</div>
-          <h4>Sở thích – Cảm xúc – Trạng thái</h4>
-          <p>Dùng với các động từ chỉ trạng thái: like, love, know, want…</p>
+          <h4>Lặp lại trong khoảng thời gian</h4>
+          <p>Hành động xảy ra nhiều lần trong một khoảng thời gian gần đây.</p>
         </div>
       </div>
 
-      <h3 class="sub">3.1 · Nói về thói quen</h3>
-      <div class="ex"><span class="en">I get up at 6 a.m. every day.</span><span class="vi">Tôi thức dậy lúc 6 giờ mỗi ngày.</span></div>
-      <div class="ex pink"><span class="en">I drink coffee every morning.</span><span class="vi">Tôi uống cà phê mỗi sáng.</span></div>
-      <div class="ex cyan"><span class="en">She goes to school every day.</span><span class="vi">Cô ấy đi học mỗi ngày.</span></div>
-      <div class="ex amber"><span class="en">They play football on Sundays.</span><span class="vi">Họ chơi bóng đá vào Chủ nhật.</span></div>
+      <h3 class="sub">3.1 · Hành động bắt đầu trong quá khứ và vẫn tiếp diễn</h3>
+      <div class="ex"><span class="en">I have been studying English for three years.</span><span class="vi">Tôi đã học tiếng Anh được ba năm.</span></div>
+      <div class="ex"><span class="en">She has been working here since 2024.</span><span class="vi">Cô ấy đã làm việc ở đây từ năm 2024.</span></div>
+      <div class="ex"><span class="en">They have been living in Hanoi for five years.</span><span class="vi">Họ đã sống ở Hà Nội được năm năm.</span></div>
+      <div class="ex"><span class="en">We have been waiting for you for an hour.</span><span class="vi">Chúng tôi đã chờ bạn được một giờ.</span></div>
 
       <p style="margin-top:18px;font-weight:800;color:var(--text)">Các từ thường xuất hiện:</p>
       <div class="chips">
-        <span>every day</span><span>every morning</span><span>every week</span>
-        <span>every month</span><span>every year</span><span>on Mondays</span>
-        <span>in the morning</span>
+        <span>for</span><span>since</span><span>all day</span>
+        <span>all morning</span><span>all week</span><span>all night</span>
+        <span>how long</span>
       </div>
 
-      <h3 class="sub">3.2 · Nói về sự thật hiển nhiên</h3>
-      <div class="ex green"><span class="en">The sun rises in the east.</span><span class="vi">Mặt trời mọc ở phía Đông.</span></div>
-      <div class="ex green"><span class="en">Water boils at 100°C.</span><span class="vi">Nước sôi ở 100°C.</span></div>
-      <div class="ex green"><span class="en">The Earth goes around the Sun.</span><span class="vi">Trái Đất quay quanh Mặt Trời.</span></div>
-      <div class="ex green"><span class="en">Cats like fish.</span><span class="vi">Mèo thích cá.</span></div>
+      <h3 class="sub">3.2 · Nhấn mạnh quá trình hoặc khoảng thời gian</h3>
+      <div class="ex amber"><span class="en">I have been studying for three hours.</span><span class="vi">Tôi đã học được ba tiếng.</span></div>
+      <div class="ex amber"><span class="en">She has been working all day.</span><span class="vi">Cô ấy đã làm việc cả ngày.</span></div>
+      <div class="ex amber"><span class="en">They have been playing football for two hours.</span><span class="vi">Họ đã chơi bóng đá được hai tiếng.</span></div>
 
-      <h3 class="sub">3.3 · Nói về những điều thường xuyên xảy ra</h3>
-      <div class="ex amber"><span class="en">I usually go to work by bus.</span><span class="vi">Tôi thường đi làm bằng xe buýt.</span></div>
-      <div class="ex amber"><span class="en">He often plays football.</span><span class="vi">Anh ấy thường chơi bóng đá.</span></div>
-      <div class="ex amber"><span class="en">We sometimes eat at restaurants.</span><span class="vi">Chúng tôi thỉnh thoảng ăn ở nhà hàng.</span></div>
+      <h3 class="sub">3.3 · Hành động vừa kết thúc nhưng còn dấu hiệu ở hiện tại</h3>
+      <div class="ex green"><span class="en">You are wet. Have you been walking in the rain?</span><span class="vi">Bạn bị ướt à. Bạn vừa đi dưới mưa phải không?</span></div>
+      <div class="ex green"><span class="en">She has been crying.</span><span class="vi">Cô ấy vừa khóc.</span></div>
+      <div class="ex green"><span class="en">He is tired because he has been running.</span><span class="vi">Anh ấy mệt vì anh ấy vừa chạy.</span></div>
 
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Từ</th><th>Nghĩa</th><th>Ví dụ</th></tr></thead>
-          <tbody>
-            <tr><td><strong>always</strong></td><td>luôn luôn</td><td>I <span class="hl">always</span> drink coffee in the morning.</td></tr>
-            <tr><td><strong>usually</strong></td><td>thường xuyên</td><td>She <span class="hl">usually</span> goes to bed at 10 p.m.</td></tr>
-            <tr><td><strong>often</strong></td><td>thường</td><td>He <span class="hl">often</span> plays football.</td></tr>
-            <tr><td><strong>sometimes</strong></td><td>đôi khi</td><td>We <span class="hl">sometimes</span> eat out.</td></tr>
-            <tr><td><strong>rarely</strong></td><td>hiếm khi</td><td>They <span class="hl">rarely</span> watch TV.</td></tr>
-            <tr><td><strong>never</strong></td><td>không bao giờ</td><td>I <span class="hl">never</span> smoke.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 class="sub">3.4 · Nói về sở thích, cảm xúc, trạng thái</h3>
-      <div class="ex pink"><span class="en">I like music.</span><span class="vi">Tôi thích âm nhạc.</span></div>
-      <div class="ex pink"><span class="en">She loves cats.</span><span class="vi">Cô ấy yêu mèo.</span></div>
-      <div class="ex pink"><span class="en">He knows the answer.</span><span class="vi">Anh ấy biết câu trả lời.</span></div>
-      <div class="ex pink"><span class="en">I understand English.</span><span class="vi">Tôi hiểu tiếng Anh.</span></div>
-      <div class="ex pink"><span class="en">They want a new car.</span><span class="vi">Họ muốn một chiếc xe mới.</span></div>
+      <h3 class="sub">3.4 · Hành động lặp lại trong một khoảng thời gian</h3>
+      <div class="ex pink"><span class="en">He has been calling me all morning.</span><span class="vi">Anh ấy đã gọi cho tôi suốt cả buổi sáng.</span></div>
+      <div class="ex pink"><span class="en">She has been asking the same question all day.</span><span class="vi">Cô ấy đã hỏi cùng một câu hỏi suốt cả ngày.</span></div>
+      <div class="ex pink"><span class="en">They have been playing football every evening this week.</span><span class="vi">Họ đã chơi bóng đá mỗi buổi tối trong tuần này.</span></div>
     </section>
 
     <!-- 04 -->
@@ -1592,139 +2052,139 @@ tbody td .hl{
 
       <div class="note key">
         <span class="ico">🔑</span>
-        <span>Trước tiên, cần chia động từ thành <strong>2 nhóm</strong>. Hai nhóm này có cách sử dụng <strong>hoàn toàn khác nhau</strong>.</span>
+        <span>Công thức quan trọng nhất của thì này:</span>
       </div>
 
-      <div class="compare">
-        <div class="col vthuong">
-          <h4>🔤 Nhóm 1 — Động từ thường</h4>
-          <ul>
-            <li>work &nbsp;·&nbsp; play</li>
-            <li>study &nbsp;·&nbsp; like</li>
-            <li>eat &nbsp;·&nbsp; drink</li>
-            <li>go &nbsp;·&nbsp; watch</li>
-          </ul>
+      <div class="formula">
+        <span class="tag s">S</span><span class="plus">+</span>
+        <span class="tag aux">have/has</span><span class="plus">+</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span>
+      </div>
+
+      <div class="note info">
+        <span class="ico">📖</span>
+        <span><strong>S</strong> = Subject (chủ ngữ) &nbsp;·&nbsp; <strong>have/has</strong> = trợ động từ &nbsp;·&nbsp; <strong>been</strong> = V3 của "be" &nbsp;·&nbsp; <strong>V-ing</strong> = động từ thêm -ing</span>
+      </div>
+
+      <h3 class="sub">Bảng HAVE / HAS</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Chủ ngữ</th><th>Trợ động từ</th></tr></thead>
+          <tbody>
+            <tr><td><strong>I</strong></td><td><span class="hl">have</span></td></tr>
+            <tr><td><strong>You</strong></td><td><span class="hl">have</span></td></tr>
+            <tr><td><strong>We</strong></td><td><span class="hl">have</span></td></tr>
+            <tr><td><strong>They</strong></td><td><span class="hl">have</span></td></tr>
+            <tr><td><strong>He</strong></td><td><span class="hl">has</span></td></tr>
+            <tr><td><strong>She</strong></td><td><span class="hl">has</span></td></tr>
+            <tr><td><strong>It</strong></td><td><span class="hl">has</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid2">
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:var(--primary-d);margin-bottom:9px">I / YOU / WE / THEY</p>
+          <div class="ex" style="margin:0"><span class="en">→ <strong>HAVE + BEEN + V-ING</strong></span></div>
         </div>
-        <div class="col tobe">
-          <h4>⭐ Nhóm 2 — Động từ TO BE</h4>
-          <ul>
-            <li><strong>am</strong></li>
-            <li><strong>is</strong></li>
-            <li><strong>are</strong></li>
-          </ul>
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:#be185d;margin-bottom:9px">HE / SHE / IT</p>
+          <div class="ex pink" style="margin:0"><span class="en">→ <strong>HAS + BEEN + V-ING</strong></span></div>
         </div>
       </div>
     </section>
 
     <!-- 05 -->
-    <section class="section reveal" id="dong-tu-thuong">
-      <div class="sec-head"><div class="sec-num">05</div><h2>Hiện tại đơn với động từ thường</h2></div>
+    <section class="section reveal" id="khang-dinh">
+      <div class="sec-head"><div class="sec-num">05</div><h2>Câu khẳng định</h2></div>
 
-      <h3 class="sub">5.1 · Câu khẳng định</h3>
       <div class="formula">
         <span class="tag s">S</span><span class="plus">+</span>
-        <span class="tag v">V(s/es)</span><span class="plus">+</span>
+        <span class="tag aux">have/has</span><span class="plus">+</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span><span class="plus">+</span>
         <span class="tag o">O</span>
       </div>
 
-      <div class="note info">
-        <span class="ico">📖</span>
-        <span><strong>S</strong> = Subject (chủ ngữ) &nbsp;·&nbsp; <strong>V</strong> = Verb (động từ) &nbsp;·&nbsp; <strong>O</strong> = Object (tân ngữ)</span>
-      </div>
+      <h3 class="sub">Với I / You / We / They</h3>
+      <div class="ex"><span class="en">I <strong>have been studying</strong> English.</span><span class="vi">Tôi đã học tiếng Anh.</span></div>
+      <div class="ex"><span class="en">You <strong>have been working</strong> hard.</span><span class="vi">Bạn đã làm việc chăm chỉ.</span></div>
+      <div class="ex"><span class="en">We <strong>have been waiting</strong> for you.</span><span class="vi">Chúng tôi đã chờ bạn.</span></div>
+      <div class="ex"><span class="en">They <strong>have been playing</strong> football.</span><span class="vi">Họ đã chơi bóng đá.</span></div>
 
-      <div class="ex"><span class="en">I work every day.</span><span class="vi">Tôi làm việc mỗi ngày.</span></div>
-      <div class="ex"><span class="en">You play football.</span><span class="vi">Bạn chơi bóng đá.</span></div>
-      <div class="ex"><span class="en">We study English.</span><span class="vi">Chúng tôi học tiếng Anh.</span></div>
-      <div class="ex"><span class="en">They live in Vietnam.</span><span class="vi">Họ sống ở Việt Nam.</span></div>
+      <h3 class="sub">Với HE / SHE / IT</h3>
+      <div class="ex pink"><span class="en">He <strong>has been working</strong> since morning.</span><span class="vi">Anh ấy đã làm việc từ sáng.</span></div>
+      <div class="ex pink"><span class="en">She <strong>has been studying</strong> for three hours.</span><span class="vi">Cô ấy đã học được ba tiếng.</span></div>
+      <div class="ex pink"><span class="en">It <strong>has been raining</strong> all morning.</span><span class="vi">Trời đã mưa suốt buổi sáng.</span></div>
 
-      <h3 class="sub">Quy tắc đặc biệt: HE / SHE / IT</h3>
-      <div class="note key">
-        <span class="ico">⭐</span>
-        <span>Với <strong>I / You / We / They</strong> → động từ <strong>giữ nguyên</strong>.<br>
-        Với <strong>He / She / It</strong> → động từ phải thêm <strong>S / ES / IES</strong>.</span>
+      <div class="note danger" style="margin-top:20px">
+        <span class="ico">🚨</span>
+        <span>Không được nhầm <strong>HAVE</strong> và <strong>HAS</strong>.</span>
       </div>
-
-      <div class="grid2">
-        <div class="card" style="margin:0">
-          <div class="ex" style="margin:0 0 9px"><span class="en">I work.</span></div>
-          <div class="ex" style="margin:0 0 9px"><span class="en">I play.</span></div>
-          <div class="ex" style="margin:0"><span class="en">They watch TV.</span></div>
-        </div>
-        <div class="card" style="margin:0">
-          <div class="ex pink" style="margin:0 0 9px"><span class="en">He work<strong>s</strong>.</span></div>
-          <div class="ex pink" style="margin:0 0 9px"><span class="en">She play<strong>s</strong>.</span></div>
-          <div class="ex pink" style="margin:0"><span class="en">He watch<strong>es</strong> TV.</span></div>
-        </div>
-      </div>
+      <div class="eg good"><span class="mark">✓</span> I have been studying.</div>
+      <div class="eg good"><span class="mark">✓</span> They have been working.</div>
+      <div class="eg good"><span class="mark">✓</span> She has been studying.</div>
+      <div class="eg good"><span class="mark">✓</span> He has been working.</div>
+      <div class="eg bad"><span class="mark">✗</span> I has been studying.</div>
+      <div class="eg bad"><span class="mark">✗</span> They has been working.</div>
+      <div class="eg bad"><span class="mark">✗</span> She have been studying.</div>
+      <div class="eg bad"><span class="mark">✗</span> He have been working.</div>
     </section>
 
     <!-- 06 -->
-    <section class="section reveal" id="quy-tac">
-      <div class="sec-head"><div class="sec-num">06</div><h2>Quy tắc thêm S / ES / IES</h2></div>
+    <section class="section reveal" id="ing">
+      <div class="sec-head"><div class="sec-num">06</div><h2>Quy tắc thêm ING</h2></div>
 
-      <div class="grid3">
-        <div class="mini-card">
-          <div class="num">S</div>
-          <h4>Phần lớn động từ</h4>
-          <p>Chỉ cần thêm <strong>s</strong> vào sau động từ.</p>
-          <div class="chips" style="margin-top:12px">
-            <span>work → works</span><span>play → plays</span>
-            <span>read → reads</span><span>eat → eats</span>
-            <span>run → runs</span><span>like → likes</span>
-          </div>
-        </div>
+      <p style="color:var(--text-3);margin-bottom:16px">Sau <strong style="color:var(--text)">have/has + been</strong>, động từ chính phải ở dạng <strong style="color:var(--text)">V-ing</strong>.</p>
 
-        <div class="mini-card">
-          <div class="num">ES</div>
-          <h4>Tận cùng: s, ss, sh, ch, x, o</h4>
-          <p>Thường thêm <strong>es</strong>.</p>
-          <div class="chips alt" style="margin-top:12px">
-            <span>watch → watches</span><span>wash → washes</span>
-            <span>go → goes</span><span>do → does</span>
-            <span>fix → fixes</span><span>pass → passes</span>
-          </div>
-        </div>
-
-        <div class="mini-card">
-          <div class="num">IES</div>
-          <h4>Phụ âm + y</h4>
-          <p>Đổi <strong>y → ies</strong>.</p>
-          <div class="chips alt" style="margin-top:12px">
-            <span>study → studies</span><span>try → tries</span>
-            <span>fly → flies</span><span>carry → carries</span>
-          </div>
-        </div>
+      <h3 class="sub">6.1 · Phần lớn động từ — chỉ cần + ing</h3>
+      <div class="chips">
+        <span>work → working</span><span>play → playing</span>
+        <span>read → reading</span><span>watch → watching</span>
+        <span>eat → eating</span>
       </div>
+      <div class="ex" style="margin-top:14px"><span class="en">I have been working all day.</span></div>
+      <div class="ex"><span class="en">She has been watching TV for two hours.</span></div>
 
-      <h3 class="sub">Ví dụ đối chiếu</h3>
-      <div class="ex"><span class="en">I watch TV every evening.</span><span class="vi">Nhưng → <strong>She watches TV every evening.</strong></span></div>
-      <div class="ex"><span class="en">I study English.</span><span class="vi">Nhưng → <strong>He studies English.</strong></span></div>
-
-      <h3 class="sub">Trường hợp KHÔNG đổi Y → IES</h3>
-      <div class="note info">
-        <span class="ico">💡</span>
-        <span>Nếu trước <strong>y</strong> là một <strong>nguyên âm</strong> (a, e, i, o, u) thì chỉ thêm <strong>s</strong>.</span>
+      <h3 class="sub">6.2 · Động từ tận cùng bằng E — bỏ e + ing</h3>
+      <div class="chips alt">
+        <span>make → making</span><span>write → writing</span>
+        <span>take → taking</span><span>come → coming</span>
+        <span>use → using</span>
       </div>
-      <div class="chips"><span>play → plays</span><span>enjoy → enjoys</span><span>buy → buys</span></div>
-      <div class="eg good" style="margin-top:16px"><span class="mark">✓</span> She plays football.</div>
-      <div class="eg bad"><span class="mark">✗</span> She plaies football.</div>
+      <div class="ex pink" style="margin-top:14px"><span class="en">She has been writing an email.</span></div>
+      <div class="ex pink"><span class="en">I have been making dinner.</span></div>
 
-      <h3 class="sub">Bảng tổng hợp quy tắc</h3>
+      <h3 class="sub">6.3 · Động từ tận cùng bằng IE — đổi ie → y + ing</h3>
+      <div class="chips alt">
+        <span>lie → lying</span><span>die → dying</span><span>tie → tying</span>
+      </div>
+      <div class="ex cyan" style="margin-top:14px"><span class="en">He has been lying on the sofa.</span></div>
+
+      <h3 class="sub">6.4 · Động từ ngắn — gấp đôi phụ âm cuối</h3>
+      <div class="chips">
+        <span>run → running</span><span>sit → sitting</span>
+        <span>swim → swimming</span><span>stop → stopping</span>
+      </div>
+      <div class="ex green" style="margin-top:14px"><span class="en">He has been running for an hour.</span></div>
+      <div class="ex green"><span class="en">They have been swimming all morning.</span></div>
+
+      <h3 class="sub">Bảng tổng hợp</h3>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Động từ</th><th>He / She / It</th><th>Quy tắc</th></tr></thead>
+          <thead><tr><th>Động từ</th><th>V-ing</th></tr></thead>
           <tbody>
-            <tr><td>work</td><td><span class="hl">works</span></td><td>+ s</td></tr>
-            <tr><td>play</td><td><span class="hl">plays</span></td><td>+ s</td></tr>
-            <tr><td>read</td><td><span class="hl">reads</span></td><td>+ s</td></tr>
-            <tr><td>eat</td><td><span class="hl">eats</span></td><td>+ s</td></tr>
-            <tr><td>watch</td><td><span class="hl">watches</span></td><td>+ es</td></tr>
-            <tr><td>wash</td><td><span class="hl">washes</span></td><td>+ es</td></tr>
-            <tr><td>go</td><td><span class="hl">goes</span></td><td>+ es</td></tr>
-            <tr><td>do</td><td><span class="hl">does</span></td><td>+ es</td></tr>
-            <tr><td>study</td><td><span class="hl">studies</span></td><td>y → ies</td></tr>
-            <tr><td>try</td><td><span class="hl">tries</span></td><td>y → ies</td></tr>
-            <tr><td>enjoy</td><td><span class="hl">enjoys</span></td><td>+ s (trước y là nguyên âm)</td></tr>
+            <tr><td>work</td><td><span class="hl">working</span></td></tr>
+            <tr><td>play</td><td><span class="hl">playing</span></td></tr>
+            <tr><td>study</td><td><span class="hl">studying</span></td></tr>
+            <tr><td>make</td><td><span class="hl">making</span></td></tr>
+            <tr><td>write</td><td><span class="hl">writing</span></td></tr>
+            <tr><td>take</td><td><span class="hl">taking</span></td></tr>
+            <tr><td>lie</td><td><span class="hl">lying</span></td></tr>
+            <tr><td>run</td><td><span class="hl">running</span></td></tr>
+            <tr><td>sit</td><td><span class="hl">sitting</span></td></tr>
+            <tr><td>swim</td><td><span class="hl">swimming</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -1736,438 +2196,512 @@ tbody td .hl{
 
       <div class="note warn">
         <span class="ico">⚠️</span>
-        <span>Đây là phần người mới <strong>rất dễ nhầm</strong>. Với động từ thường, ta dùng trợ động từ <strong>do / does</strong>.</span>
+        <span>Với Present Perfect Continuous, chúng ta <strong>không dùng do/does</strong>. Ta sử dụng <strong>have / has</strong>.</span>
       </div>
 
-      <h3 class="sub">7.1 · Câu phủ định với I / You / We / They</h3>
+      <h3 class="sub">7.1 · Câu phủ định</h3>
       <div class="formula">
         <span class="tag s">S</span><span class="plus">+</span>
-        <span class="tag neg">do not / don't</span><span class="plus">+</span>
-        <span class="tag v">V nguyên mẫu</span>
+        <span class="tag aux">have/has</span><span class="plus">+</span>
+        <span class="tag neg">not</span><span class="plus">+</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span>
       </div>
-      <div class="ex"><span class="en">I don't like coffee.</span><span class="vi">Tôi không thích cà phê.</span></div>
-      <div class="ex"><span class="en">You don't work here.</span><span class="vi">Bạn không làm việc ở đây.</span></div>
-      <div class="ex"><span class="en">We don't play football.</span><span class="vi">Chúng tôi không chơi bóng đá.</span></div>
-      <div class="ex"><span class="en">They don't live here.</span><span class="vi">Họ không sống ở đây.</span></div>
+      <div class="ex"><span class="en">I <strong>haven't been sleeping</strong> well.</span><span class="vi">Tôi đã không ngủ ngon.</span></div>
+      <div class="ex"><span class="en">You <strong>haven't been studying</strong> enough.</span><span class="vi">Bạn đã không học đủ.</span></div>
+      <div class="ex"><span class="en">We <strong>haven't been working</strong> lately.</span><span class="vi">Gần đây chúng tôi không làm việc.</span></div>
+      <div class="ex"><span class="en">They <strong>haven't been practicing</strong> English.</span><span class="vi">Họ đã không luyện tiếng Anh.</span></div>
 
-      <h3 class="sub">7.2 · Câu phủ định với HE / SHE / IT</h3>
-      <div class="formula">
-        <span class="tag s">S</span><span class="plus">+</span>
-        <span class="tag neg">does not / doesn't</span><span class="plus">+</span>
-        <span class="tag v">V nguyên mẫu</span>
-      </div>
-      <div class="ex pink"><span class="en">He doesn't like coffee.</span><span class="vi">Anh ấy không thích cà phê.</span></div>
-      <div class="ex pink"><span class="en">She doesn't work here.</span><span class="vi">Cô ấy không làm việc ở đây.</span></div>
-      <div class="ex pink"><span class="en">It doesn't work.</span><span class="vi">Nó không hoạt động.</span></div>
+      <h3 class="sub">7.2 · Với HE / SHE / IT</h3>
+      <div class="ex pink"><span class="en">He <strong>hasn't been sleeping</strong> well.</span><span class="vi">Anh ấy đã không ngủ ngon.</span></div>
+      <div class="ex pink"><span class="en">She <strong>hasn't been studying</strong> recently.</span><span class="vi">Gần đây cô ấy không học.</span></div>
+      <div class="ex pink"><span class="en">It <strong>hasn't been raining</strong> lately.</span><span class="vi">Gần đây trời không mưa.</span></div>
 
       <div class="note danger">
         <span class="ico">🚨</span>
-        <span><strong>Quy tắc cực kỳ quan trọng:</strong> Khi đã có <strong>doesn't</strong>, động từ phía sau <strong>phải trở về nguyên mẫu</strong>.</span>
+        <span>Sau <strong>have/has + been</strong> phải dùng <strong>V-ing</strong>.</span>
       </div>
+      <div class="eg good"><span class="mark">✓</span> She has been studying.</div>
+      <div class="eg bad"><span class="mark">✗</span> She has been study.</div>
+      <div class="eg bad"><span class="mark">✗</span> She has been studied.</div>
 
-      <div class="eg good"><span class="mark">✓</span> She doesn't <strong>like</strong> coffee.</div>
-      <div class="eg bad"><span class="mark">✗</span> She doesn't <strong>likes</strong> coffee.</div>
-
-      <div class="note info">
-        <span class="ico">🧠</span>
-        <span><strong>Tại sao?</strong> Ở câu khẳng định <em>She like<strong>s</strong> coffee</em>, dấu <strong>-s</strong> nằm ở <em>likes</em>. Nhưng khi chuyển sang phủ định, <strong>does</strong> đã mang dấu hiệu ngôi thứ ba rồi — nên ta dùng <em>does + like</em>, không phải <em>does + likes</em>.</span>
-      </div>
-
-      <h3 class="sub">7.3 · Câu nghi vấn (Yes/No)</h3>
+      <h3 class="sub">7.3 · Câu nghi vấn Yes/No</h3>
       <div class="formula">
-        <span class="tag aux">Do / Does</span><span class="plus">+</span>
+        <span class="tag aux">Have / Has</span><span class="plus">+</span>
         <span class="tag s">S</span><span class="plus">+</span>
-        <span class="tag v">V nguyên mẫu</span><span class="plus">?</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span><span class="plus">?</span>
       </div>
 
       <div class="grid2">
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--primary-d);margin-bottom:8px">Do + I / You / We / They</p>
-          <div class="ex" style="margin:9px 0"><span class="en">Do you like coffee?</span><span class="vi">Bạn có thích cà phê không?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">Do they work here?</span><span class="vi">Họ có làm việc ở đây không?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">Do you speak English?</span><span class="vi">Bạn có nói tiếng Anh không?</span></div>
+          <p style="font-weight:800;color:var(--primary-d);margin-bottom:8px">Have + I / You / We / They</p>
+          <div class="ex" style="margin:9px 0"><span class="en">Have you been working?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Have they been studying?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Have we been waiting too long?</span></div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:#be185d;margin-bottom:8px">Does + He / She / It</p>
-          <div class="ex pink" style="margin:9px 0"><span class="en">Does he like coffee?</span><span class="vi">Anh ấy có thích cà phê không?</span></div>
-          <div class="ex pink" style="margin:9px 0"><span class="en">Does she work here?</span><span class="vi">Cô ấy có làm việc ở đây không?</span></div>
-          <div class="ex pink" style="margin:9px 0"><span class="en">Does he play football?</span><span class="vi">Anh ấy có chơi bóng đá không?</span></div>
+          <p style="font-weight:800;color:#be185d;margin-bottom:8px">Has + He / She / It</p>
+          <div class="ex pink" style="margin:9px 0"><span class="en">Has he been working?</span></div>
+          <div class="ex pink" style="margin:9px 0"><span class="en">Has she been studying?</span></div>
+          <div class="ex pink" style="margin:9px 0"><span class="en">Has it been raining?</span></div>
         </div>
       </div>
 
-      <div class="note danger" style="margin-top:20px">
-        <span class="ico">🚨</span>
-        <span>Sau <strong>Does</strong>, động từ phải trở về <strong>nguyên mẫu</strong>.</span>
-      </div>
-      <div class="eg good"><span class="mark">✓</span> Does she <strong>like</strong> coffee?</div>
-      <div class="eg bad"><span class="mark">✗</span> Does she <strong>likes</strong> coffee?</div>
-      <div class="eg good"><span class="mark">✓</span> Does he <strong>work</strong> here?</div>
-      <div class="eg bad"><span class="mark">✗</span> Does he <strong>works</strong> here?</div>
-
-      <h3 class="sub">7.4 · Cách trả lời câu hỏi Yes/No</h3>
+      <h3 class="sub">7.4 · Cách trả lời Yes/No</h3>
       <div class="grid2">
         <div class="card" style="margin:0">
-          <p style="font-weight:800;margin-bottom:9px">Do you like coffee?</p>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, I do.</div>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, I don't.</div>
+          <p style="font-weight:800;margin-bottom:9px">Have you been studying?</p>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, I have.</div>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, I haven't.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;margin-bottom:9px">Does she like coffee?</p>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, she does.</div>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, she doesn't.</div>
+          <p style="font-weight:800;margin-bottom:9px">Has she been working?</p>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, she has.</div>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, she hasn't.</div>
         </div>
       </div>
 
-      <h3 class="sub">7.5 · Bảng tổng hợp động từ thường</h3>
+      <h3 class="sub">7.5 · Bảng tổng hợp</h3>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Chủ ngữ</th><th>Khẳng định</th><th>Phủ định</th><th>Nghi vấn</th></tr></thead>
           <tbody>
-            <tr><td><strong>I</strong></td><td>I work</td><td>I don't work</td><td>Do I work?</td></tr>
-            <tr><td><strong>You</strong></td><td>You work</td><td>You don't work</td><td>Do you work?</td></tr>
-            <tr><td><strong>We</strong></td><td>We work</td><td>We don't work</td><td>Do we work?</td></tr>
-            <tr><td><strong>They</strong></td><td>They work</td><td>They don't work</td><td>Do they work?</td></tr>
-            <tr><td><strong>He</strong></td><td>He <span class="hl">works</span></td><td>He doesn't work</td><td>Does he work?</td></tr>
-            <tr><td><strong>She</strong></td><td>She <span class="hl">works</span></td><td>She doesn't work</td><td>Does she work?</td></tr>
-            <tr><td><strong>It</strong></td><td>It <span class="hl">works</span></td><td>It doesn't work</td><td>Does it work?</td></tr>
+            <tr><td><strong>I</strong></td><td>I have been working</td><td>I haven't been working</td><td>Have I been working?</td></tr>
+            <tr><td><strong>You</strong></td><td>You have been working</td><td>You haven't been working</td><td>Have you been working?</td></tr>
+            <tr><td><strong>We</strong></td><td>We have been working</td><td>We haven't been working</td><td>Have we been working?</td></tr>
+            <tr><td><strong>They</strong></td><td>They have been working</td><td>They haven't been working</td><td>Have they been working?</td></tr>
+            <tr><td><strong>He</strong></td><td>He <span class="hl">has</span> been working</td><td>He hasn't been working</td><td>Has he been working?</td></tr>
+            <tr><td><strong>She</strong></td><td>She <span class="hl">has</span> been working</td><td>She hasn't been working</td><td>Has she been working?</td></tr>
+            <tr><td><strong>It</strong></td><td>It <span class="hl">has</span> been working</td><td>It hasn't been working</td><td>Has it been working?</td></tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="note key">
-        <span class="ico">👀</span>
-        <span>Hãy đặc biệt quan sát: <strong>He works.</strong> → <strong>He doesn't work.</strong> → <strong>Does he work?</strong> — Dấu <strong>-s chỉ xuất hiện ở câu khẳng định</strong>.</span>
       </div>
     </section>
 
     <!-- 08 -->
-    <section class="section reveal" id="to-be">
-      <div class="sec-head"><div class="sec-num">08</div><h2>Hiện tại đơn với TO BE</h2></div>
+    <section class="section reveal" id="since-for">
+      <div class="sec-head"><div class="sec-num">08</div><h2>Since và For</h2></div>
 
-      <p style="color:var(--text-3);margin-bottom:16px">Đây là một nhóm riêng. Động từ <strong style="color:var(--text)">to be</strong> ở hiện tại gồm: <strong style="color:var(--text)">am / is / are</strong>.</p>
+      <p style="color:var(--text-3);margin-bottom:16px">Đây là hai từ <strong style="color:var(--text)">cực kỳ quan trọng</strong> trong Present Perfect Continuous.</p>
 
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Chủ ngữ</th><th>TO BE</th></tr></thead>
-          <tbody>
-            <tr><td><strong>I</strong></td><td><span class="hl">am</span></td></tr>
-            <tr><td><strong>He</strong></td><td><span class="hl">is</span></td></tr>
-            <tr><td><strong>She</strong></td><td><span class="hl">is</span></td></tr>
-            <tr><td><strong>It</strong></td><td><span class="hl">is</span></td></tr>
-            <tr><td><strong>You</strong></td><td><span class="hl">are</span></td></tr>
-            <tr><td><strong>We</strong></td><td><span class="hl">are</span></td></tr>
-            <tr><td><strong>They</strong></td><td><span class="hl">are</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="note warn"><span class="ico">📌</span><span>Bảng này <strong>cần học thuộc</strong> — nó là nền tảng cho rất nhiều cấu trúc sau này.</span></div>
-
-      <h3 class="sub">8.1 · Câu khẳng định với TO BE</h3>
-      <div class="formula"><span class="tag s">S</span><span class="plus">+</span><span class="tag aux">am / is / are</span><span class="plus">+</span><span class="tag o">...</span></div>
-      <div class="ex green"><span class="en">I am a student.</span><span class="vi">Tôi là học sinh / sinh viên.</span></div>
-      <div class="ex green"><span class="en">He is a teacher.</span><span class="vi">Anh ấy là giáo viên.</span></div>
-      <div class="ex green"><span class="en">She is beautiful.</span><span class="vi">Cô ấy xinh đẹp.</span></div>
-      <div class="ex green"><span class="en">We are students.</span><span class="vi">Chúng tôi là sinh viên.</span></div>
-      <div class="ex green"><span class="en">They are happy.</span><span class="vi">Họ vui.</span></div>
-
-      <h3 class="sub">8.2 · Câu phủ định với TO BE</h3>
-      <div class="formula"><span class="tag s">S</span><span class="plus">+</span><span class="tag aux">am / is / are</span><span class="plus">+</span><span class="tag neg">not</span><span class="plus">+</span><span class="tag o">...</span></div>
-      <div class="ex"><span class="en">I am not tired.</span><span class="vi">Tôi không mệt.</span></div>
-      <div class="ex"><span class="en">He is not a teacher.</span><span class="vi">Anh ấy không phải giáo viên.</span></div>
-      <div class="ex"><span class="en">She is not busy.</span><span class="vi">Cô ấy không bận.</span></div>
-      <div class="ex"><span class="en">They are not happy.</span><span class="vi">Họ không vui.</span></div>
-
+      <h3 class="sub">8.1 · FOR — khoảng thời gian</h3>
       <div class="note info">
-        <span class="ico">✂️</span>
-        <span><strong>Viết tắt:</strong> is not → <strong>isn't</strong> &nbsp;|&nbsp; are not → <strong>aren't</strong><br>
-        <em>He isn't a teacher. · They aren't busy.</em></span>
+        <span class="ico">💡</span>
+        <span><strong>For</strong> dùng để nói về <strong>khoảng thời gian</strong>.</span>
+      </div>
+      <div class="formula">
+        <span class="tag o">for</span><span class="plus">+</span>
+        <span class="tag v">khoảng thời gian</span>
+      </div>
+      <div class="chips">
+        <span>for two hours</span><span>for three days</span>
+        <span>for five years</span><span>for a long time</span>
+        <span>for two weeks</span>
+      </div>
+      <div class="ex" style="margin-top:16px"><span class="en">I have been studying for three hours.</span><span class="vi">Tôi đã học được ba tiếng.</span></div>
+      <div class="ex"><span class="en">She has been working here for five years.</span><span class="vi">Cô ấy đã làm việc ở đây được năm năm.</span></div>
+
+      <h3 class="sub">8.2 · SINCE — mốc thời gian bắt đầu</h3>
+      <div class="note info">
+        <span class="ico">💡</span>
+        <span><strong>Since</strong> dùng để nói về <strong>mốc thời gian bắt đầu</strong>.</span>
+      </div>
+      <div class="formula">
+        <span class="tag o">since</span><span class="plus">+</span>
+        <span class="tag v">mốc thời gian</span>
+      </div>
+      <div class="chips alt">
+        <span>since Monday</span><span>since 2020</span>
+        <span>since 8 a.m.</span><span>since last week</span>
+        <span>since this morning</span>
+      </div>
+      <div class="ex pink" style="margin-top:16px"><span class="en">I have been studying since 8 a.m.</span><span class="vi">Tôi đã học từ 8 giờ sáng.</span></div>
+      <div class="ex pink"><span class="en">She has been working here since 2020.</span><span class="vi">Cô ấy đã làm việc ở đây từ năm 2020.</span></div>
+
+      <h3 class="sub">Bảng phân biệt FOR và SINCE</h3>
+      <div class="compare">
+        <div class="col vthuong">
+          <h4>⏳ FOR</h4>
+          <p style="font-weight:800;color:var(--primary-d);margin-bottom:10px">→ BAO LÂU?</p>
+          <ul>
+            <li>for two hours</li>
+            <li>for three days</li>
+            <li>for five years</li>
+            <li>for two weeks</li>
+            <li>for a long time</li>
+          </ul>
+        </div>
+        <div class="col tobe">
+          <h4>📍 SINCE</h4>
+          <p style="font-weight:800;color:#047857;margin-bottom:10px">→ TỪ KHI NÀO?</p>
+          <ul>
+            <li>since 8 a.m.</li>
+            <li>since Monday</li>
+            <li>since 2020</li>
+            <li>since last week</li>
+            <li>since this morning</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="eg bad"><span class="mark">✗</span> I amn't. &nbsp;→&nbsp; Không dùng dạng này!</div>
-      <div class="eg good"><span class="mark">✓</span> I am not.</div>
-
-      <h3 class="sub">8.3 · Câu nghi vấn với TO BE</h3>
-      <div class="formula"><span class="tag aux">Am / Is / Are</span><span class="plus">+</span><span class="tag s">S</span><span class="plus">+</span><span class="tag o">...</span><span class="plus">?</span></div>
-      <div class="ex cyan"><span class="en">Are you a student?</span><span class="vi">Bạn có phải là sinh viên không?</span></div>
-      <div class="ex cyan"><span class="en">Is he a teacher?</span><span class="vi">Anh ấy có phải giáo viên không?</span></div>
-      <div class="ex cyan"><span class="en">Is she happy?</span><span class="vi">Cô ấy có vui không?</span></div>
-      <div class="ex cyan"><span class="en">Are they busy?</span><span class="vi">Họ có bận không?</span></div>
-
-      <h3 class="sub">8.4 · Cách trả lời với TO BE</h3>
-      <div class="grid2">
-        <div class="card" style="margin:0">
-          <p style="font-weight:800;margin-bottom:9px">Are you a student?</p>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, I am.</div>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, I am not.</div>
-        </div>
-        <div class="card" style="margin:0">
-          <p style="font-weight:800;margin-bottom:9px">Is he a teacher?</p>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Yes, he is.</div>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> No, he isn't.</div>
-        </div>
+      <div class="note key" style="margin-top:20px">
+        <span class="ico">🧠</span>
+        <span><strong>FOR = BAO LÂU</strong> &nbsp;|&nbsp; <strong>SINCE = TỪ KHI NÀO</strong></span>
       </div>
     </section>
 
     <!-- 09 -->
-    <section class="section reveal" id="so-sanh">
-      <div class="sec-head"><div class="sec-num">09</div><h2>Động từ thường và TO BE khác nhau thế nào?</h2></div>
+    <section class="section reveal" id="how-long">
+      <div class="sec-head"><div class="sec-num">09</div><h2>How long — Đã bao lâu?</h2></div>
 
-      <p style="color:var(--text-3);margin-bottom:18px">Đây là một trong những phần <strong style="color:var(--text)">quan trọng nhất</strong> đối với người mới học.</p>
+      <p style="color:var(--text-3);margin-bottom:16px">Present Perfect Continuous thường được dùng với <strong style="color:var(--text)">How long...?</strong></p>
 
-      <div class="compare">
-        <div class="col vthuong">
-          <h4>🔤 Động từ thường</h4>
-          <ul>
-            <li>Dùng trợ động từ <strong>do / does</strong></li>
-            <li>Phủ định: <strong>don't / doesn't</strong></li>
-            <li><em>Do you like coffee?</em></li>
-            <li><em>He doesn't work here.</em></li>
-          </ul>
-        </div>
-        <div class="col tobe">
-          <h4>⭐ TO BE</h4>
-          <ul>
-            <li><strong>KHÔNG</strong> dùng do / does</li>
-            <li>Phủ định: thêm <strong>not</strong> sau am/is/are</li>
-            <li><em>Are you a student?</em></li>
-            <li><em>He isn't a teacher.</em></li>
-          </ul>
-        </div>
+      <div class="formula">
+        <span class="tag aux">How long</span><span class="plus">+</span>
+        <span class="tag neg">have/has</span><span class="plus">+</span>
+        <span class="tag s">S</span><span class="plus">+</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span><span class="plus">?</span>
       </div>
 
-      <div class="eg bad" style="margin-top:20px"><span class="mark">✗</span> Do you are a student?</div>
-      <div class="eg good"><span class="mark">✓</span> Are you a student?</div>
+      <div class="ex cyan"><span class="en">How long have you been studying English?</span><span class="vi">Bạn đã học tiếng Anh được bao lâu?</span></div>
+      <div class="ex cyan"><span class="en">How long has she been working here?</span><span class="vi">Cô ấy đã làm việc ở đây bao lâu rồi?</span></div>
+      <div class="ex cyan"><span class="en">How long have they been living in Hanoi?</span><span class="vi">Họ đã sống ở Hà Nội được bao lâu?</span></div>
 
-      <h3 class="sub">Bảng so sánh trực quan</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Động từ thường</th><th>TO BE</th></tr></thead>
-          <tbody>
-            <tr><td>I work.</td><td>I am a student.</td></tr>
-            <tr><td>He works.</td><td>He is a student.</td></tr>
-            <tr><td>I don't work.</td><td>I am not a student.</td></tr>
-            <tr><td>He doesn't work.</td><td>He isn't a student.</td></tr>
-            <tr><td>Do you work?</td><td>Are you a student?</td></tr>
-            <tr><td>Does he work?</td><td>Is he a student?</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <h3 class="sub">Cách trả lời</h3>
+      <div class="ex green"><span class="en">I have been studying English for three years.</span></div>
+      <div class="ex green"><span class="en">She has been working here since 2020.</span></div>
+      <div class="ex green"><span class="en">They have been living here for five years.</span></div>
     </section>
 
     <!-- 10 -->
-    <section class="section reveal" id="trang-tu">
-      <div class="sec-head"><div class="sec-num">10</div><h2>Trạng từ chỉ tần suất</h2></div>
+    <section class="section reveal" id="tu-thuong">
+      <div class="sec-head"><div class="sec-num">10</div><h2>Các từ thường đi với Present Perfect Continuous</h2></div>
 
-      <p style="color:var(--text-3);margin-bottom:8px">Thì hiện tại đơn thường đi cùng các trạng từ chỉ tần suất. Hãy hình dung mức độ từ <strong style="color:var(--text)">100%</strong> xuống <strong style="color:var(--text)">0%</strong>:</p>
-
-      <div class="card">
-        <div class="freq-list" id="freqList">
-          <div class="freq-row">
-            <span class="freq-name">always</span>
-            <span class="freq-vi">luôn luôn</span>
-            <div class="freq-track"><div class="freq-fill" data-w="100"></div></div>
-          </div>
-          <div class="freq-row">
-            <span class="freq-name">usually</span>
-            <span class="freq-vi">thường xuyên</span>
-            <div class="freq-track"><div class="freq-fill" data-w="85"></div></div>
-          </div>
-          <div class="freq-row">
-            <span class="freq-name">often</span>
-            <span class="freq-vi">thường</span>
-            <div class="freq-track"><div class="freq-fill" data-w="70"></div></div>
-          </div>
-          <div class="freq-row">
-            <span class="freq-name">sometimes</span>
-            <span class="freq-vi">đôi khi</span>
-            <div class="freq-track"><div class="freq-fill" data-w="50"></div></div>
-          </div>
-          <div class="freq-row">
-            <span class="freq-name">rarely</span>
-            <span class="freq-vi">hiếm khi</span>
-            <div class="freq-track"><div class="freq-fill" data-w="20"></div></div>
-          </div>
-          <div class="freq-row">
-            <span class="freq-name">never</span>
-            <span class="freq-vi">không bao giờ</span>
-            <div class="freq-track"><div class="freq-fill" data-w="4"></div></div>
-          </div>
+      <div class="grid3">
+        <div class="mini-card">
+          <div class="num">FOR</div>
+          <h4>Khoảng thời gian</h4>
+          <p>for two hours · for three years · for a long time</p>
+          <div class="ex" style="margin:9px 0 0"><span class="en">I have been working for three hours.</span></div>
+        </div>
+        <div class="mini-card">
+          <div class="num">SINCE</div>
+          <h4>Mốc thời gian</h4>
+          <p>since Monday · since 2020 · since this morning</p>
+          <div class="ex pink" style="margin:9px 0 0"><span class="en">She has been studying since morning.</span></div>
+        </div>
+        <div class="mini-card">
+          <div class="num">ALL</div>
+          <h4>all day / all morning / all night</h4>
+          <p>Nhấn mạnh hành động kéo dài suốt cả một khoảng thời gian.</p>
+          <div class="ex amber" style="margin:9px 0 0"><span class="en">I have been working all day.</span></div>
+        </div>
+        <div class="mini-card">
+          <div class="num">L</div>
+          <h4>lately / recently</h4>
+          <p>Gần đây — hành động diễn ra trong thời gian gần đây.</p>
+          <div class="ex cyan" style="margin:9px 0 0"><span class="en">I have been feeling tired lately.</span></div>
         </div>
       </div>
 
-      <h3 class="sub">Vị trí của trạng từ tần suất</h3>
-      <div class="compare">
-        <div class="col vthuong">
-          <h4>🔤 Với động từ thường</h4>
-          <p style="font-weight:800;color:var(--primary-d);margin-bottom:10px;font-family:'JetBrains Mono',monospace">S + adverb + V</p>
-          <div class="ex" style="margin:9px 0"><span class="en">I always drink coffee.</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">She usually goes to work by bus.</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">He often plays football.</span></div>
-        </div>
-        <div class="col tobe">
-          <h4>⭐ Với TO BE</h4>
-          <p style="font-weight:800;color:#047857;margin-bottom:10px;font-family:'JetBrains Mono',monospace">S + am/is/are + adverb</p>
-          <div class="ex green" style="margin:9px 0"><span class="en">I am always busy.</span></div>
-          <div class="ex green" style="margin:9px 0"><span class="en">She is usually happy.</span></div>
-          <div class="ex green" style="margin:9px 0"><span class="en">They are often late.</span></div>
-        </div>
-      </div>
-
-      <h3 class="sub">Dấu hiệu nhận biết thì hiện tại đơn</h3>
-      <div class="note key">
-        <span class="ico">🔍</span>
-        <span>Khi gặp những từ này, hãy nghĩ ngay đến <strong>thì hiện tại đơn</strong>.</span>
-      </div>
-      <div class="chips">
-        <span>every day</span><span>every week</span><span>every month</span>
-        <span>every year</span><span>always</span><span>usually</span>
-        <span>often</span><span>sometimes</span><span>rarely</span>
-        <span>never</span><span>on Mondays</span><span>on weekends</span>
-      </div>
-      <div class="ex" style="margin-top:16px"><span class="en">I go to school every day.</span></div>
-      <div class="ex"><span class="en">She usually gets up at 6.</span></div>
-      <div class="ex"><span class="en">He never drinks coffee.</span></div>
+      <h3 class="sub">Ví dụ đầy đủ</h3>
+      <div class="ex"><span class="en">I have been working all day.</span><span class="vi">Tôi đã làm việc cả ngày.</span></div>
+      <div class="ex"><span class="en">She has been studying all morning.</span><span class="vi">Cô ấy đã học suốt cả buổi sáng.</span></div>
+      <div class="ex"><span class="en">They have been working all night.</span><span class="vi">Họ đã làm việc suốt đêm.</span></div>
+      <div class="ex"><span class="en">I have been feeling tired lately.</span><span class="vi">Gần đây tôi cảm thấy mệt.</span></div>
+      <div class="ex"><span class="en">She has been working a lot recently.</span><span class="vi">Gần đây cô ấy làm việc rất nhiều.</span></div>
     </section>
 
     <!-- 11 -->
     <section class="section reveal" id="wh">
-      <div class="sec-head"><div class="sec-num">11</div><h2>Câu hỏi WH- với hiện tại đơn</h2></div>
+      <div class="sec-head"><div class="sec-num">11</div><h2>Câu hỏi WH- với Present Perfect Continuous</h2></div>
 
-      <p style="color:var(--text-3);margin-bottom:16px">Ngoài câu hỏi Yes/No, ta còn có câu hỏi bắt đầu bằng: <strong style="color:var(--text)">What, Where, When, Why, Who, How</strong>.</p>
+      <p style="color:var(--text-3);margin-bottom:16px">Ngoài câu hỏi Yes/No, ta có: <strong style="color:var(--text)">What, Where, When, Why, How, How long</strong>.</p>
 
       <div class="formula">
         <span class="tag aux">WH-word</span><span class="plus">+</span>
-        <span class="tag neg">do / does</span><span class="plus">+</span>
+        <span class="tag neg">have/has</span><span class="plus">+</span>
         <span class="tag s">S</span><span class="plus">+</span>
-        <span class="tag v">V nguyên mẫu</span><span class="plus">?</span>
+        <span class="tag o">been</span><span class="plus">+</span>
+        <span class="tag v">V-ing</span><span class="plus">?</span>
       </div>
 
       <div class="grid2">
         <div class="mini-card">
           <div class="num">W</div>
           <h4>What</h4>
-          <div class="ex" style="margin:9px 0"><span class="en">What do you do every day?</span><span class="vi">Bạn làm gì mỗi ngày?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">What does he do?</span><span class="vi">Anh ấy làm nghề gì?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">What have you been doing?</span><span class="vi">Bạn đã làm gì vậy?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">What has she been studying?</span><span class="vi">Cô ấy đã học gì?</span></div>
         </div>
         <div class="mini-card">
           <div class="num">W</div>
           <h4>Where</h4>
-          <div class="ex" style="margin:9px 0"><span class="en">Where do you live?</span><span class="vi">Bạn sống ở đâu?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">Where does she work?</span><span class="vi">Cô ấy làm việc ở đâu?</span></div>
-        </div>
-        <div class="mini-card">
-          <div class="num">W</div>
-          <h4>When</h4>
-          <div class="ex" style="margin:9px 0"><span class="en">When do you go to work?</span><span class="vi">Bạn đi làm khi nào?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">When does he study English?</span><span class="vi">Anh ấy học tiếng Anh khi nào?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Where have you been working?</span><span class="vi">Bạn đã làm việc ở đâu?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Where has he been living?</span><span class="vi">Anh ấy đã sống ở đâu?</span></div>
         </div>
         <div class="mini-card">
           <div class="num">W</div>
           <h4>Why</h4>
-          <div class="ex" style="margin:9px 0"><span class="en">Why do you study English?</span><span class="vi">Tại sao bạn học tiếng Anh?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">Why does she work here?</span><span class="vi">Tại sao cô ấy làm việc ở đây?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Why have you been crying?</span><span class="vi">Tại sao bạn đã khóc?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">Why has she been studying so hard?</span><span class="vi">Tại sao cô ấy đã học chăm chỉ như vậy?</span></div>
         </div>
         <div class="mini-card">
           <div class="num">H</div>
           <h4>How</h4>
-          <div class="ex" style="margin:9px 0"><span class="en">How do you go to work?</span><span class="vi">Bạn đi làm bằng cách nào?</span></div>
-          <div class="ex" style="margin:9px 0"><span class="en">How does he learn English?</span><span class="vi">Anh ấy học tiếng Anh như thế nào?</span></div>
+          <div class="ex" style="margin:9px 0"><span class="en">How have you been learning English?</span><span class="vi">Bạn đã học tiếng Anh như thế nào?</span></div>
         </div>
         <div class="mini-card">
-          <div class="num">W</div>
-          <h4>Who — đặc biệt!</h4>
-          <div class="ex cyan" style="margin:9px 0"><span class="en">Who works here?</span><span class="vi">Ai làm việc ở đây?</span></div>
-          <div class="eg bad" style="margin:9px 0"><span class="mark">✗</span> Who does work here?</div>
-          <p style="font-size:.85rem;color:var(--text-3)">Ở đây <strong style="color:var(--text)">Who = chủ ngữ</strong>, <strong style="color:var(--text)">works = động từ</strong> → không dùng <em>does</em>.</p>
+          <div class="num">H</div>
+          <h4>How long</h4>
+          <div class="ex cyan" style="margin:9px 0"><span class="en">How long have you been waiting?</span><span class="vi">Bạn đã chờ bao lâu rồi?</span></div>
         </div>
       </div>
     </section>
 
     <!-- 12 -->
+    <section class="section reveal" id="so-sanh-pp">
+      <div class="sec-head"><div class="sec-num">12</div><h2>Present Perfect Continuous và Present Perfect</h2></div>
+
+      <p style="color:var(--text-3);margin-bottom:18px">Hai thì đều có <strong style="color:var(--text)">have / has</strong> nhưng cách nhấn mạnh khác nhau.</p>
+
+      <div class="compare">
+        <div class="col vthuong">
+          <h4>✨ PRESENT PERFECT</h4>
+          <p style="font-weight:800;color:var(--primary-d);margin-bottom:10px">have/has + V3</p>
+          <ul>
+            <li>Nhấn mạnh <strong>kết quả</strong></li>
+            <li>Nhấn mạnh <strong>số lượng</strong></li>
+            <li><strong>I have read three books.</strong></li>
+            <li>Tôi đã đọc ba cuốn sách.</li>
+          </ul>
+        </div>
+        <div class="col tobe">
+          <h4>🔄 PRESENT PERFECT CONTINUOUS</h4>
+          <p style="font-weight:800;color:#047857;margin-bottom:10px">have/has + been + V-ing</p>
+          <ul>
+            <li>Nhấn mạnh <strong>quá trình</strong></li>
+            <li>Nhấn mạnh <strong>thời lượng</strong></li>
+            <li><strong>I have been reading for three hours.</strong></li>
+            <li>Tôi đã đọc sách được ba tiếng.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub">Bảng so sánh</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Present Perfect</th><th>Present Perfect Continuous</th></tr></thead>
+          <tbody>
+            <tr><td>have/has + V3</td><td>have/has + been + V-ing</td></tr>
+            <tr><td>nhấn mạnh kết quả</td><td>nhấn mạnh quá trình</td></tr>
+            <tr><td>nhấn mạnh số lượng</td><td>nhấn mạnh thời lượng</td></tr>
+            <tr><td>I have read 3 books.</td><td>I have been reading for 3 hours.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 13 -->
+    <section class="section reveal" id="so-sanh-pc">
+      <div class="sec-head"><div class="sec-num">13</div><h2>Present Perfect Continuous và Present Continuous</h2></div>
+
+      <div class="compare">
+        <div class="col vthuong">
+          <h4>🎯 PRESENT CONTINUOUS</h4>
+          <p style="font-weight:800;color:var(--primary-d);margin-bottom:10px">am/is/are + V-ing</p>
+          <ul>
+            <li>Hành động đang diễn ra <strong>ngay tại thời điểm hiện tại</strong></li>
+            <li><strong>I am studying English now.</strong></li>
+            <li>Tôi đang học tiếng Anh bây giờ.</li>
+          </ul>
+        </div>
+        <div class="col tobe">
+          <h4>🔄 PRESENT PERFECT CONTINUOUS</h4>
+          <p style="font-weight:800;color:#047857;margin-bottom:10px">have/has + been + V-ing</p>
+          <ul>
+            <li>Bắt đầu trước hiện tại và <strong>kéo dài đến hiện tại</strong></li>
+            <li><strong>I have been studying English for three hours.</strong></li>
+            <li>Tôi đã học tiếng Anh được ba tiếng.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub">So sánh trực quan</h3>
+      <div class="ex cyan"><span class="en">I am studying English now.</span><span class="vi">→ Tôi đang học ngay bây giờ.</span></div>
+      <div class="ex green"><span class="en">I have been studying English for three hours.</span><span class="vi">→ Tôi đã học được ba tiếng.</span></div>
+
+      <h3 class="sub">So sánh 3 thì quan trọng</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Thì</th><th>Công thức</th><th>Ý chính</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Present Continuous</strong></td><td>am/is/are + V-ing</td><td>Đang xảy ra bây giờ</td></tr>
+            <tr><td><strong>Present Perfect</strong></td><td>have/has + V3</td><td>Kết quả / kinh nghiệm</td></tr>
+            <tr><td><strong>Present Perfect Continuous</strong></td><td>have/has + been + V-ing</td><td>Quá trình / thời lượng kéo dài</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ex" style="margin-top:16px"><span class="en">I am studying English now.</span><span class="vi">Tôi đang học tiếng Anh bây giờ.</span></div>
+      <div class="ex"><span class="en">I have studied three lessons.</span><span class="vi">Tôi đã học ba bài.</span></div>
+      <div class="ex"><span class="en">I have been studying for three hours.</span><span class="vi">Tôi đã học được ba tiếng.</span></div>
+    </section>
+
+    <!-- 14 -->
     <section class="section reveal" id="loi">
-      <div class="sec-head"><div class="sec-num">12</div><h2>Những lỗi người mới thường mắc</h2></div>
+      <div class="sec-head"><div class="sec-num">14</div><h2>Những lỗi người mới thường mắc</h2></div>
 
       <div class="grid2">
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 1 — Quên thêm S</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> He work every day.</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> He works every day.</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 1 — Quên BEEN</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> I have studying English.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> I have been studying English.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 2 — Thêm S sau DOES</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Does he works here?</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Does he work here?</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 2 — Dùng V3 thay vì V-ing</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> She has been studied English.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> She has been studying English.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 3 — Thêm S sau DOESN'T</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> She doesn't likes coffee.</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> She doesn't like coffee.</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 3 — Dùng V nguyên mẫu</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> He has been work here.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> He has been working here.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 4 — Dùng DO với TO BE</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Do you are a student?</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Are you a student?</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 4 — Nhầm HAVE và HAS</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> She have been studying.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> She has been studying.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 5 — Dùng DOES với I</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Does I work here?</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Do I work here?</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 5 — Dùng HAS với THEY</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> They has been working.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> They have been working.</div>
         </div>
         <div class="card" style="margin:0">
-          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 6 — Dùng DO với HE</p>
-          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Do he work here?</div>
-          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Does he work here?</div>
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 6 — Dùng DOES</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Does she have been working?</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Has she been working?</div>
+        </div>
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 7 — Dùng DO</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> Do you have been studying?</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> Have you been studying?</div>
+        </div>
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 8 — Quên FOR / SINCE</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> I have been studying three hours.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> I have been studying for three hours.</div>
+        </div>
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 9 — Nhầm SINCE và FOR</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> I have been working since five years.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> I have been working for five years.</div>
+        </div>
+        <div class="card" style="margin:0">
+          <p style="font-weight:800;color:var(--red);margin-bottom:9px">Lỗi 10 — Dùng với động từ trạng thái</p>
+          <div class="eg bad" style="margin:7px 0"><span class="mark">✗</span> I have been knowing him for ten years.</div>
+          <div class="eg good" style="margin:7px 0"><span class="mark">✓</span> I have known him for ten years.</div>
+          <p style="font-size:.85rem;color:var(--text-3);margin-top:9px">Các động từ trạng thái như <strong>know, believe, understand, want, need, love, like, own</strong> thường <strong>không dùng ở dạng tiếp diễn</strong>.</p>
         </div>
       </div>
 
       <div class="note key" style="margin-top:22px">
         <span class="ico">🧠</span>
         <span><strong>Cách nhớ cực kỳ đơn giản:</strong><br>
-        <strong>HE / SHE / IT</strong> → câu khẳng định: <strong>V + S/ES/IES</strong> <em>(He works. She watches. It goes.)</em><br>
-        Nhưng nếu có <strong>DOES / DOESN'T</strong> → động từ <strong>trở về nguyên mẫu</strong> <em>(Does he work? · He doesn't work.)</em></span>
+        <strong>PRESENT PERFECT CONTINUOUS = HAVE/HAS + BEEN + V-ING</strong><br>
+        <strong>I / YOU / WE / THEY → HAVE</strong> &nbsp;|&nbsp; <strong>HE / SHE / IT → HAS</strong><br>
+        <strong>FOR = BAO LÂU</strong> &nbsp;|&nbsp; <strong>SINCE = TỪ KHI NÀO</strong></span>
       </div>
     </section>
 
-    <!-- 13 -->
+    <!-- 15 -->
     <section class="section reveal" id="tong-ket">
-      <div class="sec-head"><div class="sec-num">13</div><h2>Công thức tổng hợp</h2></div>
+      <div class="sec-head"><div class="sec-num">15</div><h2>Công thức tổng hợp</h2></div>
 
       <div class="grid2">
         <div class="summary-card a">
-          <h4>🔤 Động từ thường</h4>
-          <div class="row"><span class="lbl">Khẳng định</span><span class="val">I/You/We/They + V<br>He/She/It + V(s/es)</span></div>
-          <div class="row"><span class="lbl">Phủ định</span><span class="val">I/You/We/They + don't + V<br>He/She/It + doesn't + V</span></div>
-          <div class="row"><span class="lbl">Nghi vấn</span><span class="val">Do + I/you/we/they + V?<br>Does + he/she/it + V?</span></div>
+          <h4>✅ Công thức cơ bản</h4>
+          <div class="row"><span class="lbl">Khẳng định</span><span class="val">S + have/has + been + V-ing</span></div>
+          <div class="row"><span class="lbl">Phủ định</span><span class="val">S + have/has + not + been + V-ing</span></div>
+          <div class="row"><span class="lbl">Nghi vấn</span><span class="val">Have/Has + S + been + V-ing?</span></div>
+          <div class="row"><span class="lbl">WH-</span><span class="val">WH + have/has + S + been + V-ing?</span></div>
         </div>
 
         <div class="summary-card b">
-          <h4>⭐ Động từ TO BE</h4>
-          <div class="row"><span class="lbl">Khẳng định</span><span class="val">I + am<br>He/She/It + is<br>You/We/They + are</span></div>
-          <div class="row"><span class="lbl">Phủ định</span><span class="val">S + am/is/are + not</span></div>
-          <div class="row"><span class="lbl">Nghi vấn</span><span class="val">Am/Is/Are + S ...?</span></div>
+          <h4>🌟 Quy tắc vàng</h4>
+          <div class="row"><span class="lbl">Quy tắc 1</span><span class="val">I / You / We / They → HAVE</span></div>
+          <div class="row"><span class="lbl">Quy tắc 2</span><span class="val">He / She / It → HAS</span></div>
+          <div class="row"><span class="lbl">Quy tắc 3</span><span class="val">Sau have/has → BEEN</span></div>
+          <div class="row"><span class="lbl">Quy tắc 4</span><span class="val">Sau been → V-ING</span></div>
+          <div class="row"><span class="lbl">Quy tắc 5</span><span class="val">FOR → khoảng thời gian</span></div>
+          <div class="row"><span class="lbl">Quy tắc 6</span><span class="val">SINCE → mốc thời gian</span></div>
         </div>
+      </div>
+
+      <h3 class="sub">Bảng tổng hợp toàn bài</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Loại câu</th><th>Công thức</th></tr></thead>
+          <tbody>
+            <tr><td>Khẳng định</td><td><span class="hl">S + have/has + been + V-ing</span></td></tr>
+            <tr><td>Phủ định</td><td><span class="hl">S + have/has + not + been + V-ing</span></td></tr>
+            <tr><td>Yes/No</td><td><span class="hl">Have/Has + S + been + V-ing?</span></td></tr>
+            <tr><td>WH-question</td><td><span class="hl">WH + have/has + S + been + V-ing?</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">Các từ quan trọng cần nhớ</h3>
+      <div class="chips">
+        <span>FOR</span><span>SINCE</span><span>HOW LONG</span>
+        <span>ALL DAY</span><span>ALL MORNING</span><span>ALL NIGHT</span>
+        <span>LATELY</span><span>RECENTLY</span>
+      </div>
+
+      <div class="note key">
+        <span class="ico">🧠</span>
+        <span><strong>Mẹo nhớ quan trọng nhất:</strong><br>
+        <strong>Present Perfect Continuous = HAVE/HAS + BEEN + V-ING</strong><br>
+        Nhấn mạnh quá trình hoặc thời gian hành động kéo dài từ quá khứ đến hiện tại.<br>
+        <em>I have been studying English for three hours.</em><br>
+        <em>Tôi đã học tiếng Anh được ba tiếng.</em></span>
       </div>
     </section>
 
-    <!-- 14 - QUIZ -->
+    <!-- 16 - QUIZ -->
     <section class="section reveal" id="quiz">
-      <div class="sec-head"><div class="sec-num">14</div><h2>Luyện tập — Kiểm tra kiến thức 🎯</h2></div>
-
-      <div class="quiz-shell">
-        <div class="quiz-bar">
-          <div class="quiz-bar-left">
-            <div class="quiz-score">🏅 Điểm: <b id="scoreVal">0</b> <span style="color:var(--text-3);font-weight:600">/ <span id="totalVal">0</span></span></div>
-            <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgress"></div></div>
-          </div>
-          <button class="btn-reset" id="resetBtn">🔄 Làm lại</button>
-        </div>
-        <div id="quizList"></div>
-        <div class="quiz-result" id="quizResult">
-          <div class="big" id="resultEmoji">🎉</div>
-          <div class="msg" id="resultMsg"></div>
-          <div class="sub" id="resultSub"></div>
-        </div>
+      <div class="sec-head"><div class="sec-num">16</div><h2>Luyện tập — Kiểm tra kiến thức</h2>
+        <br>
+        <a href="./bt.html"><button style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 13px 28px;
+          background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+          color: #fff;
+          border: none;
+          border-radius: 14px;
+          font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+          cursor: pointer;
+          box-shadow: 0 8px 22px -6px rgba(99, 102, 241, 0.5);
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          white-space: nowrap;
+          position: relative;
+          overflow: hidden;
+        "
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 14px 32px -8px rgba(99,102,241,0.6)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 22px -6px rgba(99,102,241,0.5)'"
+        onmousedown="this.style.transform='translateY(0) scale(0.98)'"
+        onmouseup="this.style.transform='translateY(-2px)'"
+        >
+          Làm bài
+        </button></a>
       </div>
     </section>
 
@@ -2269,207 +2803,6 @@ const mnavIO = new IntersectionObserver((entries)=>{
 },{rootMargin:'-30% 0px -60% 0px', threshold:0});
 mnavSections.forEach(s=>mnavIO.observe(s));
 
-/* ============ FREQUENCY BARS ============ */
-const freqList = document.getElementById('freqList');
-const freqIO = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.querySelectorAll('.freq-fill').forEach((f,i)=>{
-        setTimeout(()=>{ f.style.width = f.dataset.w + '%'; }, i*110);
-      });
-      freqIO.unobserve(e.target);
-    }
-  });
-},{threshold:.25});
-if(freqList) freqIO.observe(freqList);
-
-/* ============ CONFETTI ============ */
-function launchConfetti(count = 80){
-  const colors = ['#6366f1','#8b5cf6','#ec4899','#f59e0b','#10b981','#06b6d4','#fde68a'];
-  const isMobile = window.innerWidth < 720;
-  const n = isMobile ? Math.min(count, 60) : count;
-  for(let i=0;i<n;i++){
-    const el = document.createElement('div');
-    el.className = 'confetti-piece';
-    el.style.left = Math.random()*100 + 'vw';
-    el.style.background = colors[Math.floor(Math.random()*colors.length)];
-    el.style.width = (6 + Math.random()*8) + 'px';
-    el.style.height = (8 + Math.random()*10) + 'px';
-    el.style.animationDuration = (2.4 + Math.random()*2.2) + 's';
-    el.style.animationDelay = (Math.random()*0.4) + 's';
-    el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-    document.body.appendChild(el);
-    setTimeout(()=>el.remove(), 5200);
-  }
-}
-
-/* ============ QUIZ ============ */
-const quizData = [
-  { q:'He ______ football every Sunday.',
-    options:['play','plays','playing','is play'],
-    answer:1,
-    explain:'Chủ ngữ "He" (ngôi thứ 3 số ít) → động từ phải thêm -s: plays.' },
-  { q:'She ______ like coffee.',
-    options:["don't","doesn't","isn't","not"],
-    answer:1,
-    explain:'Với He/She/It ở câu phủ định, ta dùng "doesn\'t" + động từ nguyên mẫu.' },
-  { q:'______ you speak English?',
-    options:['Does','Do','Is','Are'],
-    answer:1,
-    explain:'Chủ ngữ "You" → dùng trợ động từ "Do": Do you speak English?' },
-  { q:'Does she ______ here?',
-    options:['works','working','work','worked'],
-    answer:2,
-    explain:'Sau "Does", động từ phải trở về nguyên mẫu → work (không phải works).' },
-  { q:'______ he a teacher?',
-    options:['Do','Does','Is','Are'],
-    answer:2,
-    explain:'Đây là câu với động từ TO BE. Chủ ngữ "He" → dùng "Is". Không dùng do/does với to be.' },
-  { q:'I ______ a student.',
-    options:['is','are','am','be'],
-    answer:2,
-    explain:'Chủ ngữ "I" luôn đi với "am".' },
-  { q:'My sister ______ TV every evening.',
-    options:['watch','watchs','watches','watching'],
-    answer:2,
-    explain:'"watch" tận cùng bằng "ch" → thêm "es": watches.' },
-  { q:'He ______ English every day.',
-    options:['study','studys','studies','studying'],
-    answer:2,
-    explain:'"study" kết thúc bằng phụ âm + y → đổi y thành ies: studies.' },
-  { q:'______ does she work? — She works in Hanoi.',
-    options:['What','Where','When','Who'],
-    answer:1,
-    explain:'Câu trả lời nói về địa điểm (in Hanoi) → dùng "Where".' },
-  { q:'Câu nào ĐÚNG ngữ pháp?',
-    options:['Do you are a student?','Are you a student?','Do you be a student?','You are a student?'],
-    answer:1,
-    explain:'Với động từ TO BE, ta không dùng do/does. Câu hỏi đúng: "Are you a student?"' }
-];
-
-const quizList = document.getElementById('quizList');
-const scoreVal = document.getElementById('scoreVal');
-const totalVal = document.getElementById('totalVal');
-const quizProgress = document.getElementById('quizProgress');
-const quizResult = document.getElementById('quizResult');
-const resultEmoji = document.getElementById('resultEmoji');
-const resultMsg = document.getElementById('resultMsg');
-const resultSub = document.getElementById('resultSub');
-
-let score = 0;
-let answeredCount = 0;
-
-totalVal.textContent = quizData.length;
-
-function buildQuiz(){
-  quizList.innerHTML = '';
-  score = 0;
-  answeredCount = 0;
-  scoreVal.textContent = '0';
-  scoreVal.classList.remove('bump');
-  quizProgress.style.width = '0%';
-  quizResult.classList.remove('show');
-
-  quizData.forEach((item, qi)=>{
-    const card = document.createElement('div');
-    card.className = 'quiz-q';
-    card.style.animationDelay = (qi * 0.04) + 's';
-
-    const qText = document.createElement('div');
-    qText.className = 'q-text';
-    const num = document.createElement('span');
-    num.className = 'q-num';
-    num.textContent = qi + 1;
-    const txt = document.createElement('span');
-    txt.textContent = item.q;
-    qText.appendChild(num);
-    qText.appendChild(txt);
-    card.appendChild(qText);
-
-    const optsWrap = document.createElement('div');
-    optsWrap.className = 'opts';
-
-    const explain = document.createElement('div');
-    explain.className = 'explain';
-    explain.textContent = '💡 ' + item.explain;
-
-    item.options.forEach((opt, oi)=>{
-      const btn = document.createElement('button');
-      btn.className = 'opt';
-      btn.type = 'button';
-      btn.textContent = opt;
-
-      btn.addEventListener('click', ()=>{
-        if(card.dataset.done === '1') return;
-        card.dataset.done = '1';
-        card.classList.add('done');
-
-        const buttons = optsWrap.querySelectorAll('.opt');
-        buttons.forEach(b=> b.disabled = true);
-
-        if(oi === item.answer){
-          btn.classList.add('correct');
-          score++;
-          scoreVal.textContent = score;
-          scoreVal.classList.add('bump');
-          setTimeout(()=>scoreVal.classList.remove('bump'), 320);
-        } else {
-          btn.classList.add('wrong');
-          buttons[item.answer].classList.add('correct');
-        }
-
-        explain.classList.add('show');
-        answeredCount++;
-
-        const pct = (answeredCount / quizData.length) * 100;
-        quizProgress.style.width = pct + '%';
-
-        if(answeredCount === quizData.length){
-          showResult();
-        }
-      });
-
-      optsWrap.appendChild(btn);
-    });
-
-    card.appendChild(optsWrap);
-    card.appendChild(explain);
-    quizList.appendChild(card);
-  });
-}
-
-function showResult(){
-  const pct = Math.round((score / quizData.length) * 100);
-  quizResult.classList.add('show');
-
-  if(pct === 100){
-    resultEmoji.textContent = '🏆';
-    resultMsg.textContent = 'Xuất sắc! Điểm tuyệt đối!';
-    resultSub.textContent = 'Bạn đã nắm vững thì hiện tại đơn — sẵn sàng học bài tiếp theo!';
-    setTimeout(()=>launchConfetti(120), 250);
-  } else if(pct >= 70){
-    resultEmoji.textContent = '🎉';
-    resultMsg.textContent = 'Rất tốt! Bạn đã hiểu bài!';
-    resultSub.textContent = `Bạn đúng ${score}/${quizData.length} câu. Ôn lại vài chỗ là hoàn hảo!`;
-    setTimeout(()=>launchConfetti(70), 250);
-  } else if(pct >= 40){
-    resultEmoji.textContent = '💪';
-    resultMsg.textContent = 'Cố lên! Bạn đang tiến bộ!';
-    resultSub.textContent = `Bạn đúng ${score}/${quizData.length} câu. Đọc lại phần công thức và thử lại nhé.`;
-  } else {
-    resultEmoji.textContent = '📚';
-    resultMsg.textContent = 'Đừng lo — hãy ôn lại từ đầu!';
-    resultSub.textContent = `Bạn đúng ${score}/${quizData.length} câu. Xem lại phần 5–8 rồi làm lại nhé!`;
-  }
-}
-
-document.getElementById('resetBtn').addEventListener('click', ()=>{
-  buildQuiz();
-  document.getElementById('quiz').scrollIntoView({behavior:'smooth', block:'start'});
-});
-
-buildQuiz();
-
 /* ============ SMOOTH ANCHOR SCROLL WITH OFFSET ============ */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', (e)=>{
@@ -2484,6 +2817,38 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     window.scrollTo({top, behavior:'smooth'});
   });
 });
+
+/* ============ PRINT MODE ============ */
+(function(){
+  const printBtn = document.getElementById('printBtn');
+  const exitPrintBtn = document.getElementById('exitPrintBtn');
+
+  function enterPrintMode(){
+    document.body.classList.add('print-mode');
+    document.title = 'In tài liệu — Thì Hiện Tại Hoàn Thành Tiếp Diễn';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('.section.reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+  }
+
+  function exitPrintMode(){
+    document.body.classList.remove('print-mode');
+    document.title = 'Thì Hiện Tại Hoàn Thành Tiếp Diễn · Present Perfect Continuous — Học Ngữ Pháp Tiếng Anh';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  if (printBtn) printBtn.addEventListener('click', enterPrintMode);
+  if (exitPrintBtn) exitPrintBtn.addEventListener('click', exitPrintMode);
+
+  window.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p') {
+      if (!document.body.classList.contains('print-mode')) {
+        enterPrintMode();
+      }
+    }
+  });
+})();
 </script>
 
 </body>
