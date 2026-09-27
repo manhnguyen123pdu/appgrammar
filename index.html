@@ -3,16 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ngữ pháp tiếng Anh – 12 thì cơ bản</title>
+<title>Ngữ pháp tiếng Anh – Trang chủ</title>
 <style>
-/* =========================================================
-   RESET & BIẾN
-   ========================================================= */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg: #f6f7fb;
-  --bg-soft: #eef1f9;
   --card: #ffffff;
   --text: #0f172a;
   --text-soft: #475569;
@@ -23,18 +19,14 @@
   --brand-dark: #4f46e5;
   --brand-soft: #eef2ff;
   --accent: #06b6d4;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
   --shadow-sm: 0 2px 8px rgba(15, 23, 42, .04);
   --shadow: 0 6px 20px rgba(15, 23, 42, .06);
   --shadow-lg: 0 20px 40px -12px rgba(79, 70, 229, .25);
   --radius: 16px;
   --radius-lg: 24px;
-  --radius-sm: 10px;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -55,101 +47,59 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-button { font-family: inherit; cursor: pointer; }
 
-/* =========================================================
-   HEADER / NAV
-   ========================================================= */
+/* ============ HEADER ============ */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  position: sticky; top: 0; z-index: 50;
   background: rgba(255, 255, 255, .78);
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
   border-bottom: 1px solid var(--border);
 }
-
 .nav {
-  max-width: 1120px;
-  margin: 0 auto;
+  max-width: 1120px; margin: 0 auto;
   padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
+  display: flex; align-items: center; gap: 18px;
 }
-
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-weight: 700;
-  font-size: 15.5px;
-  letter-spacing: -.01em;
-  white-space: nowrap;
-  color: var(--text);
+  display: flex; align-items: center; gap: 11px;
+  font-weight: 700; font-size: 15.5px;
+  letter-spacing: -.01em; white-space: nowrap;
   transition: opacity .2s;
 }
 .logo:hover { opacity: .8; }
-
 .logo .dot {
-  width: 34px; height: 34px;
-  border-radius: 11px;
-  display: grid;
-  place-items: center;
+  width: 34px; height: 34px; border-radius: 11px;
+  display: grid; place-items: center;
   background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
-  color: #fff;
-  font-size: 12.5px;
-  font-weight: 800;
+  color: #fff; font-size: 12.5px; font-weight: 800;
   letter-spacing: .5px;
   box-shadow: 0 4px 12px rgba(99, 102, 241, .35);
   flex-shrink: 0;
 }
-
 .nav-links {
-  margin-left: auto;
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap;
 }
-
 .nav-links a {
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-soft);
-  transition: .18s ease;
+  padding: 8px 14px; border-radius: 10px;
+  font-size: 14px; font-weight: 500;
+  color: var(--text-soft); transition: .18s ease;
   white-space: nowrap;
 }
-.nav-links a:hover {
-  background: var(--brand-soft);
-  color: var(--brand-dark);
-}
+.nav-links a:hover { background: var(--brand-soft); color: var(--brand-dark); }
 .nav-links a.active {
   background: linear-gradient(135deg, var(--brand), var(--brand-dark));
   color: #fff;
   box-shadow: 0 4px 12px rgba(99, 102, 241, .35);
 }
 
-/* =========================================================
-   LAYOUT
-   ========================================================= */
-.wrap {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 32px 24px 90px;
-}
+/* ============ LAYOUT ============ */
+.wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px 90px; }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* ============ HERO ============ */
 .hero {
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  border-radius: var(--radius-lg);
+  position: relative; overflow: hidden;
+  color: #fff; border-radius: var(--radius-lg);
   padding: 56px 48px;
   background:
     radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .18), transparent 45%),
@@ -158,140 +108,88 @@ header {
   isolation: isolate;
 }
 .hero::after {
-  content: "";
-  position: absolute;
+  content: ""; position: absolute;
   right: -100px; top: -100px;
   width: 340px; height: 340px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, .10);
+  border-radius: 50%; background: rgba(255, 255, 255, .10);
   z-index: -1;
 }
 .hero::before {
-  content: "";
-  position: absolute;
+  content: ""; position: absolute;
   right: 100px; bottom: -120px;
   width: 240px; height: 240px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, .07);
+  border-radius: 50%; background: rgba(255, 255, 255, .07);
   z-index: -1;
 }
-
 .hero h1 {
   font-size: clamp(26px, 4.5vw, 42px);
-  font-weight: 800;
-  line-height: 1.18;
-  letter-spacing: -.025em;
-  margin-bottom: 14px;
+  font-weight: 800; line-height: 1.18;
+  letter-spacing: -.025em; margin-bottom: 14px;
   position: relative;
 }
-
 .hero p {
   max-width: 620px;
   font-size: clamp(14.5px, 1.6vw, 16.5px);
-  line-height: 1.7;
-  opacity: .95;
-  margin-bottom: 28px;
-  position: relative;
+  line-height: 1.7; opacity: .95;
+  margin-bottom: 28px; position: relative;
 }
-
 .hero-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  position: relative;
+  display: flex; gap: 12px; flex-wrap: wrap; position: relative;
 }
-
-/* =========================================================
-   BUTTON
-   ========================================================= */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 13px 24px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 14.5px;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 6px; padding: 13px 24px; border-radius: 12px;
+  font-weight: 600; font-size: 14.5px;
   border: 1px solid transparent;
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-  cursor: pointer;
-  white-space: nowrap;
+  cursor: pointer; white-space: nowrap;
 }
 .btn-light {
-  background: #fff;
-  color: var(--brand-dark);
+  background: #fff; color: var(--brand-dark);
   box-shadow: 0 6px 16px rgba(0, 0, 0, .12);
 }
-.btn-light:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, .2);
-}
+.btn-light:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(0, 0, 0, .2); }
 .btn-ghost {
-  background: rgba(255, 255, 255, .16);
-  color: #fff;
+  background: rgba(255, 255, 255, .16); color: #fff;
   border-color: rgba(255, 255, 255, .4);
   backdrop-filter: blur(6px);
 }
-.btn-ghost:hover {
-  background: rgba(255, 255, 255, .26);
-  transform: translateY(-2px);
-}
+.btn-ghost:hover { background: rgba(255, 255, 255, .26); transform: translateY(-2px); }
 
-/* =========================================================
-   SECTION
-   ========================================================= */
+/* ============ SECTION ============ */
 .section { margin-top: 56px; }
-
 .section-head {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  margin-bottom: 22px;
-  flex-wrap: wrap;
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 22px; flex-wrap: wrap;
 }
 .section-head h2 {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  color: var(--text);
+  font-size: 22px; font-weight: 700;
+  letter-spacing: -.02em; color: var(--text);
 }
-.section-head span {
-  color: var(--muted);
-  font-size: 14px;
-}
+.section-head span { color: var(--muted); font-size: 14px; }
 
-/* =========================================================
-   GRID & TOPIC CARD
-   ========================================================= */
+/* ============ GRID ============ */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 18px;
 }
-
 .topic {
   position: relative;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: flex; flex-direction: column; gap: 8px;
   box-shadow: var(--shadow-sm);
   transition: transform .22s cubic-bezier(.4, 0, .2, 1),
               box-shadow .22s ease, border-color .22s ease;
   overflow: hidden;
 }
 .topic::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+  content: ""; position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(99, 102, 241, .04), transparent 60%);
-  opacity: 0;
-  transition: opacity .25s ease;
-  pointer-events: none;
+  opacity: 0; transition: opacity .25s ease; pointer-events: none;
 }
 .topic:hover {
   transform: translateY(-4px);
@@ -299,79 +197,41 @@ header {
   border-color: var(--border-strong);
 }
 .topic:hover::before { opacity: 1; }
-
 .topic .ico {
-  font-size: 26px;
-  line-height: 1;
-  margin-bottom: 4px;
+  font-size: 26px; line-height: 1; margin-bottom: 4px;
   filter: drop-shadow(0 2px 4px rgba(99, 102, 241, .15));
 }
-.topic h3 {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  color: var(--text);
-}
-.topic p {
-  font-size: 13.5px;
-  line-height: 1.6;
-  color: var(--text-soft);
-  flex-grow: 1;
-}
-
+.topic h3 { font-size: 16px; font-weight: 700; letter-spacing: -.01em; color: var(--text); }
+.topic p { font-size: 13.5px; line-height: 1.6; color: var(--text-soft); flex-grow: 1; }
 .topic.soon { opacity: .58; cursor: not-allowed; }
-.topic.soon:hover {
-  transform: none;
-  box-shadow: var(--shadow-sm);
-  border-color: var(--border);
-}
-
+.topic.soon:hover { transform: none; box-shadow: var(--shadow-sm); border-color: var(--border); }
 .badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  align-self: flex-start;
-  margin-top: 6px;
-  font-size: 11.5px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: var(--brand-soft);
-  color: var(--brand-dark);
+  display: inline-flex; align-items: center; gap: 4px;
+  align-self: flex-start; margin-top: 6px;
+  font-size: 11.5px; font-weight: 700;
+  padding: 5px 12px; border-radius: 999px;
+  background: var(--brand-soft); color: var(--brand-dark);
   letter-spacing: .2px;
 }
-.badge.gray {
-  background: #f1f5f9;
-  color: #94a3b8;
-}
+.badge.gray { background: #f1f5f9; color: #94a3b8; }
 
-/* =========================================================
-   GROUP TITLE + TENSE CARD
-   ========================================================= */
+/* ============ GROUP + TENSE CARD ============ */
 .group-title {
-  display: flex;
-  align-items: center;
-  gap: 11px;
+  display: flex; align-items: center; gap: 11px;
   margin: 40px 0 18px;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  color: var(--text);
+  font-size: 17px; font-weight: 700;
+  letter-spacing: -.01em; color: var(--text);
 }
 .group-title .bar {
-  width: 5px;
-  height: 22px;
-  border-radius: 4px;
+  width: 5px; height: 22px; border-radius: 4px;
   background: var(--accent-color, var(--brand));
 }
-
 .g-hien-tai  { --accent-color: #3b82f6; }
 .g-qua-khu   { --accent-color: #f97316; }
 .g-tuong-lai { --accent-color: #10b981; }
 
 .tense-card {
-  position: relative;
-  display: block;
+  position: relative; display: block;
   background: var(--card);
   border: 1px solid var(--border);
   border-left: 4px solid var(--accent-color, var(--brand));
@@ -382,449 +242,74 @@ header {
   overflow: hidden;
 }
 .tense-card::after {
-  content: "→";
-  position: absolute;
-  right: 18px;
-  top: 50%;
+  content: "→"; position: absolute;
+  right: 18px; top: 50%;
   transform: translateY(-50%) translateX(-6px);
   font-size: 18px;
   color: var(--accent-color, var(--brand));
-  opacity: 0;
-  transition: .22s ease;
+  opacity: 0; transition: .22s ease;
 }
 .tense-card:hover {
   transform: translateY(-2px) translateX(4px);
   box-shadow: 0 14px 28px -12px rgba(15, 23, 42, .18);
   border-color: var(--border-strong);
 }
-.tense-card:hover::after {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
+.tense-card:hover::after { opacity: 1; transform: translateY(-50%) translateX(0); }
 .tense-card .num {
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 12px; font-weight: 800;
   color: var(--accent-color, var(--brand));
-  letter-spacing: 1.5px;
-  display: block;
-  margin-bottom: 2px;
+  letter-spacing: 1.5px; display: block; margin-bottom: 2px;
 }
 .tense-card h3 {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  margin-bottom: 2px;
-  color: var(--text);
+  font-size: 16px; font-weight: 700;
+  letter-spacing: -.01em; margin-bottom: 2px; color: var(--text);
 }
 .tense-card .en {
-  font-size: 13px;
-  color: var(--text-soft);
-  font-style: italic;
-  margin-bottom: 10px;
+  font-size: 13px; color: var(--text-soft);
+  font-style: italic; margin-bottom: 10px;
 }
 .tense-card .mini {
   display: inline-block;
   font-family: var(--mono);
   font-size: 12.5px;
-  background: #f4f6fc;
-  color: #334155;
-  padding: 6px 11px;
-  border-radius: 8px;
+  background: #f4f6fc; color: #334155;
+  padding: 6px 11px; border-radius: 8px;
   border: 1px solid #e6eaf6;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 100%; overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap;
 }
 
-/* =========================================================
-   BREADCRUMB
-   ========================================================= */
-.crumbs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  font-size: 13.5px;
-  color: var(--muted);
-  margin-bottom: 20px;
-}
-.crumbs a { transition: color .15s; }
-.crumbs a:hover {
-  color: var(--brand-dark);
-  text-decoration: underline;
-}
-.crumbs span:last-child { color: var(--text-soft); font-weight: 500; }
-
-/* =========================================================
-   LESSON HEAD
-   ========================================================= */
-.lesson-head {
-  margin-bottom: 26px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid var(--border);
-}
-.lesson-head h1 {
-  font-size: clamp(24px, 3.6vw, 34px);
-  font-weight: 800;
-  letter-spacing: -.025em;
-  line-height: 1.2;
-  margin: 10px 0 6px;
-  color: var(--text);
-}
-.lesson-head .en-title {
-  color: var(--text-soft);
-  font-style: italic;
-  font-size: 15px;
-}
-
-/* =========================================================
-   CARD (bài học)
-   ========================================================= */
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px 26px;
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 18px;
-  transition: box-shadow .25s ease, border-color .25s ease;
-}
-.card:hover {
-  box-shadow: var(--shadow);
-  border-color: var(--border-strong);
-}
-
-.card h2 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16.5px;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  margin-bottom: 16px;
-  color: var(--text);
-}
-.card h2 .n {
-  width: 28px; height: 28px;
-  border-radius: 9px;
-  background: var(--brand-soft);
-  color: var(--brand-dark);
-  display: grid;
-  place-items: center;
-  font-size: 13px;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.card ul {
-  list-style: none;
-  padding-left: 0;
-}
-.card li {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 10px;
-  color: var(--text-soft);
-  line-height: 1.65;
-}
-.card li::before {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 10px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--brand);
-}
-.card li:last-child { margin-bottom: 0; }
-
-/* =========================================================
-   FORMULA LIST
-   ========================================================= */
-.formula-list {
-  display: grid;
-  gap: 10px;
-}
-
-.formula-row {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 4px 14px;
-  align-items: center;
-  background: linear-gradient(135deg, #f8faff 0%, #f4f6fd 100%);
-  border: 1px solid #e8ecf9;
-  border-radius: 12px;
-  padding: 13px 16px;
-  transition: .18s ease;
-}
-.formula-row:hover {
-  border-color: #d5dcf3;
-  background: linear-gradient(135deg, #f5f7ff 0%, #eef1fb 100%);
-}
-
-.formula-row .lab {
-  font-size: 12.5px;
-  font-weight: 800;
-  color: var(--brand-dark);
-  text-transform: uppercase;
-  letter-spacing: .4px;
-}
-.formula-row .val {
-  font-family: var(--mono);
-  font-size: 14px;
-  font-weight: 500;
-  color: #1e293b;
-  word-break: break-word;
-}
-.formula-row .sub {
-  grid-column: 2;
-  font-size: 12.5px;
-  color: var(--muted);
-  font-family: var(--font);
-  font-style: italic;
-  margin-top: 2px;
-}
-
-/* =========================================================
-   CHIPS
-   ========================================================= */
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.chip {
-  display: inline-block;
-  background: linear-gradient(135deg, #eef7ff, #e0f2fe);
-  color: #0369a1;
-  border: 1px solid #cbe8ff;
-  padding: 6px 13px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.chip:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(6, 182, 212, .15);
-}
-
-/* =========================================================
-   EXAMPLES
-   ========================================================= */
-.ex {
-  display: grid;
-  gap: 14px;
-  list-style: none;
-  padding: 0;
-}
-.ex li {
-  position: relative;
-  padding: 12px 16px 12px 18px;
-  background: #fafbff;
-  border-left: 3px solid var(--brand);
-  border-radius: 0 10px 10px 0;
-  transition: .18s ease;
-}
-.ex li::before { display: none; }
-.ex li:hover {
-  background: #f4f6ff;
-  border-left-color: var(--brand-dark);
-  transform: translateX(2px);
-}
-.ex .en {
-  font-weight: 600;
-  color: #0f172a;
-  font-size: 14.5px;
-  line-height: 1.5;
-}
-.ex .vi {
-  font-size: 13px;
-  color: var(--text-soft);
-  margin-top: 3px;
-  line-height: 1.55;
-}
-
-/* =========================================================
-   WARNING CARD
-   ========================================================= */
-.card.warn {
-  background: linear-gradient(135deg, #fffaf5 0%, #fff5ed 100%);
-  border-color: #ffe0cc;
-}
-.card.warn:hover { border-color: #ffd0b0; }
-.card.warn h2 { color: #9a3412; }
-.card.warn h2 .n {
-  background: #ffe4d1;
-  color: #c2410c;
-}
-.card.warn li { color: #7c2d12; }
-.card.warn li::before { background: #f97316; }
-
-/* =========================================================
-   NOTE
-   ========================================================= */
-.note {
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-  border: 1px solid #a7f3d0;
-  color: #065f46;
-  border-radius: 14px;
-  padding: 16px 20px;
-  font-size: 14px;
-  line-height: 1.65;
-  margin-bottom: 18px;
-}
-.note b { color: #047857; }
-
-/* =========================================================
-   PAGER
-   ========================================================= */
-.pager {
-  display: flex;
-  gap: 14px;
-  justify-content: space-between;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-.pager a {
-  flex: 1 1 260px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 14px 20px;
-  font-size: 14.5px;
-  font-weight: 600;
-  box-shadow: var(--shadow-sm);
-  transition: .2s ease;
-  color: var(--text);
-  display: block;
-}
-.pager a:hover {
-  border-color: var(--brand);
-  color: var(--brand-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px -10px rgba(99, 102, 241, .28);
-}
-.pager a small {
-  display: block;
-  font-weight: 500;
-  color: var(--muted);
-  font-size: 12px;
-  margin-bottom: 2px;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-}
-.pager .right { text-align: right; margin-left: auto; }
-
-/* =========================================================
-   TABLE
-   ========================================================= */
-.table-scroll {
-  overflow-x: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: #fff;
-  box-shadow: var(--shadow-sm);
-  -webkit-overflow-scrolling: touch;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 860px;
-  font-size: 14px;
-}
-th, td {
-  padding: 14px 18px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-th {
-  background: linear-gradient(180deg, #f7f9fd, #f1f4fb);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .6px;
-  color: #64748b;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-tbody tr { transition: background .15s ease; }
-tbody tr:hover { background: #fafbff; }
-td.mono {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: #1e293b;
-  white-space: nowrap;
-}
-.grp-row td {
-  background: #f8fafc;
-  font-weight: 800;
-  color: #334155;
-  font-size: 13px;
-  letter-spacing: .5px;
-  border-top: 2px solid #e2e8f0;
-}
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* ============ FOOTER ============ */
 footer {
   border-top: 1px solid var(--border);
-  background: #fff;
-  text-align: center;
+  background: #fff; text-align: center;
   padding: 26px 20px;
-  font-size: 13.5px;
-  color: var(--muted);
+  font-size: 13.5px; color: var(--muted);
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-/* Tablet */
+/* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {
   .wrap { padding: 26px 20px 80px; }
   .hero { padding: 44px 32px; }
   .grid { gap: 14px; }
 }
 
-/* Mobile lớn */
 @media (max-width: 640px) {
   body { font-size: 15px; }
-
-  .nav {
-    padding: 10px 16px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
+  .nav { padding: 10px 16px; gap: 8px; flex-wrap: wrap; }
   .logo { font-size: 14px; }
   .logo .dot { width: 30px; height: 30px; font-size: 11px; border-radius: 9px; }
   .nav-links {
-    width: 100%;
-    margin-left: 0;
+    width: 100%; margin-left: 0;
     justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 2px;
+    overflow-x: auto; padding-bottom: 2px;
     scrollbar-width: none;
   }
   .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a {
-    padding: 7px 12px;
-    font-size: 13px;
-    flex-shrink: 0;
-  }
+  .nav-links a { padding: 7px 12px; font-size: 13px; flex-shrink: 0; }
 
   .wrap { padding: 20px 16px 70px; }
-
-  .hero {
-    padding: 32px 24px;
-    border-radius: 20px;
-  }
+  .hero { padding: 32px 24px; border-radius: 20px; }
   .hero h1 { margin-bottom: 12px; }
   .hero p { margin-bottom: 22px; font-size: 14.5px; }
   .hero-actions { flex-direction: column; }
@@ -835,82 +320,26 @@ footer {
   .section-head h2 { font-size: 19px; }
   .section-head span { font-size: 13px; width: 100%; }
 
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .topic {
-    padding: 18px;
-    border-radius: 14px;
-  }
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .topic { padding: 18px; border-radius: 14px; }
   .topic .ico { font-size: 22px; }
-
-  .group-title {
-    margin: 30px 0 14px;
-    font-size: 15.5px;
-  }
-
-  .tense-card {
-    padding: 15px 16px;
-    border-radius: 12px;
-  }
+  .group-title { margin: 30px 0 14px; font-size: 15.5px; }
+  .tense-card { padding: 15px 16px; border-radius: 12px; }
   .tense-card::after { display: none; }
   .tense-card:hover { transform: translateY(-2px); }
-
-  .card {
-    padding: 18px 16px;
-    border-radius: 14px;
-    margin-bottom: 14px;
-  }
-  .card h2 { font-size: 15.5px; gap: 10px; }
-  .card h2 .n { width: 26px; height: 26px; font-size: 12px; }
-
-  .formula-row {
-    grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 12px 14px;
-  }
-  .formula-row .sub { grid-column: 1; }
-  .formula-row .val { font-size: 13.5px; }
-
-  .ex li { padding: 10px 12px 10px 14px; }
-  .ex .en { font-size: 14px; }
-  .ex .vi { font-size: 12.5px; }
-
-  .lesson-head { padding-bottom: 18px; margin-bottom: 20px; }
-
-  .pager { flex-direction: column; }
-  .pager a {
-    flex: 1 1 100%;
-    width: 100%;
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-  .pager .right { text-align: left; margin-left: 0; }
-
-  .crumbs { font-size: 13px; margin-bottom: 14px; }
-
-  .chip { font-size: 12.5px; padding: 5px 11px; }
-
-  table { font-size: 13.5px; }
-  th, td { padding: 12px 14px; }
 
   footer { padding: 20px 16px; font-size: 12.5px; }
 }
 
-/* Mobile nhỏ */
 @media (max-width: 380px) {
   .hero { padding: 26px 18px; }
   .hero h1 { font-size: 22px; }
   .wrap { padding: 18px 14px 60px; }
-  .card { padding: 16px 14px; }
   .nav { padding: 8px 12px; }
   .logo { font-size: 13px; }
   .logo .dot { width: 28px; height: 28px; font-size: 10px; }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition-duration: .01ms !important;
@@ -924,620 +353,126 @@ footer {
 
 <header>
   <div class="nav">
-    <a class="logo" href="#/"><span class="dot">EN</span> Ngữ pháp tiếng Anh</a>
+    <a class="logo" href="index.html"><span class="dot">EN</span> Ngữ pháp tiếng Anh</a>
     <nav class="nav-links">
-      <a href="#/" data-nav="home">Trang chủ</a>
-      <a href="#/thi" data-nav="thi">12 thì</a>
-      <a href="#/thi/bang-tong-hop" data-nav="bang">Bảng tổng hợp</a>
+      <a href="index.html" class="active">Trang chủ</a>
+      <a href="bang-tong-hop.html">Bảng tổng hợp</a>
     </nav>
   </div>
 </header>
 
-<main id="app" class="wrap"></main>
+<main class="wrap">
+  <section class="hero">
+    <h1>Học ngữ pháp tiếng Anh<br>từ con số 0</h1>
+    <p>Bắt đầu với <b>12 thì cơ bản</b> — nền tảng quan trọng nhất của mọi kỳ thi và giao tiếp. Mỗi bài gồm công thức, cách dùng, dấu hiệu nhận biết, ví dụ và lỗi thường gặp.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="#danh-sach-thi">Bắt đầu với 12 thì →</a>
+      <a class="btn btn-ghost" href="bang-tong-hop.html">Bảng tổng hợp</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Chủ điểm ngữ pháp</h2>
+      <span>Chọn một chủ điểm để bắt đầu học</span>
+    </div>
+    <div class="grid" id="topic-grid"></div>
+  </section>
+
+  <section class="section" id="danh-sach-thi">
+    <div class="section-head">
+      <h2>12 thì trong tiếng Anh</h2>
+      <span>Nhấn vào từng thì để mở bài học</span>
+    </div>
+    <div id="tense-list"></div>
+  </section>
+</main>
 
 <footer>Ngữ pháp tiếng Anh cơ bản · 12 thì · Học mỗi ngày một ít 🚀</footer>
 
 <script>
 /* =========================================================
-   1. DỮ LIỆU 12 THÌ
+   DANH SÁCH 12 THÌ — TRỎ ĐẾN FILE HTML RIÊNG
    ========================================================= */
 const TENSES = [
-  {
-    id: "hien-tai-don",
-    num: "01",
-    name: "Thì hiện tại đơn",
-    en: "Present Simple",
-    group: "Hiện tại",
-    g: "g-hien-tai",
-    formula: [
-      { lab: "Khẳng định", val: "S + V(s/es) + O", sub: "Với động từ to be: S + am/is/are + …" },
-      { lab: "Phủ định", val: "S + do/does + not + V", sub: "do → I/you/we/they · does → he/she/it" },
-      { lab: "Nghi vấn", val: "Do/Does + S + V?", sub: "Trả lời: Yes, S + do/does. / No, S + don't/doesn't." }
-    ],
-    usage: [
-      "Diễn tả thói quen, hành động lặp đi lặp lại: I usually get up at 6 a.m.",
-      "Diễn tả sự thật hiển nhiên, chân lý: Water boils at 100°C.",
-      "Diễn tả lịch trình, thời gian biểu cố định: The train leaves at 8 a.m.",
-      "Diễn tả cảm xúc, suy nghĩ, giác quan (stative verbs): I like music. / She knows the answer."
-    ],
-    signals: ["always","usually","often","sometimes","occasionally","rarely","seldom","never","every day/week/month","once a week","on Mondays","in the morning"],
-    examples: [
-      { en: "I go to school by bike every day.", vi: "Tôi đi học bằng xe đạp mỗi ngày." },
-      { en: "She doesn't like coffee.", vi: "Cô ấy không thích cà phê." },
-      { en: "Do they live in Hanoi?", vi: "Họ sống ở Hà Nội phải không?" },
-      { en: "The sun rises in the east.", vi: "Mặt trời mọc ở hướng đông." }
-    ],
-    mistakes: [
-      "Quên thêm -s/-es với chủ ngữ số ít: He go → He goes.",
-      "Sai trợ động từ: She doesn't likes → She doesn't like.",
-      "Dùng hiện tại đơn cho hành động đang xảy ra ngay lúc nói."
-    ]
-  },
-  {
-    id: "hien-tai-tiep-dien",
-    num: "02",
-    name: "Thì hiện tại tiếp diễn",
-    en: "Present Continuous",
-    group: "Hiện tại",
-    g: "g-hien-tai",
-    formula: [
-      { lab: "Khẳng định", val: "S + am/is/are + V-ing" },
-      { lab: "Phủ định", val: "S + am/is/are + not + V-ing" },
-      { lab: "Nghi vấn", val: "Am/Is/Are + S + V-ing?" }
-    ],
-    usage: [
-      "Hành động đang xảy ra ngay lúc nói: I am studying English now.",
-      "Kế hoạch đã sắp xếp trong tương lai gần: I'm meeting Tom tomorrow.",
-      "Phàn nàn về thói quen gây khó chịu với always: He is always losing his keys.",
-      "Diễn tả sự thay đổi, xu hướng đang diễn ra: The climate is getting warmer."
-    ],
-    signals: ["now","right now","at the moment","at present","currently","Look!","Listen!","Be quiet!","today","this week"],
-    examples: [
-      { en: "I am studying English now.", vi: "Tôi đang học tiếng Anh bây giờ." },
-      { en: "They aren't watching TV at the moment.", vi: "Lúc này họ không xem TV." },
-      { en: "Is she cooking dinner?", vi: "Cô ấy đang nấu bữa tối phải không?" },
-      { en: "Look! The bus is coming.", vi: "Nhìn kìa! Xe buýt đang đến." }
-    ],
-    mistakes: [
-      "Quên động từ to be: I studying → I am studying.",
-      "Dùng với stative verbs (know, like, want, believe…): I am knowing → I know.",
-      "Nhầm với hiện tại đơn khi nói về thói quen."
-    ]
-  },
-  {
-    id: "hien-tai-hoan-thanh",
-    num: "03",
-    name: "Thì hiện tại hoàn thành",
-    en: "Present Perfect",
-    group: "Hiện tại",
-    g: "g-hien-tai",
-    formula: [
-      { lab: "Khẳng định", val: "S + have/has + V3/ed" },
-      { lab: "Phủ định", val: "S + have/has + not + V3/ed" },
-      { lab: "Nghi vấn", val: "Have/Has + S + V3/ed?" }
-    ],
-    usage: [
-      "Hành động bắt đầu trong quá khứ và kéo dài đến hiện tại: I have lived here for 10 years.",
-      "Trải nghiệm trong đời (không nêu thời gian cụ thể): Have you ever been to Japan?",
-      "Hành động vừa mới xảy ra: She has just finished her homework.",
-      "Kết quả của hành động còn ảnh hưởng đến hiện tại.",
-      "Hành động xảy ra trong khoảng thời gian chưa kết thúc: today, this week, this year."
-    ],
-    signals: ["already","yet","just","ever","never","since","for","recently","lately","so far","up to now","several times","this is the first time"],
-    examples: [
-      { en: "I have lived here for 10 years.", vi: "Tôi đã sống ở đây 10 năm." },
-      { en: "She has just finished her homework.", vi: "Cô ấy vừa mới làm xong bài tập." },
-      { en: "Have you ever been to Japan?", vi: "Bạn đã từng đến Nhật chưa?" },
-      { en: "We haven't seen him since 2020.", vi: "Chúng tôi không gặp anh ấy từ năm 2020." }
-    ],
-    mistakes: [
-      "Dùng với mốc thời gian quá khứ xác định: I have seen him yesterday → I saw him yesterday.",
-      "Nhầm since và for: since + mốc thời gian, for + khoảng thời gian.",
-      "Nhầm V2 với V3 (gone/went, done/did…)."
-    ],
-    note: "<b>since</b> + mốc thời gian (since 2020, since Monday) · <b>for</b> + khoảng thời gian (for 3 years, for a long time)."
-  },
-  {
-    id: "hien-tai-hoan-thanh-tiep-dien",
-    num: "04",
-    name: "Thì hiện tại hoàn thành tiếp diễn",
-    en: "Present Perfect Continuous",
-    group: "Hiện tại",
-    g: "g-hien-tai",
-    formula: [
-      { lab: "Khẳng định", val: "S + have/has + been + V-ing" },
-      { lab: "Phủ định", val: "S + have/has + not + been + V-ing" },
-      { lab: "Nghi vấn", val: "Have/Has + S + been + V-ing?" }
-    ],
-    usage: [
-      "Hành động bắt đầu ở quá khứ, kéo dài liên tục đến hiện tại (nhấn mạnh quá trình).",
-      "Hành động vừa mới kết thúc nhưng kết quả vẫn còn thấy rõ.",
-      "Nhấn mạnh thời gian kéo dài của hành động với how long, for, since."
-    ],
-    signals: ["since","for","all day","all morning","how long","lately","recently"],
-    examples: [
-      { en: "I have been learning English for 5 years.", vi: "Tôi đã học tiếng Anh được 5 năm." },
-      { en: "It has been raining all day.", vi: "Trời mưa suốt cả ngày." },
-      { en: "How long have you been waiting?", vi: "Bạn đã đợi bao lâu rồi?" },
-      { en: "She is tired because she has been working hard.", vi: "Cô ấy mệt vì đã làm việc chăm chỉ suốt." }
-    ],
-    mistakes: [
-      "Dùng với động từ không tiếp diễn: I have been knowing → I have known.",
-      "Nhầm với hiện tại hoàn thành: HTHT nhấn mạnh kết quả, HTHTTD nhấn mạnh quá trình.",
-      "Quên been trong công thức."
-    ]
-  },
+  // ----- HIỆN TẠI -----
+  { num:"01", name:"Thì hiện tại đơn",                    en:"Present Simple",              group:"Hiện tại",  file:"hien-tai-don.html",                    formula:"S + V(s/es) + O" },
+  { num:"02", name:"Thì hiện tại tiếp diễn",              en:"Present Continuous",          group:"Hiện tại",  file:"hien-tai-tiep-dien.html",              formula:"S + am/is/are + V-ing" },
+  { num:"03", name:"Thì hiện tại hoàn thành",             en:"Present Perfect",             group:"Hiện tại",  file:"hien-tai-hoan-thanh.html",             formula:"S + have/has + V3/ed" },
+  { num:"04", name:"Thì hiện tại hoàn thành tiếp diễn",   en:"Present Perfect Continuous",  group:"Hiện tại",  file:"hien-tai-hoan-thanh-tiep-dien.html",   formula:"S + have/has + been + V-ing" },
 
-  {
-    id: "qua-khu-don",
-    num: "05",
-    name: "Thì quá khứ đơn",
-    en: "Past Simple",
-    group: "Quá khứ",
-    g: "g-qua-khu",
-    formula: [
-      { lab: "Khẳng định", val: "S + V2/ed + O", sub: "Với to be: S + was/were + …" },
-      { lab: "Phủ định", val: "S + did + not + V" },
-      { lab: "Nghi vấn", val: "Did + S + V?" }
-    ],
-    usage: [
-      "Hành động đã xảy ra và kết thúc hoàn toàn trong quá khứ, có thời gian xác định.",
-      "Chuỗi hành động liên tiếp trong quá khứ: She got up, washed her face and went out.",
-      "Thói quen trong quá khứ (thường dùng used to): I used to play football.",
-      "Kể lại sự kiện, câu chuyện trong quá khứ."
-    ],
-    signals: ["yesterday","last night/week/month/year","ago","in 1990","when I was young","in the past","then"],
-    examples: [
-      { en: "I watched a movie yesterday.", vi: "Hôm qua tôi đã xem một bộ phim." },
-      { en: "She didn't come to the party.", vi: "Cô ấy đã không đến bữa tiệc." },
-      { en: "Did you finish your homework?", vi: "Bạn đã làm xong bài tập chưa?" },
-      { en: "We were at home last night.", vi: "Tối qua chúng tôi ở nhà." }
-    ],
-    mistakes: [
-      "Dùng V2/ed sau did: Did you went → Did you go?",
-      "Nhầm V2 và V3.",
-      "Dùng quá khứ đơn cho hành động còn kéo dài đến hiện tại."
-    ]
-  },
-  {
-    id: "qua-khu-tiep-dien",
-    num: "06",
-    name: "Thì quá khứ tiếp diễn",
-    en: "Past Continuous",
-    group: "Quá khứ",
-    g: "g-qua-khu",
-    formula: [
-      { lab: "Khẳng định", val: "S + was/were + V-ing" },
-      { lab: "Phủ định", val: "S + was/were + not + V-ing" },
-      { lab: "Nghi vấn", val: "Was/Were + S + V-ing?" }
-    ],
-    usage: [
-      "Hành động đang xảy ra tại một thời điểm xác định trong quá khứ.",
-      "Hành động đang xảy ra thì một hành động khác xen vào (when / while).",
-      "Hai hành động xảy ra song song cùng lúc trong quá khứ (while).",
-      "Diễn tả bối cảnh, không khí của một câu chuyện."
-    ],
-    signals: ["at 8 p.m yesterday","at that time","at that moment","while","when","all day yesterday"],
-    examples: [
-      { en: "I was watching TV at 9 p.m yesterday.", vi: "Tôi đang xem TV lúc 9 giờ tối qua." },
-      { en: "While she was cooking, the phone rang.", vi: "Trong khi cô ấy đang nấu ăn thì điện thoại reo." },
-      { en: "They were playing football when it started to rain.", vi: "Họ đang chơi bóng thì trời bắt đầu mưa." }
-    ],
-    mistakes: [
-      "Nhầm was/were với chủ ngữ.",
-      "Dùng when/while sai: while + hành động kéo dài, when + hành động xen vào.",
-      "Quên dạng V-ing của động từ."
-    ]
-  },
-  {
-    id: "qua-khu-hoan-thanh",
-    num: "07",
-    name: "Thì quá khứ hoàn thành",
-    en: "Past Perfect",
-    group: "Quá khứ",
-    g: "g-qua-khu",
-    formula: [
-      { lab: "Khẳng định", val: "S + had + V3/ed" },
-      { lab: "Phủ định", val: "S + had + not + V3/ed" },
-      { lab: "Nghi vấn", val: "Had + S + V3/ed?" }
-    ],
-    usage: [
-      "Hành động xảy ra trước một hành động khác trong quá khứ.",
-      "Hành động xảy ra trước một thời điểm xác định trong quá khứ.",
-      "Hành động là nguyên nhân, điều kiện cho hành động sau.",
-      "Dùng trong câu điều kiện loại 3 và câu ước."
-    ],
-    signals: ["before","after","by the time","when","already","as soon as","by + mốc quá khứ","until then"],
-    examples: [
-      { en: "When I arrived, they had already left.", vi: "Khi tôi đến, họ đã rời đi rồi." },
-      { en: "She had finished her homework before she went out.", vi: "Cô ấy đã làm xong bài tập trước khi ra ngoài." },
-      { en: "By 2010, he had written 3 books.", vi: "Đến năm 2010, ông ấy đã viết được 3 cuốn sách." }
-    ],
-    mistakes: [
-      "Nhầm với quá khứ đơn khi hai hành động không có quan hệ trước – sau.",
-      "Dùng after/before mà không phân biệt trình tự hành động.",
-      "Nhầm had + V3 với have + V3."
-    ]
-  },
-  {
-    id: "qua-khu-hoan-thanh-tiep-dien",
-    num: "08",
-    name: "Thì quá khứ hoàn thành tiếp diễn",
-    en: "Past Perfect Continuous",
-    group: "Quá khứ",
-    g: "g-qua-khu",
-    formula: [
-      { lab: "Khẳng định", val: "S + had + been + V-ing" },
-      { lab: "Phủ định", val: "S + had + not + been + V-ing" },
-      { lab: "Nghi vấn", val: "Had + S + been + V-ing?" }
-    ],
-    usage: [
-      "Nhấn mạnh quá trình kéo dài liên tục trước một hành động / thời điểm trong quá khứ.",
-      "Diễn tả nguyên nhân của một sự việc trong quá khứ."
-    ],
-    signals: ["before","after","for","since","how long","by the time","until then"],
-    examples: [
-      { en: "She had been working here for 5 years before she resigned.", vi: "Cô ấy đã làm việc ở đây 5 năm trước khi nghỉ việc." },
-      { en: "They were tired because they had been walking all day.", vi: "Họ mệt vì đã đi bộ suốt cả ngày." },
-      { en: "How long had you been studying English before you moved?", vi: "Bạn đã học tiếng Anh bao lâu trước khi chuyển đi?" }
-    ],
-    mistakes: [
-      "Nhầm với quá khứ hoàn thành (QKHT nhấn mạnh kết quả, QKHTTD nhấn mạnh quá trình).",
-      "Dùng với động từ không tiếp diễn.",
-      "Thiếu been trong công thức."
-    ]
-  },
+  // ----- QUÁ KHỨ -----
+  { num:"05", name:"Thì quá khứ đơn",                     en:"Past Simple",                 group:"Quá khứ",   file:"qua-khu-don.html",                     formula:"S + V2/ed + O" },
+  { num:"06", name:"Thì quá khứ tiếp diễn",               en:"Past Continuous",             group:"Quá khứ",   file:"qua-khu-tiep-dien.html",               formula:"S + was/were + V-ing" },
+  { num:"07", name:"Thì quá khứ hoàn thành",              en:"Past Perfect",                group:"Quá khứ",   file:"qua-khu-hoan-thanh.html",              formula:"S + had + V3/ed" },
+  { num:"08", name:"Thì quá khứ hoàn thành tiếp diễn",    en:"Past Perfect Continuous",     group:"Quá khứ",   file:"qua-khu-hoan-thanh-tiep-dien.html",    formula:"S + had + been + V-ing" },
 
-  {
-    id: "tuong-lai-don",
-    num: "09",
-    name: "Thì tương lai đơn",
-    en: "Future Simple",
-    group: "Tương lai",
-    g: "g-tuong-lai",
-    formula: [
-      { lab: "Khẳng định", val: "S + will + V" },
-      { lab: "Phủ định", val: "S + will not (won't) + V" },
-      { lab: "Nghi vấn", val: "Will + S + V?" },
-      { lab: "Be going to", val: "S + am/is/are + going to + V", sub: "Dùng cho kế hoạch đã định trước hoặc dự đoán có bằng chứng." }
-    ],
-    usage: [
-      "Quyết định tức thời ngay tại lúc nói: I'll have coffee, please.",
-      "Dự đoán dựa trên suy nghĩ, ý kiến: I think it will rain.",
-      "Lời hứa, lời đề nghị, yêu cầu: I will help you.",
-      "Be going to: kế hoạch đã định trước, dự đoán có bằng chứng rõ ràng."
-    ],
-    signals: ["tomorrow","next week/month/year","in the future","soon","tonight","someday","I think","I believe","probably"],
-    examples: [
-      { en: "I will call you tomorrow.", vi: "Tôi sẽ gọi cho bạn vào ngày mai." },
-      { en: "She won't come to the meeting.", vi: "Cô ấy sẽ không đến cuộc họp." },
-      { en: "Will you help me?", vi: "Bạn sẽ giúp tôi chứ?" },
-      { en: "Look at those clouds! It's going to rain.", vi: "Nhìn mây kìa! Trời sắp mưa rồi." }
-    ],
-    mistakes: [
-      "Nhầm will và be going to.",
-      "Dùng will trong mệnh đề thời gian sau when: When I will come → When I come.",
-      "Chia động từ sau will: will goes → will go."
-    ],
-    note: "Sau <b>when, if, before, after, as soon as, until</b> trong mệnh đề thời gian / điều kiện, ta <b>không dùng will</b> mà dùng hiện tại đơn."
-  },
-  {
-    id: "tuong-lai-tiep-dien",
-    num: "10",
-    name: "Thì tương lai tiếp diễn",
-    en: "Future Continuous",
-    group: "Tương lai",
-    g: "g-tuong-lai",
-    formula: [
-      { lab: "Khẳng định", val: "S + will + be + V-ing" },
-      { lab: "Phủ định", val: "S + will + not + be + V-ing" },
-      { lab: "Nghi vấn", val: "Will + S + be + V-ing?" }
-    ],
-    usage: [
-      "Hành động đang xảy ra tại một thời điểm xác định trong tương lai.",
-      "Hành động tương lai đã được lên kế hoạch, sắp xếp sẵn.",
-      "Diễn tả hai hành động tương lai xảy ra song song."
-    ],
-    signals: ["at this time tomorrow","at 8 p.m next Sunday","this time next week","when you come","in the near future"],
-    examples: [
-      { en: "At 8 a.m tomorrow, I will be taking an exam.", vi: "Lúc 8 giờ sáng mai, tôi sẽ đang làm bài kiểm tra." },
-      { en: "Don't call me at 9 p.m — I will be having dinner.", vi: "Đừng gọi cho tôi lúc 9 giờ tối — tôi sẽ đang ăn tối." },
-      { en: "This time next week, we will be lying on the beach.", vi: "Giờ này tuần sau, chúng tôi sẽ đang nằm trên bãi biển." }
-    ],
-    mistakes: [
-      "Nhầm với tương lai đơn (TLĐ nói về sự việc, TLTD nói về hành động đang diễn ra tại một thời điểm).",
-      "Quên be trong công thức.",
-      "Nhầm với tương lai hoàn thành tiếp diễn."
-    ]
-  },
-  {
-    id: "tuong-lai-hoan-thanh",
-    num: "11",
-    name: "Thì tương lai hoàn thành",
-    en: "Future Perfect",
-    group: "Tương lai",
-    g: "g-tuong-lai",
-    formula: [
-      { lab: "Khẳng định", val: "S + will + have + V3/ed" },
-      { lab: "Phủ định", val: "S + will + not + have + V3/ed" },
-      { lab: "Nghi vấn", val: "Will + S + have + V3/ed?" }
-    ],
-    usage: [
-      "Hành động sẽ hoàn thành trước một thời điểm trong tương lai.",
-      "Hành động sẽ hoàn thành trước một hành động khác trong tương lai."
-    ],
-    signals: ["by + mốc tương lai (by 2030, by next month)","by the time","before","by then"],
-    examples: [
-      { en: "By the end of this year, I will have finished my course.", vi: "Đến cuối năm nay, tôi sẽ hoàn thành xong khóa học." },
-      { en: "She will have graduated by 2027.", vi: "Cô ấy sẽ tốt nghiệp trước năm 2027." },
-      { en: "By the time you arrive, I will have cooked dinner.", vi: "Khi bạn đến thì tôi đã nấu xong bữa tối rồi." }
-    ],
-    mistakes: [
-      "Nhầm by và until: by = trước mốc thời gian, until = kéo dài đến mốc đó.",
-      "Dùng với mốc thời gian không xác định.",
-      "Nhầm với tương lai đơn."
-    ]
-  },
-  {
-    id: "tuong-lai-hoan-thanh-tiep-dien",
-    num: "12",
-    name: "Thì tương lai hoàn thành tiếp diễn",
-    en: "Future Perfect Continuous",
-    group: "Tương lai",
-    g: "g-tuong-lai",
-    formula: [
-      { lab: "Khẳng định", val: "S + will + have + been + V-ing" },
-      { lab: "Phủ định", val: "S + will + not + have + been + V-ing" },
-      { lab: "Nghi vấn", val: "Will + S + have + been + V-ing?" }
-    ],
-    usage: [
-      "Nhấn mạnh quá trình kéo dài liên tục đến một thời điểm trong tương lai.",
-      "Diễn tả nguyên nhân của một tình huống trong tương lai.",
-      "Thường dùng trong văn viết, ít gặp trong giao tiếp hằng ngày."
-    ],
-    signals: ["by + mốc tương lai + for + khoảng thời gian","by the time","for","since"],
-    examples: [
-      { en: "By next June, I will have been working here for 10 years.", vi: "Đến tháng 6 tới, tôi sẽ làm việc ở đây được 10 năm." },
-      { en: "By the time he retires, he will have been teaching for 30 years.", vi: "Đến lúc nghỉ hưu, ông ấy sẽ dạy học được 30 năm." }
-    ],
-    mistakes: [
-      "Nhầm với tương lai hoàn thành.",
-      "Thiếu been trong công thức.",
-      "Dùng trong ngữ cảnh không cần nhấn mạnh tính liên tục."
-    ]
-  }
+  // ----- TƯƠNG LAI -----
+  { num:"09", name:"Thì tương lai đơn",                   en:"Future Simple",               group:"Tương lai", file:"tuong-lai-don.html",                   formula:"S + will + V" },
+  { num:"10", name:"Thì tương lai tiếp diễn",             en:"Future Continuous",           group:"Tương lai", file:"tuong-lai-tiep-dien.html",             formula:"S + will + be + V-ing" },
+  { num:"11", name:"Thì tương lai hoàn thành",            en:"Future Perfect",              group:"Tương lai", file:"tuong-lai-hoan-thanh.html",            formula:"S + will + have + V3/ed" },
+  { num:"12", name:"Thì tương lai hoàn thành tiếp diễn",  en:"Future Perfect Continuous",   group:"Tương lai", file:"tuong-lai-hoan-thanh-tiep-dien.html",  formula:"S + will + have + been + V-ing" }
 ];
 
 /* =========================================================
-   2. DANH SÁCH CHỦ ĐIỂM TRANG CHỦ
+   CHỦ ĐIỂM KHÁC TRÊN TRANG CHỦ
    ========================================================= */
 const TOPICS = [
-  { ico: "⏱️", title: "12 thì cơ bản", desc: "Công thức, cách dùng, dấu hiệu, ví dụ và lỗi thường gặp.", href: "#/thi", ready: true },
-  { ico: "🧩", title: "Từ loại", desc: "Danh từ, động từ, tính từ, trạng từ, giới từ, liên từ…", ready: false },
-  { ico: "📚", title: "Danh từ & Mạo từ", desc: "Đếm được / không đếm được, a – an – the.", ready: false },
-  { ico: "🔄", title: "Câu bị động", desc: "Passive voice và cách chuyển đổi từ câu chủ động.", ready: false },
-  { ico: "🔗", title: "Mệnh đề quan hệ", desc: "Who, whom, which, that, whose, where, when.", ready: false },
-  { ico: "🌦️", title: "Câu điều kiện", desc: "Loại 0, 1, 2, 3 và điều kiện hỗn hợp.", ready: false },
-  { ico: "💬", title: "Câu tường thuật", desc: "Reported speech – lùi thì và đổi đại từ.", ready: false },
-  { ico: "⚖️", title: "So sánh", desc: "So sánh bằng, hơn, nhất, so sánh kép.", ready: false },
-  { ico: "📍", title: "Giới từ", desc: "Giới từ chỉ thời gian, nơi chốn, chuyển động.", ready: false },
-  { ico: "🔑", title: "Động từ khuyết thiếu", desc: "Can, could, may, must, should, would…", ready: false },
-  { ico: "🌱", title: "Gerund & To-V", desc: "Danh động từ và động từ nguyên thể có to.", ready: false },
-  { ico: "🔃", title: "Đảo ngữ", desc: "Inversion trong câu nhấn mạnh và điều kiện.", ready: false }
+  { ico:"⏱️", title:"12 thì cơ bản",        desc:"Công thức, cách dùng, dấu hiệu, ví dụ và lỗi thường gặp.", href:"#danh-sach-thi", ready:true },
+  { ico:"📋", title:"Bảng tổng hợp 12 thì",  desc:"Xem nhanh công thức và dấu hiệu của cả 12 thì.",           href:"bang-tong-hop.html", ready:true },
+  { ico:"🧩", title:"Từ loại",               desc:"Danh từ, động từ, tính từ, trạng từ, giới từ, liên từ…",  ready:false },
+  { ico:"📚", title:"Danh từ & Mạo từ",      desc:"Đếm được / không đếm được, a – an – the.",                 ready:false },
+  { ico:"🔄", title:"Câu bị động",           desc:"Passive voice và cách chuyển đổi từ câu chủ động.",        ready:false },
+  { ico:"🔗", title:"Mệnh đề quan hệ",       desc:"Who, whom, which, that, whose, where, when.",              ready:false },
+  { ico:"🌦️", title:"Câu điều kiện",         desc:"Loại 0, 1, 2, 3 và điều kiện hỗn hợp.",                    ready:false },
+  { ico:"💬", title:"Câu tường thuật",       desc:"Reported speech – lùi thì và đổi đại từ.",                 ready:false },
+  { ico:"⚖️", title:"So sánh",               desc:"So sánh bằng, hơn, nhất, so sánh kép.",                    ready:false },
+  { ico:"📍", title:"Giới từ",               desc:"Giới từ chỉ thời gian, nơi chốn, chuyển động.",            ready:false },
+  { ico:"🔑", title:"Động từ khuyết thiếu",  desc:"Can, could, may, must, should, would…",                    ready:false },
+  { ico:"🌱", title:"Gerund & To-V",         desc:"Danh động từ và động từ nguyên thể có to.",                ready:false },
+  { ico:"🔃", title:"Đảo ngữ",               desc:"Inversion trong câu nhấn mạnh và điều kiện.",              ready:false }
 ];
 
 /* =========================================================
-   3. ROUTER + RENDER
+   RENDER
    ========================================================= */
-const app = document.getElementById("app");
 const GROUPS = ["Hiện tại", "Quá khứ", "Tương lai"];
+const GROUP_SLUG = { "Hiện tại": "g-hien-tai", "Quá khứ": "g-qua-khu", "Tương lai": "g-tuong-lai" };
 
-function goTop() { window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); }
-
-function setNav(key) {
-  document.querySelectorAll(".nav-links a").forEach(a => {
-    a.classList.toggle("active", a.dataset.nav === key);
-  });
-}
-
-/* ---------- Trang chủ ---------- */
-function renderHome() {
-  setNav("home");
-  const cards = TOPICS.map(t => {
-    if (t.ready) {
-      return `<a class="topic" href="${t.href}">
-        <span class="ico">${t.ico}</span>
-        <h3>${t.title}</h3>
-        <p>${t.desc}</p>
-        <span class="badge">Học ngay →</span>
-      </a>`;
-    }
-    return `<div class="topic soon">
+/* --- Chủ điểm --- */
+document.getElementById("topic-grid").innerHTML = TOPICS.map(t => {
+  if (t.ready) {
+    return `<a class="topic" href="${t.href}">
       <span class="ico">${t.ico}</span>
       <h3>${t.title}</h3>
       <p>${t.desc}</p>
-      <span class="badge gray">Sắp ra mắt</span>
-    </div>`;
-  }).join("");
-
-  app.innerHTML = `
-    <section class="hero">
-      <h1>Học ngữ pháp tiếng Anh<br>từ con số 0</h1>
-      <p>Bắt đầu với <b>12 thì cơ bản</b> — nền tảng quan trọng nhất của mọi kỳ thi và giao tiếp. Mỗi bài gồm công thức, cách dùng, dấu hiệu nhận biết, ví dụ và lỗi thường gặp.</p>
-      <div class="hero-actions">
-        <a class="btn btn-light" href="#/thi">Bắt đầu với 12 thì →</a>
-        <a class="btn btn-ghost" href="#/thi/bang-tong-hop">Bảng tổng hợp</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Chủ điểm ngữ pháp</h2>
-        <span>Chọn một chủ điểm để bắt đầu học</span>
-      </div>
-      <div class="grid">${cards}</div>
-    </section>
-  `;
-}
-
-/* ---------- Danh sách 12 thì ---------- */
-function renderTenseList() {
-  setNav("thi");
-  const blocks = GROUPS.map(g => {
-    const items = TENSES.filter(t => t.group === g);
-    const slug = g === "Hiện tại" ? "g-hien-tai" : g === "Quá khứ" ? "g-qua-khu" : "g-tuong-lai";
-    const cards = items.map(t => `
-      <a class="tense-card ${t.g}" href="#/thi/${t.id}">
-        <span class="num">${t.num}</span>
-        <h3>${t.name}</h3>
-        <p class="en">${t.en}</p>
-        <p class="mini">${t.formula[0].val}</p>
-      </a>`).join("");
-    return `
-      <div class="${slug}">
-        <div class="group-title"><span class="bar"></span>${g} (${items.length} thì)</div>
-        <div class="grid">${cards}</div>
-      </div>`;
-  }).join("");
-
-  app.innerHTML = `
-    <nav class="crumbs"><a href="#/">Trang chủ</a><span>/</span><span>12 thì</span></nav>
-    <div class="section-head">
-      <h2>12 thì trong tiếng Anh</h2>
-      <span>Nhấn vào từng thì để xem bài học chi tiết</span>
-    </div>
-    <p style="margin:0 0 4px">
-      <a class="btn" style="background:#eef2ff;color:#4338ca;padding:9px 16px;font-size:13.5px"
-         href="#/thi/bang-tong-hop">📋 Xem bảng tổng hợp 12 thì</a>
-    </p>
-    ${blocks}
-  `;
-}
-
-/* ---------- Bảng tổng hợp ---------- */
-function renderSummary() {
-  setNav("bang");
-  const rows = GROUPS.map(g => {
-    const items = TENSES.filter(t => t.group === g);
-    const head = `<tr class="grp-row"><td colspan="4">${g.toUpperCase()}</td></tr>`;
-    const body = items.map(t => `
-      <tr>
-        <td><b>${t.name}</b><br><span style="color:#64748b;font-style:italic;font-size:12.5px">${t.en}</span></td>
-        <td class="mono">${t.formula[0].val}</td>
-        <td>${t.signals.slice(0, 5).join(", ")}</td>
-        <td>${t.examples[0].en}</td>
-      </tr>`).join("");
-    return head + body;
-  }).join("");
-
-  app.innerHTML = `
-    <nav class="crumbs"><a href="#/">Trang chủ</a><span>/</span><a href="#/thi">12 thì</a><span>/</span><span>Bảng tổng hợp</span></nav>
-    <div class="section-head">
-      <h2>Bảng tổng hợp 12 thì</h2>
-      <span>Nhấn vào tên thì ở cột đầu để xem bài học</span>
-    </div>
-    <div class="table-scroll">
-      <table>
-        <thead>
-          <tr><th>Thì</th><th>Công thức (khẳng định)</th><th>Dấu hiệu nhận biết</th><th>Ví dụ</th></tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>
-    <div class="pager" style="margin-top:22px">
-      <a href="#/thi"><small>Quay lại</small>← Danh sách 12 thì</a>
-    </div>
-  `;
-}
-
-/* ---------- Bài học chi tiết ---------- */
-function renderLesson(t) {
-  setNav("thi");
-  const idx = TENSES.indexOf(t);
-  const prev = idx > 0 ? TENSES[idx - 1] : null;
-  const next = idx < TENSES.length - 1 ? TENSES[idx + 1] : null;
-
-  const formulas = t.formula.map(f => `
-    <div class="formula-row">
-      <span class="lab">${f.lab}</span>
-      <span class="val">${f.val}</span>
-      ${f.sub ? `<span class="sub">${f.sub}</span>` : ""}
-    </div>`).join("");
-
-  const usage = t.usage.map(u => `<li>${u}</li>`).join("");
-  const chips = t.signals.map(s => `<span class="chip">${s}</span>`).join("");
-  const exs = t.examples.map(e => `
-    <li><div class="en">${e.en}</div><div class="vi">${e.vi}</div></li>`).join("");
-  const mistakes = t.mistakes.map(m => `<li>${m}</li>`).join("");
-
-  app.innerHTML = `
-    <nav class="crumbs">
-      <a href="#/">Trang chủ</a><span>/</span>
-      <a href="#/thi">12 thì</a><span>/</span>
-      <span>${t.name}</span>
-    </nav>
-
-    <div class="lesson-head ${t.g}">
-      <span class="badge">${t.group}</span>
-      <h1>${t.num}. ${t.name}</h1>
-      <p class="en-title">${t.en} Tense</p>
-    </div>
-
-    <section class="card">
-      <h2><span class="n">1</span> Công thức</h2>
-      <div class="formula-list">${formulas}</div>
-    </section>
-
-    <section class="card">
-      <h2><span class="n">2</span> Cách dùng</h2>
-      <ul>${usage}</ul>
-    </section>
-
-    <section class="card">
-      <h2><span class="n">3</span> Dấu hiệu nhận biết</h2>
-      <div class="chips">${chips}</div>
-    </section>
-
-    <section class="card">
-      <h2><span class="n">4</span> Ví dụ</h2>
-      <ul class="ex">${exs}</ul>
-    </section>
-
-    <section class="card warn">
-      <h2><span class="n">!</span> Lỗi thường gặp</h2>
-      <ul>${mistakes}</ul>
-    </section>
-
-    ${t.note ? `<div class="note">💡 <b>Ghi nhớ:</b> ${t.note}</div>` : ""}
-
-    <div class="pager">
-      ${prev ? `<a href="#/thi/${prev.id}"><small>Bài trước</small>← ${prev.name}</a>` : `<a href="#/thi"><small>Quay lại</small>← Danh sách 12 thì</a>`}
-      ${next ? `<a class="right" href="#/thi/${next.id}"><small>Bài tiếp theo</small>${next.name} →</a>` : `<a class="right" href="#/thi/bang-tong-hop"><small>Ôn tập</small>Bảng tổng hợp 12 thì →</a>`}
-    </div>
-  `;
-}
-
-/* ---------- Điều hướng ---------- */
-function route() {
-  const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-
-  if (parts.length === 0) { renderHome(); }
-  else if (parts[0] === "thi") {
-    if (parts[1] === "bang-tong-hop") renderSummary();
-    else if (parts[1]) {
-      const t = TENSES.find(x => x.id === parts[1]);
-      t ? renderLesson(t) : renderTenseList();
-    }
-    else renderTenseList();
+      <span class="badge">Học ngay →</span>
+    </a>`;
   }
-  else renderHome();
+  return `<div class="topic soon">
+    <span class="ico">${t.ico}</span>
+    <h3>${t.title}</h3>
+    <p>${t.desc}</p>
+    <span class="badge gray">Sắp ra mắt</span>
+  </div>`;
+}).join("");
 
-  goTop();
-}
-
-window.addEventListener("hashchange", route);
-window.addEventListener("DOMContentLoaded", route);
-route();
+/* --- Danh sách 12 thì --- */
+document.getElementById("tense-list").innerHTML = GROUPS.map(g => {
+  const items = TENSES.filter(t => t.group === g);
+  const cards = items.map(t => `
+    <a class="tense-card" href="${t.file}">
+      <span class="num">${t.num}</span>
+      <h3>${t.name}</h3>
+      <p class="en">${t.en}</p>
+      <p class="mini">${t.formula}</p>
+    </a>`).join("");
+  return `
+    <div class="${GROUP_SLUG[g]}">
+      <div class="group-title"><span class="bar"></span>${g} (${items.length} thì)</div>
+      <div class="grid">${cards}</div>
+    </div>`;
+}).join("");
 </script>
 </body>
 </html>
